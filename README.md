@@ -1,1 +1,1 @@
-j.d.-lindsay
+J.D. Lindsay 2.0
