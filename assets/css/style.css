@@ -1,0 +1,3010 @@
+/* -------------------------------------------
+
+Stylesheet for
+Template: Proton Creative Agency and Personal Template
+Version: 1.0
+Author: Ydirection Themes
+Author url: http://themeforest.net/user/ydirectionthemes
+---------------------------------------------*/
+
+/* ------Table of Contents -----
+
+1. Primary Styles
+2. Main Top Navigation
+3. Agency Top Navigation
+4. Hamburger Menu, Off Canvas Navigation
+5. Home and Intro Styling
+6. Homepage Portfolio
+7. About Section
+8. Portfolio Single Item
+9. Contact Page
+10. Minimal Contact Page
+11. Footer
+12. Footer 2nd variant
+13. Back To Top
+14. Media Queries
+15. Agency Home Intro Styling
+16. Portfolio Item 2
+17. Services 2nd Variant
+18. About Page 2nd Variant
+
+
+/* --------------------------------
+
+Primary styles
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+::-moz-selection {
+    color: #FFFFFF;
+    background: #000;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+.custompadding {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.rightpadding {
+	padding-left: 0px;
+}
+
+
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   opacity: 1;
+   background-color: #000;
+   z-index: 99;
+   text-align: center;
+}
+
+#loading-image {
+	display: inline;
+    top: 40%;
+    position: relative;
+  z-index: 100;
+}
+
+/*Body Border */
+
+
+#top, #bottom, #left, #right {
+	background: #F1F1FA;
+	position: fixed;
+  z-index: 99;
+}
+	#left, #right {
+	top: 0; bottom: 0;
+	width: 15px;
+}
+
+#left { left: 0; }
+#right { right: 0; }
+
+#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+/* -- Body Border End ---*/
+
+/* ----- Body Border for Agency Template Start -----*/
+
+#pta-top, #pta-bottom, #pta-left, #pta-right {
+	background: #EFEFEF;
+	position: fixed;
+  z-index: 111;
+	}
+#pta-left, #pta-right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+#pta-left { left: 0; }
+#pta-right { right: 0; }
+
+#pta-top {
+		left: 0; right: 0;
+		height: 15px;
+	}
+#pta-bottom {
+		left: 0; right: 0;
+		height: 15px;
+	}
+
+#pta-top { top: 0; }
+#pta-bottom { bottom: 0; }
+
+/* ----- Body Border for Agency Template End -----*/
+
+
+.spacer {
+  width: 100%;
+  height: 75px;
+}
+
+.spacer-1 {
+  width: 100%;
+  height: 50px;
+}
+
+
+.logo {
+  position: absolute;
+  top: 35px;
+  left: 25px;
+  padding: 0px 0px;
+	max-width: 250px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Poppins;
+	font-weight: 700;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.logo:hover {
+	text-decoration: none;
+}
+
+.logo:focus {
+	text-decoration: none;
+}
+
+.logo span {
+	color: #072DEF;
+}
+
+.logo span:hover, .logo span:focus {
+	color: #072DEF;
+}
+
+/* ------ Primary Styling Ends Here -----*/
+
+
+
+header {
+  position: absolute;
+   top: 0;
+   left: 0;
+   height: 100px;
+   width: 100%;
+   z-index: 11;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+ }
+
+
+/* --------------------------------------
+------- 2. Top Navigation Styling --------
+----------------------------------------*/
+
+
+#top-nav {
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  height: 100%;
+  display: none;
+}
+
+#top-nav ul {
+  height: 100%;
+  padding-top: 18px;
+}
+
+
+#top-nav li {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0.5em;
+}
+
+#top-nav a {
+  position: relative;
+  display: inline-block;
+  color: #111111;
+  text-decoration: none;
+}
+
+#top-nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  background-color: #072DEF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#top-nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.no-touch #top-nav a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+#top-nav .active a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  background-color: #072DEF;
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#top-nav .active a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+
+/* ----- 3. Agency Top Navigation - Different Styling Starts----- */
+
+.pta-top-nav  {
+  position: fixed;
+  top: 40px;
+}
+
+.pta-top-nav a {
+  position: relative;
+  display: inline-block;
+  color: #111111 !important;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 00px;
+  text-decoration: none;
+}
+
+
+.pta-top-nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px !important;
+  bottom: -3px;
+  left: 0;
+  background-color: #666666 !important;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.pta-top-nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* ------ Agency Top Nav - Different Styling Ends -----*/
+
+
+
+/* ---------------------------------------------------
+------ 4. Hamburger Menu Styling and Animation--------
+-----------------------------------------------------*/
+
+.nav-trigger {
+  width: 40px;
+  height: 40px;
+	z-index: 31;
+  position: fixed;
+  right: 15px;
+	top: 35px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .7s cubic-bezier(.77,0,.175,1);
+  -moz-transition: .7s cubic-bezier(.77,0,.175,1);
+  -o-transition: .7s cubic-bezier(.77,0,.175,1);
+  transition: .7s cubic-bezier(.77,0,.175,1);
+  cursor: pointer;
+}
+
+.nav-trigger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  background: #111;
+  border-radius: 0px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.nav-trigger span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-trigger span:nth-child(2) {
+  width: 18px;
+  top: 8px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-trigger span:nth-child(3) {
+  top: 16px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-trigger.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -1px;
+  left: 4px;
+}
+
+.nav-trigger.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.nav-trigger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 4px;
+}
+
+
+.nav-logo {
+	position: fixed;
+	top: 100px;
+	left: 20px;
+	padding: 5px 10px;
+	max-width: 250px;
+	letter-spacing: -1px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: #111;
+	text-decoration: none;
+	z-index: 11;
+}
+
+.nav-logo:hover {
+	text-decoration: none;
+	color: #111;
+}
+
+.nav-logo:focus {
+	text-decoration: none;
+}
+
+.nav-logo span {
+	padding: 2px;
+	color: #FFF;
+	background: #072DEF;
+}
+
+#nav-menu {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  /* the secondary navigation is covered by the main element */
+  z-index: 1;
+  width: 260px;
+  background-color: #F1F1F1;
+  overflow-y: auto;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .6s 0s, visibility 0s .6s;
+  -moz-transition: -moz-transform .6s 0s, visibility 0s .6s;
+    transition: transform .6s 0s, visibility 0s .6s;
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  /* this creates the subtle slide in animation of the navigation */
+  -webkit-transform: translateX(260px);
+  -moz-transform: translateX(260px);
+  -ms-transform: translateX(260px);
+  -o-transform: translateX(260px);
+  transform: translateX(260px);
+}
+
+#nav-menu .navigation {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+
+#nav-menu li {
+  padding-bottom: 1em;
+}
+
+#nav-menu li {
+  display: block;
+  line-height: 2em;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 2;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  color: #222;
+}
+
+#nav-menu a {
+  position: relative;
+  color: #111;
+	text-decoration: none;
+}
+
+
+#nav-menu a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #072DEF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+#nav-menu li:hover a::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.no-touch #nav-menu a:hover {
+  color: #000;
+	text-decoration: none;
+}
+
+/* ----- Agency Minimal Nav Menu Start -----*/
+
+
+/*
+.pta-nav-menu a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #111111 !important;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.pta-nav-menu li:hover a::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.pta-nav-social i, .pta-nav-social a {
+  font-size: 21px;
+  color: #111111 !important;
+}
+*/
+
+/* ----- Agency Minimal Nav Menu End -----*/
+
+
+.main.is-active {
+  -webkit-transform: translateX(-260px);
+  -moz-transform: translateX(-260px);
+  -ms-transform: translateX(-260px);
+  -o-transform: translateX(-260px);
+  transform: translateX(-260px);
+  -webkit-transition: -webkit-transform .6s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform .6s 0s, visibility 0s 0s;
+  transition: transform .6s 0s, visibility 0s 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+header.is-active {
+  /* translate to show the lateral menu */
+  -webkit-transform: translateX(-260px);
+  -moz-transform: translateX(-260px);
+  -ms-transform: translateX(-260px);
+  -o-transform: translateX(-260px);
+  transform: translateX(-260px);
+  -webkit-transition: -webkit-transform .6s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform .6s 0s, visibility 0s 0s;
+  transition: transform .6s 0s, visibility 0s 0s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+#nav-menu.is-active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+  -webkit-transition: -webkit-transform .6s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform .6s 0s, visibility 0s 0s;
+  transition: transform .6s 0s, visibility 0s 0s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  /* smooth the scrolling on touch devices - webkit browsers */
+  -webkit-overflow-scrolling: touch;
+}
+
+#nav-menu .copyright-text {
+  font-family: Source Sans Pro;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 0px 20px;
+}
+
+.nav-social ul {
+  padding: 0.5em;
+  list-style-type: none;
+}
+
+.nav-social li {
+  display: inline !important;
+  padding-left: 1em !important;
+}
+
+.nav-social i, .nav-social a {
+  font-size: 21px;
+  color: #072DEF;
+}
+
+.nav-social a:before {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #nav-menu .navigation {
+    margin-top: 175px;
+    margin-bottom: 50px;
+  }
+  .nav-social ul {
+    padding: 0.4em;
+  }
+}
+
+/* ---------------------------------------------
+------- 5. Main and Intro Section Styling ------
+-----------------------------------------------*/
+
+
+.main {
+  padding-top: 150px;
+  -webkit-transform: translateZ(0);
+   -webkit-backface-visibility: hidden;
+   -webkit-transition-property: -webkit-transform;
+   -moz-transition-property: -moz-transform;
+   transition-property: transform;
+   -webkit-transition-duration: 0.6s;
+   -moz-transition-duration: 0.6s;
+   transition-duration: 0.6s;
+   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+   z-index: 11;
+}
+
+.main-intro h1 {
+  font-family: Source Sans Pro;
+  font-size: 34px;
+  font-weight: 600;
+  color: #333222;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  margin: 0 0 50px;
+}
+
+.main h1 a {
+  position: relative;
+  text-decoration: none;
+  color: #072DEF;
+}
+
+.main h1 a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #072DEF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.main h1 a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.intro-button {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+  margin-right: 1em;
+  padding: 6px 12px;
+  border: 3px solid;
+  border-color: #072DEF;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-fill {
+  color: #FFF;
+  background: #072DEF;
+}
+
+.intro-button:hover, .intro-button:focus {
+  background: #072DEF;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.btn-fill:hover {
+  color: #072DEF;
+  border-color: #072DEF;
+  background: #FFF;
+}
+
+
+/* ------------------------------------------------------------------
+--------------6.  Home Page Work Section Styling Start -----------------
+--------------------------------------------------------------------*/
+
+.pt-portfolio {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+.pt-portfolio-intro {
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+}
+
+.pt-portfolio-intro h3 {
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-weight: 700;
+  color: #072DEF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 2em 0;
+}
+
+.pt-portfolio-intro h1 {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+
+.pt-portfolio-intro h1::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 2px;
+  margin-top: 0.3em;
+  left: 0;
+  background-color: #072DEF;
+  -webkit-transition: .5s;
+  -moz-transition: 0.5s;
+  transition: .5s;
+}
+
+.pt-portfolio-intro:hover h1::after {
+  width: 150px;
+}
+
+.pt-portfolio-section {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background: #F6F6F6;
+}
+
+.pt-title {
+  padding-left: 24px;
+}
+
+.pt-title span {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 5px 6px;
+  color: #FFF;
+  text-transform: uppercase;
+  background: #072DEF;
+}
+
+.overlay {
+	background: rgba(7, 45, 239, 0.90);
+	position:absolute;
+	top: 0px;
+	left: 0px;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+	opacity: 1;
+  -webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.overlay-items {
+	height: 300px;
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+}
+
+.overlay-items h5 {
+	font-family: Source Sans Pro;
+	display: block;
+	color: #FFF;
+	font-size: 16px;
+  font-weight: 600;
+	text-decoration: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 0;
+}
+
+.overlay-items p {
+	margin-top: 1em;
+	opacity: 0;
+	font-size: 12px;
+	font-family: Source Sans Pro;
+  font-weight: 600;
+	letter-spacing: 2px;
+	color: #072DEF;
+	padding: 5px 5px;
+	background: #FFF;
+	display: inline-block;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+	transition: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+	transition-delay: 0.2s;
+}
+
+.grid img {
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.grid a:hover img {
+-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+  transform: translateY(100%);
+  }
+
+.grid a:hover .overlay {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.grid a:hover h5, .grid a:hover p {
+  opacity: 1;
+  text-decoration: none;
+}
+
+
+  .pt-about-cta {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 1em;
+  }
+
+  .pt-about-cta h1 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .pt-about-cta a:before {
+    display: none;
+  }
+
+  .cta-button{
+    font-family: Source Sans Pro;
+    font-size: 21px;
+    font-weight: 600;
+    color: #FFF !important;
+    text-decoration: none;
+    padding: 0px 2px;
+    border: 2px solid;
+    background: #072DEF;
+    border-color: #072DEF;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+.cta-button:hover {
+  color: #111 !important;
+  background: #FFF;
+}
+
+/* ------------------------------------------------------------------
+--------------  Home Page Work Section Styling Ends -----------------
+--------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+----------------- 7. About Section Styling Starts ---------------------
+--------------------------------------------------------------------*/
+
+
+.pt-about {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.pt-about-intro {
+  padding: 1em;
+}
+
+.pt-about-intro h1 {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+  color: #222222;
+  letter-spacing: 0px;
+  line-height: 1.4;
+  margin: 20px 0 30px;
+}
+
+.pt-about-intro h4 {
+  font-family: Source Sans Pro;
+  font-size: 21px;
+  font-weight: 700;
+  color: #072DEF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+
+.pt-about-intro p {
+  font-family: Source Sans Pro;
+  font-size: 15px;
+  font-weight: 300;
+  color: #888DA1;
+  text-align: left;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin: 0 0 50px;
+
+}
+
+.pt-about-image img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 200px ;
+  width: 200px;
+  -webkit-filter: grayscale(45%);
+    filter: grayscale(45%);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+      transition: 0.5s;
+}
+
+.pt-about-image:hover img {
+  -webkit-filter: grayscale(5%);
+    filter: grayscale(5%);
+}
+
+.pt-about-image ul {
+  list-style-type: none;
+  margin: 2em 0 0 0;
+}
+
+.pt-about-image li {
+  display: inline;
+}
+
+.pt-about-image i {
+  font-size: 21px;
+  padding: 0.5em;
+  color: #072DEF;
+}
+
+.pt-about-details {
+  padding: 1em;
+}
+
+.pt-about-details h2 {
+  font-family: Source Sans Pro;
+  font-size: 21px;
+  font-weight: 700;
+  color: #072DEF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 2em 0;
+}
+
+.pt-about-details li {
+  margin-bottom: 1em;
+}
+
+.pt-about-details h3 {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+
+.pt-about-details p {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  color: #888DA1;
+  padding: 0.7em;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.pt-about-details h6 {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  color: #072DEF;
+  padding: 0.5em;
+  letter-spacing: 1px;
+}
+
+.pt-about-pitch {
+  padding: 1em;
+}
+
+.pt-about-pitch h3 {
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-weight: 700;
+  color: #072DEF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 2em 0;
+}
+
+.pt-about-pitch h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222222;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  margin: 0 0 1em 0;
+}
+
+.btn-pitch {
+  margin: 1em 0 0 1em;
+}
+
+/* ------------------------------------------------------------------
+------------------  About Page Styling Ends ----------------------
+--------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+------------ 8. Portfolio Single Item Styling Starts ----------------
+--------------------------------------------------------------------*/
+
+.pt-portfolio-single {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  margin-bottom: 100px;
+}
+
+.pt-portfolio-single h3 {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-weight: 700;
+  color: #072DEF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 2em 0;
+}
+
+.pt-portfolio-single h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.4;
+}
+
+.pt-portfolio-single h1::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 2px;
+  left: 0;
+  margin-top: 0.3em;
+  background-color: #072DEF;
+  -webkit-transition: .5s;
+  -moz-transition: 0.5s;
+  transition: .5s;
+}
+
+.pt-portfolio-single h1:hover::after {
+  width: 150px;
+}
+
+
+.pt-portfolio-details {
+  padding: 1em;
+}
+
+.pt-portfolio-details h2 {
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #072DEF;
+  line-height: 1.2;
+  margin: 0 0 1em 0;
+}
+
+.pt-portfolio-details p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+}
+
+.pt-portfolio-details h6 {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 600;
+  color: #888DA1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.pt-portfolio-details h6 span{
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.pt-portfolio-details a {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+
+.pt-portfolio-item {
+  padding: 1em;
+}
+
+.pt-portfolio-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ------------------------------------------------------------------
+------------------  Portfolio Single Item Styling Ends ----------------------
+--------------------------------------------------------------------*/
+
+
+
+/* ------------------------------------------------------------------
+------------------ 9. Contact Page Styling Starts ----------------------
+--------------------------------------------------------------------*/
+
+.pt-contact {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  margin-top: 50px;
+}
+
+.pt-contact h3 {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-weight: 700;
+  color: #072DEF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 2em 0;
+}
+
+.pt-contact h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0px;
+  line-height: 1.4;
+}
+
+.pt-contact h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0px;
+  line-height: 1.4;
+}
+
+.pt-contact p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding: 1em 0 0 0;
+}
+
+/* ----- Map Styling ----- */
+
+#map_canvas {
+  width: 100%;
+  height: 250px;
+  margin-top: 2em;
+}
+
+/* ----- Map Styling Ends -----*/
+
+
+
+/* ----- Form Styling Starts ----- */
+
+label {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #111111;
+}
+
+.controls input {
+  font-family: Poppins;
+  color: #888DA1;
+}
+
+.form-control {
+  border: 0px;
+  border-radius: 0px;
+  margin-top: 10px;
+  background: transparent;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+  box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.form-control:focus {
+  border-color: #072DEF;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #888DA1;
+}
+
+.form-control:-moz-placeholder {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #888DA1;
+}
+
+
+.form-control::-moz-placeholder {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #888DA1;
+}
+
+.form-control:-ms-input-placeholder {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #888DA1;
+}
+
+.text-muted {
+  font-family: Source Sans Pro;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #222;
+}
+
+.text-muted strong {
+  color: #FF3333;
+}
+
+.btn-send {
+  font-family: Poppins;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  color: #FFFFFF !important;
+  background: #072DEF;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.btn-send:hover, .btn-send:focus {
+  color: #FFFFFF;
+  background: #000000;
+  outline: none !important;
+}
+
+
+/* ----- Form Styling Ends ----- */
+
+/* ------------------------------------------------------------------
+------------------  Contact Page Styling Ends ----------------------
+--------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+------------------- 10. Contact Page Agency Minimal ---------------------
+-------------------------------------------------------------------*/
+
+
+
+.contact-us {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  padding-bottom: 0px;
+  background: #FFFFFF;
+}
+
+.contact-bg {
+  background: #F2F2F2;
+}
+
+.ct-intro {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  background-size: cover;
+  background-position: left;
+}
+
+.ct-intro h5 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #111111;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+
+.ct-intro h2 {
+  font-family: Poppins;
+  font-size: 2em;
+  color: #111;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+
+.aft-line {
+  height: 2px;
+  width: 50px;
+  background: #111111;
+  margin-top: 1em;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.ct-intro:hover .aft-line {
+  width: 100px;
+}
+
+.ct-section-1 {
+  width: 100%;
+  height: 100%;
+}
+
+.ct-section-title {
+  padding: 0em;
+}
+
+.ct-section-title i {
+  font-size: 48px;
+  color: #666666;
+}
+
+
+.ct-section-title h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 2em;
+  color: #111;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.ct-section-content {
+  padding: 0em;
+}
+
+.ct-section-content span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ct-section-content p {
+  font-family: Work Sans;
+  font-size: 13px;
+  color: #111;
+  padding-top: 1em;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+@media only screen and (min-width: 767px) {
+  .ct-intro {
+    padding: 1em;
+  }
+
+  .ct-intro h2 {
+    font-size: 3em;
+  }
+
+  .ct-intro h2 span {
+    font-size: 1em;
+  }
+
+  .ct-section-title {
+    padding: 0em;
+  }
+}
+
+/* ------------------------------------------------------------------
+------------------- Contact Page Agency Minimal Ends ---------------------
+-------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+----------------- 11. Footer Section Styling Starts --------------------
+--------------------------------------------------------------------*/
+
+.pt-footer {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer-rights {
+  padding: 1em;
+}
+
+.footer-rights p {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  color: #444;
+  letter-spacing: 1px;
+}
+
+.footer-social ul {
+  padding: 0.8em;
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer-social li {
+  display: inline;
+}
+
+.footer-social i, .footer-social a {
+  font-size: 19px;
+  padding: 0.2em;
+  color: #072DEF;
+}
+
+
+/* ------------------------------------------------------------------
+------------------  Footer Section Styling Ends ---------------------
+--------------------------------------------------------------------*/
+
+
+
+
+/* -------------------------------------------------------
+--------12. 2nd Footer Section Styling Starts Here ----------
+---------------------------------------------------------*/
+
+
+.footer-minimal {
+	width: 100%;
+  height: 100%;
+	background: rgba(0, 0, 0, 1);
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.footer-min-content h2 {
+	font-family: Poppins;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFF;
+	letter-spacing: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.footer-min-content h6 {
+	font-family: Poppins;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFF;
+	letter-spacing: 0;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.footer-min-content p {
+	font-family: Poppins;
+	font-size: 12px;
+	font-weight: 400;
+	color: #FFF;
+	line-height: 25px;
+}
+
+
+.footer-min-content ul {
+	list-style: none;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.footer-min-content li {
+	display: inline;
+}
+
+.footer-min-content a {
+	display: inline;
+	font-family: Poppins;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 5px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.footer-min-content a:hover {
+	color: #072DEF;
+  text-decoration: line-through;
+}
+
+
+/* ----- Footer light Bg -----*/
+
+.light-bg {
+  background: #FFF;
+}
+
+.light-bg h2 {
+	font-family: Poppins;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #111;
+	letter-spacing: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.light-bg h6 {
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #111;
+	letter-spacing: 0;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.light-bg p {
+	font-family: QuickSand;
+	font-size: 14px;
+	font-weight: 400;
+	color: #111;
+	line-height: 25px;
+}
+
+
+.light-bg ul {
+	list-style: none;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.light-bg li {
+	display: inline;
+}
+
+.light-bg a {
+	display: inline;
+	font-family: Quicksand;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 5px;
+	color: #111;
+	text-decoration: none;
+}
+
+.light-bg a:hover {
+	color: #072DEF;
+}
+
+
+
+
+/* -------------------------------------------------------
+-------- 2nd Footer Section Styling Ends Here ----------
+---------------------------------------------------------*/
+
+
+
+/* -------------------------------------------------------
+----------- 13. Bact-to-Top Styling Starts Here --------------
+---------------------------------------------------------*/
+
+
+.back-to-top {
+background: rgba(0, 0, 0, 0.1);
+margin: 0;
+position: fixed;
+bottom: 50px;
+right: 50px;
+width: 35px;
+height: 35px;
+z-index: 90;
+display: none;
+text-decoration: none;
+color: #0E1729;
+}
+
+.back-to-top i {
+	position: relative;
+	left: 13px;
+	top: 8px;
+	font-size: 24px;
+	color: #FFF;
+}
+
+.back-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.back-to-top:focus {
+    color: #fff;
+}
+
+@media only screen and (max-width: 420px) {
+	.back-to-top {
+		right: 20px;
+	}
+}
+
+
+
+
+/* ------------------------------------------------------------------
+--------------13. Media Queries For Responsive Layout ------------------
+--------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 20px;
+  }
+  #top {
+      left: 0; right: 0;
+      height: 20px;
+  }
+
+  #bottom {
+      left: 0; right: 0;
+      height: 20px;
+  }
+
+  #pta-left, #pta-right {
+    top: 0; bottom: 0;
+    width: 30px;
+  }
+  #pta-top {
+      left: 0; right: 0;
+      height: 30px;
+  }
+
+  #pta-bottom {
+      left: 0; right: 0;
+      height: 30px;
+  }
+
+  #top-nav {
+    position: fixed;
+    display: block;
+  }
+
+  .nav-trigger {
+    right: 30px;
+    top: 55px;
+  }
+
+  header {
+    position: absolute;
+  }
+
+  .logo {
+    position: fixed;
+    top: 50px;
+    left: 45px;
+  	font-size: 21px;
+  }
+  .main-intro {
+    padding: 1em;
+  }
+
+  .main-intro h1 {
+    font-size: 3em;
+  }
+
+  .intro-button {
+    font-size: 20px;
+    padding: 8px 20px;
+  }
+
+  .pt-portfolio-intro h1 {
+    font-size: 48px;
+  }
+
+  .pt-portfolio-intro h1::after {
+    width: 100px;
+  }
+
+
+.pt-about-cta h1 {
+  font-size: 32px;
+  line-height: 1.8;
+}
+
+.cta-button{
+  font-family: Source Sans Pro;
+  font-size: 32px;
+  font-weight: 600;
+  color: #FFF !important;
+  text-decoration: none;
+  padding: 0px 8px;
+  border: 3px solid;
+  background: #072DEF;
+  border-color: #072DEF;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cta-button:hover {
+  color: #111 !important;
+  background: #FFF;
+}
+
+  .pt-about-intro h4 {
+    font-size: 18px;
+  }
+
+  .pt-about-intro h1 {
+    font-size: 42px;
+  }
+
+  .pt-about-intro p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .pt-about-image img {
+    height: 240px ;
+    width: 240px;
+  }
+
+  .pt-about-details h2 {
+    font-size: 18px;
+  }
+
+  .pt-about-details h3 {
+    font-size: 20px;
+  }
+
+  .pt-about-details p {
+    font-size: 14px;
+    padding: 0.5em;
+  }
+
+  .pt-about-pitch {
+    margin-top: 100px;
+    padding: 1em;
+  }
+
+  .pt-about-pitch h1 {
+    font-size: 42px;
+    margin: 0;
+  }
+
+  .btn-pitch {
+    margin: 1em 0 0 1em;
+  }
+
+  .pt-contact {
+    padding-bottom: 100px;
+  }
+
+  .pt-contact h1 {
+    font-size: 48px;
+  }
+
+  .pt-contact h2 {
+    font-size: 28px;
+  }
+
+  #map_canvas {
+    margin-top: 0em;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .pt-portfolio-single h3 {
+    font-size: 18px;
+  }
+
+  .pt-portfolio-single h1 {
+    font-size: 48px;
+  }
+
+  .pt-portfolio-details {
+    padding: 2em;
+  }
+
+  .pt-portfolio-details h2 {
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  .pt-portfolio-details p {
+    font-size: 15px;
+  }
+
+  .pt-portfolio-details h6 {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .pt-portfolio-details h6 span {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .pt-portfolio-details a {
+    font-size: 14px;
+  }
+
+  .pt-portfolio-item {
+    padding: 0em;
+  }
+
+  .footer-rights p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 800px) {
+
+  .container {
+    padding-right:30px;
+    padding-left:30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-intro {
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .intro-button {
+    display: block;
+    padding: 8px 24px;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto 10px;
+  }
+}
+
+
+/* ------------------------------------------------------------------
+----------14. Agency Home Page Intro Section Styling Starts -------------
+--------------------------------------------------------------------*/
+
+
+.pta-main {
+  background: #FFF;
+}
+
+.pta-intro {
+  padding: 1em;
+}
+
+.pta-intro h1 {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 1.4;
+  margin: 0 0 50px;
+}
+
+@media only screen and (min-width: 767px) {
+
+  .pta-intro {
+    padding: 0em;
+  }
+
+  .pta-intro h1 {
+    font-size: 34px;
+    line-height: 1.4;
+  }
+}
+
+
+/* ------------------------------------------------------------------
+---------- Agency Home Page Intro Section Styling End -------------
+--------------------------------------------------------------------*/
+
+.portfoli-3 {
+  padding-top: 150px;
+}
+
+.portfolio-3-intro h1 {
+  font-family: Poppins;
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin: 0 0 50px 0;
+}
+
+.pta-portfolio nav {
+ padding-bottom: 30px;
+ text-align: left;
+}
+
+.pta-portfolio .categories ul li {
+ display: inline;
+   list-style: none;
+}
+
+.pta-portfolio .categories ul li a {
+   display: inline;
+   font-family: Poppins;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 2.5;
+   text-decoration: none;
+   color: #666666;
+   margin-left: 20px;
+}
+
+.pta-portfolio .categories ul li a.active {
+   text-decoration: line-through;
+   color: #000000;
+}
+
+.pta-portfolio_filter {
+   padding-left: 0;
+}
+
+@media (max-width: 991px) {
+   .pta-portfolio span {
+       margin-bottom: 0;
+       text-align: center;
+       width: 100%;
+   }
+   .pta-portfolio .categories ul li {
+       text-align: center;
+   }
+   .pta-portfolio .categories ul li a {
+       margin-left: 20px;
+   }
+}
+
+@media only screen and (max-width: 420px) {
+
+  .portfolio-3-intro {
+    padding: 1em;
+  }
+
+  .portfolio-3-intro h1 {
+    font-size: 2em;
+  }
+
+ .pta-portfolio .categories ul li {
+   display: block;
+     text-align: center;
+ }
+ .pta-portfolio .categories ul li a {
+   display: block;
+   line-height: 1;
+   padding: 5px 25px;
+     margin-left: 0px;
+     margin-bottom: 20px;
+ }
+}
+
+.pta-portfolio_item {
+   overflow: hidden;
+   margin-bottom: 10px;
+   display: block;
+}
+
+
+.pta-portfolio-overlay {
+ background: rgba(255, 255, 255, 0.95);
+ transform: scale(0.5);
+ position:absolute;
+ top: 10px;
+ left: 15px;
+ height: calc(100% - 30px);
+ width: calc(100% - 30px);
+ opacity: 0;
+ -webkit-transition: 0.5s;
+ -moz-transition: 0.5s;
+ -o-transition: 0.5s;
+   transition: 0.5s;
+
+}
+
+.pta-overlay-items {
+ height: 300px;
+ position: absolute;
+ top: 45%;
+ left: 0;
+ right: 0;
+}
+
+.pta-overlay-items h5 {
+ font-family: Work Sans;
+ display: block;
+ color: #000000;
+ font-size: 16px;
+ text-decoration: none;
+ -webkit-transition: all .5s ease-in-out .3s;
+ transition: all .5s ease-in-out .3s;
+ opacity: 0;
+}
+
+.pta-overlay-items p {
+ margin-top: 1em;
+ opacity: 0;
+ font-size: 12px;
+ font-family: Poppins;
+ letter-spacing: 2px;
+ color: #FFF;
+ padding: 5px 5px;
+ background: #072DEF;
+ display: inline-block;
+ transition: 0.5s;
+ transition-delay: 0.2s;
+}
+
+.pta-portfolio_item:focus, .pta-portfolio_item:hover {
+    text-decoration: none;
+}
+
+.pta-portfolio_item:hover .pta-portfolio-overlay {
+ transform: scale(1);
+ opacity: 1;
+}
+
+.pta-portfolio_item:hover h5, .pta-portfolio_item:hover p {
+ opacity: 1
+}
+
+.pta-colored p {
+ background: #000000 !important;
+}
+
+
+/* -------------------------------------------------
+-----15. Agency Portfolio Item 2 Styling Starts--------
+---------------------------------------------------*/
+
+.pta-item-2 {
+  width: 100%;
+  height: 100%;
+}
+
+.pta-item-2-intro h1 {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.pta-item-2-intro p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  padding-top: 1em;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+
+.pta-item-content p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  padding-top: 1em;
+  letter-spacing: 0px;
+  line-height: 1.3;
+}
+
+.pta-project-details {
+  padding-top: 1em;
+}
+
+.pta-project-details h5 {
+  font-family: Poppins;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.pta-project-details span {
+  font-family: Poppins;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-right: 0.5em;
+}
+
+.pta-project-details a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.pta-item-content h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  padding-top: 2em;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+
+@media only screen and (min-width: 767px) {
+
+  .pta-item-2-intro h1 {
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 1.4;
+  }
+
+  .pta-item-2-intro p {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    letter-spacing: 0px;
+    line-height: 1.3;
+  }
+
+  .pta-item-content p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    padding-top: 1em;
+    letter-spacing: 0px;
+    line-height: 1.5;
+  }
+
+  .pta-item-content h2 {
+    font-size: 34px;
+    padding-top: 1em;
+  }
+
+  .pta-project-details h5 {
+    font-family: Poppins;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+}
+
+
+/* -------------------------------------------------
+------ Agency Portfolio Item 2 Styling Ends --------
+---------------------------------------------------*/
+
+
+
+
+/* -------------------------------------------------
+------ 16. Agency Services-2 Styling Starts --------
+---------------------------------------------------*/
+
+
+.services {
+	width: 100%;
+	background: #FFF;
+  padding-top: 0px;
+}
+
+.service-intro {
+	padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient( to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/services-bg.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.service-intro h1 {
+	font-family: Poppins;
+	font-size: 42px;
+  text-transform: uppercase;
+	color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  padding: 40px;
+}
+
+.service-intro i {
+  font-size: 34px;
+  color: #FFFFFF;
+}
+
+
+.service-block {
+	position: relative;
+	margin-bottom: 4em;
+	cursor: pointer;
+}
+
+.service-block:after {
+	content: "";
+	display: block;
+	height: 1.4px;
+	width: 25%;
+	background: #222222;
+	margin-top: 1em;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.service-icon {
+	font-size: 42px;
+	font-weight: bolder;
+	color: #111111;
+	float: left;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-description {
+	padding-top: 0.8em;
+}
+
+.service-description h2 {
+	font-family: Quicksand;
+	font-size: 16px;
+	font-weight: 600;
+	color: #000000;
+	text-align: left;
+	padding-left: 4em;
+	padding-bottom: 2em;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-description p {
+	font-family: Work Sans;
+	font-size: 14px;
+	font-weight: 300;
+  color: #000000;
+	text-align: left;
+	padding-left: 0em;
+	line-height: 1.5;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-block:hover::after {
+    width: 50%;
+}
+
+.service-block:hover .service-icon, .service-block:hover .service-description h2  {
+    color: #072DEF;
+}
+
+
+/* -------------------------------------------------
+------ 17. Agency Services-2 Styling Ends --------
+---------------------------------------------------*/
+
+
+
+/* ----- Testimonials Section Styling Starts Here -----*/
+
+.testimonials {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.test-single {
+  background: #F9F9F9;
+  padding: 20px;
+  border-bottom: 2px solid;
+  border-color: transparent;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+.test-image {
+  padding: 20px;
+}
+
+.test-image img {
+  height: 100px;
+  width: 100px;
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+      transition: 0.5s;
+}
+
+.test-single:hover img {
+  -webkit-filter: grayscale(35%);
+    filter: grayscale(35%);
+    transform: translateY(-10%);
+}
+
+.test-single:hover {
+  background: #F2F2F2;
+  border-bottom: 2px solid #072DEF;
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  transform: translateY(-5%);
+}
+
+.test-content h3 {
+  font-family: Roboto;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  color: #111;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.test-content p {
+  font-family: Quicksand;
+  font-size: 14px;
+  color: #111;
+  line-height: 1.3;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 801px) and (max-width: 991px) {
+  .test-single {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .test-single {
+    margin-bottom: 1em;
+  }
+}
+
+/* ----- Testimonials Section Styling Ends Here -----*/
+
+
+
+/* ----- Call to action section styling -----*/
+
+.cta-section {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	background: #000;
+}
+
+.cta-content {
+	padding: 10px;
+}
+
+.cta-content h4 {
+	font-family: Poppins;
+	font-size: 18px;
+	color: #072DEF;
+	font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.cta-content h2 {
+	font-family: Poppins;
+	font-size: 28px;
+	color: #FFF;
+	font-weight: 600;
+  letter-spacing: -1px;
+	line-height: 1.2;
+}
+
+.cta-content p {
+	font-family: Poppins;
+	font-size: 16px;
+  color: #FFF;
+	font-weight: 300;
+	padding-top: 1em;
+}
+
+
+.cta-contact-button {
+	display: inline-block;
+	background: #072DEF;
+	padding: 10px 16px;
+	margin: 1em 0;
+	text-decoration: none;
+	font-family: Poppins;
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 600;
+  border: 3px solid #072DEF;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.cta-contact-button:hover, .cta-contact-button:focus {
+  text-decoration: none;
+  color: #FFF;
+  border-color: #072DEF;
+  background: transparent;
+}
+
+
+.about-button {
+	display: inline-block;
+	background: #072DEF;
+	padding: 10px 12px;
+	margin: 3em 0;
+	text-decoration: none;
+	text-transform: uppercase;
+  font-family: Poppins;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 400;
+	transition: 0.5s;
+}
+
+.about-button:hover, .about-button:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+@media only screen and (min-width: 767px ) {
+
+  .cta-content h2 {
+  	font-size: 48px;
+  }
+}
+
+
+
+/* ---------------------------------------------------------
+-----------18. About Us 2 Page Styling Starts here ------------
+------------------------------------------------------------ */
+
+
+.about-us {
+	width: 100%;
+	height: 100%;
+  padding-top: 200px;
+	padding-bottom: 0px;
+  background: url(../img/about-bg.png);
+	background-size: cover;
+	background-attachment: fixed;
+  position: static;
+}
+
+.about-intro {
+  padding: 10px;
+}
+
+.about-intro h1 {
+	font-family: Poppins;
+	font-size: 28px;
+  	font-weight: 700;
+	letter-spacing: -1px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #111111;
+}
+
+.about-intro p {
+	font-family: Roboto;
+	font-size: 14px;
+	padding-top: 2em;
+	font-weight: 400;
+	color: #111111;
+	letter-spacing: 1px;
+	line-height: 1.8;
+}
+
+
+/* ----- About Us Page 2 work section styling -----*/
+
+.work-section {
+	background: #FFF;
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+
+.work-intro {
+	padding-left: 1em;
+	padding-top: 50px;
+}
+
+.work-section h4 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: #072DEF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+}
+
+.work-section h1 {
+	font-family: Montserrat;
+	font-size: 34px;
+	line-height: 1.2;
+	color: #000;
+}
+
+
+.work-section p {
+	font-family: Roboto;
+	font-size: 14px;
+	padding-top: 1em;
+	padding-bottom: 50px;
+	font-weight: 400;
+	color: #888;
+	letter-spacing: 1px;
+	line-height: 1.5;
+
+}
+
+.work-section p::after {
+  content: "";
+  display: block;
+	height: 2px;
+	width: 50px;
+	background: #666;
+	margin-top: 1em;
+}
+
+.work-item {
+	padding: 1em;
+  position: relative;
+  display: inline-block;
+	cursor: pointer;
+  padding-top: 1em;
+	padding-bottom: 1em;
+  margin-bottom: 1em;
+	background: #F9F9F9;
+	-webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.w-icon {
+  padding: 1em;
+}
+
+.w-icon i {
+  font-size: 42px;
+  color: #072DEF;
+}
+
+
+.work-item h2 {
+	font-family: Montserrat;
+	font-size: 18px;
+	color: #000;
+	padding-top: 1em;
+	font-weight: 300;
+	-webkit-transition: 0.9s;
+	-moz-transition: 0.9s;
+	transition: 0.9s;
+}
+
+.work-item p {
+	font-family: Roboto;
+	font-size: 14px;
+	color: #333;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	line-height: 20px;
+	font-weight: 300;
+}
+
+.work-item p:after {
+	display: none;
+}
+
+.work-item a {
+	font-family: Montserrat;
+	font-size: 13px;
+	color: #444;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.work-item a::after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 25px;
+	background: #072DEF;
+	margin-top: 0.2em;
+	opacity: 0;
+	-webkit-transition: 0.9s;
+	-moz-transition: 0.9s;
+	transition: 0.9s;
+}
+
+.work-item:hover a:after {
+	width: 70px;
+	opacity: 1;
+}
+
+/* ----- Call to action section styling -----*/
+
+.cta-section {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	background: #000;
+}
+
+.cta-content {
+	padding: 1em;
+}
+
+.cta-content h4 {
+	font-family: Poppins;
+	font-size: 18px;
+	color: #072DEF;
+	font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.cta-content h2 {
+	font-family: Poppins;
+	font-size: 28px;
+	color: #FFF;
+	font-weight: 600;
+  letter-spacing: -1px;
+	line-height: 1.2;
+}
+
+.cta-content p {
+	font-family: Poppins;
+	font-size: 16px;
+  color: #FFF;
+	font-weight: 300;
+	padding-top: 1em;
+}
+
+
+.cta-contact-button {
+	display: inline-block;
+	background: #072DEF;
+	padding: 10px 16px;
+	margin: 2em 0;
+	text-decoration: none !important;
+	font-family: Poppins;
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 600;
+  border: 3px solid #072DEF;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.cta-contact-button:hover, .cta-contact-button:focus {
+  text-decoration: none;
+  color: #FFF;
+  border-color: #072DEF;
+  background: transparent;
+}
+
+
+.about-button {
+	display: inline-block;
+	background: #072DEF;
+	padding: 10px 12px;
+	margin: 3em 0;
+	text-decoration: none;
+	text-transform: uppercase;
+  font-family: Poppins;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 400;
+	transition: 0.5s;
+}
+
+.about-button:hover, .about-button:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* ----- About-Section-2 Media Queries -----*/
+
+
+
+@media only screen and (min-width: 767px ) {
+
+  .about-intro h1 {
+  	font-size: 58px;
+  }
+
+	.work-section h1 {
+		font-size: 48px;
+    letter-spacing: -1px;
+	}
+
+  .work-section h4 {
+    font-size: 18px;
+  }
+  .counter-up {
+    margin-bottom: 2em;
+  }
+
+  .cta-content h2 {
+  	font-size: 48px;
+  }
+  .counter-text {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .work-item {
+    padding: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+  }
+}
+
+
+
+/* -------- About Team Styling Starts Here -------- */
+
+.team {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #E9EBEE;
+}
+
+.team-intro {
+	padding: 1em;
+}
+
+.team-intro h4 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: #072DEF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+}
+
+.team-intro h1 {
+	font-family: Poppins;
+  font-weight: 700;
+	font-size: 34px;
+	color: #000;
+	letter-spacing: -1px;
+}
+
+.team-intro p {
+	font-family: Roboto;
+	font-size: 14px;
+	color: #222;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	padding-top: 1em;
+}
+
+.team-intro p:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 75px;
+	background: #666;
+	margin-top: 1em;
+}
+
+.team-member {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.team-member img {
+	max-width: 100%;
+	height: auto;
+	-webkit-filter: grayscale(75%);
+    filter: grayscale(75%);
+}
+
+.team-profile {
+	background: #FFF;
+	padding-top: 30px;
+	z-index: -111;
+	transition: 0.5s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.team-profile h2 {
+	font-family: Montserrat;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.team-profile h4 {
+	font-family: Roboto;
+	font-size: 1em;
+	padding-top: 1em;
+	letter-spacing: 1px;
+}
+
+.team-overlay {
+	transition: 0.5s;
+}
+
+.team-overlay ul {
+	list-style: none;
+	padding: 20px;
+}
+
+.team-overlay li {
+	display: inline;
+	font-family: Roboto;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.team-overlay i {
+	font-size: 16px;
+	padding: 5px;
+	color: #111;
+}
+
+.team-overlay i:hover {
+	opacity: 0.7;
+}
+
+.team-member:hover .team-profile {
+	opacity: 1;
+	-webkit-transform: translate3d(0,-50px,0);
+		transform: translate3d(0,-50px,0);
+}
+
+@media only screen and (min-width: 768px) {
+	.team-intro h1 {
+    font-size: 48px;
+  }
+  .team-profile h2 {
+  	font-size: 1.2em;
+  }
+}
+
+/* -------About Team Styling Ends Here -------- */

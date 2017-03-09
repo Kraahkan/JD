@@ -1,0 +1,3508 @@
+
+/* --------------------------------------------------
+Stylesheet - 2 for
+Template: Proton Creative Agency and Personal Template
+Version: 1.0
+Author: Ydirection Themes
+Author url: http://themeforest.net/user/ydirectionthemes
+
+------------------------------------------------------*/
+
+
+/* ------Table of Contents -----
+
+1. Basic Styles
+2. Hamburger Menu Styling
+3. Overlay Menu Styles
+4. Off canvas Menu
+5. Home and Intro Styling
+6. Homepage Slider
+7. Agency Home Page (Default)
+8. Personal Homepage Styling
+9. Portfolio
+10. About Me Page Styling
+11. Services Page
+12. Agency Work
+13. Portfolio Masonry (Photography)
+14. Portfolio Single Item
+15. About Us page Styles
+16. Contct Us Page Styles
+17. Portfolio-1 Styling (Agency Default)
+18. Portfolio Single Item variant 2
+19. Footer
+20. Footer 2nd variant
+21. Back To top
+22. Media Queries
+
+
+/* -------------------------------------------------------
+------------ 1. Template Basic Styling Start -------------
+---------------------------------------------------------*/
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poppins;
+}
+
+
+::-moz-selection {
+    color: #FFFFFF;
+    background: #000;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+.custompadding {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.rightpadding {
+	padding-left: 0px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   opacity: 1;
+   background-color: #000;
+   z-index: 99;
+   text-align: center;
+}
+
+#loading-image {
+	display: inline;
+    top: 40%;
+    position: relative;
+  z-index: 100;
+}
+
+
+/* -----Body Border -----*/
+
+#top, #bottom, #left, #right {
+	background: #F1F1F1;
+	position: fixed;
+  z-index: 111;
+	}
+#left, #right {
+		top: 0; bottom: 0;
+		width: 0;
+		}
+#left { left: 0; }
+#right { right: 0; }
+
+#top {
+		left: 0; right: 0;
+		height: 0;
+	}
+#bottom {
+		left: 0; right: 0;
+		height: 0;
+	}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+
+/* ------ Body Border End ------*/
+
+
+/* ----- Bigger Body Border -----*/
+
+#top-big, #bottom-big, #left-big, #right-big {
+	background: #FFFFFF;
+	position: fixed;
+  z-index: 111;
+	}
+#left-big, #right-big {
+		top: 0; bottom: 0;
+		width: 0;
+		}
+#left-big { left: 0; }
+#right-big { right: 0; }
+
+#top-big {
+		left: 0; right: 0;
+		height: 0;
+	}
+#bottom-big {
+		left: 0; right: 0;
+		height: 35px;
+	}
+
+#top-big { top: 0; }
+#bottom-big { bottom: 0; }
+
+/* ----- Bigger Body Border -----*/
+
+
+/* ----- Wrapper and Main Content----- */
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	max-width: 250px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Poppins;
+	font-weight: 600;
+	font-size: 21px;
+	color: #d31b33;
+
+  letter-spacing: 0px;
+	text-decoration: none;
+  z-index: 10;
+}
+
+.colored {
+  color: #d31b33;
+}
+
+.logo:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.logo:focus {
+	text-decoration: none;
+  color: #111;
+}
+
+.logo span {
+	padding: 6px;
+	color: #FFFFFF;
+	background: transparent;
+}
+
+.logo:hover span, .logo:focus span {
+	color: #d31b33;
+}
+
+
+.nav-logo {
+	position: fixed;
+	top: 100px;
+	left: 20px;
+	padding: 5px 10px;
+	max-width: 250px;
+	letter-spacing: -1px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: #111;
+	text-decoration: none;
+	z-index: 11;
+}
+
+.nav-logo:hover {
+	text-decoration: none;
+	color: #111;
+}
+
+.nav-logo:focus {
+	text-decoration: none;
+}
+
+.nav-logo span {
+	padding: 2px;
+	color: #FFF;
+	background: #111;
+}
+
+
+/* -------------------------------------------------------
+-------------- Template Basic Styling Ends ---------------
+---------------------------------------------------------*/
+
+/* -------------------------------------------------------
+------------- Main Wrapper Styling Starts --------------
+---------------------------------------------------------*/
+
+.main-wrapper {
+  min-height: 100vh;
+  position: relative;
+  background-color: #222;
+  z-index: 1;
+  padding-top: 50px;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-wrapper {
+    padding-top: 70px;
+  }
+}
+
+
+/* ---------------------------------------------------------
+--------------- 3. Hamburger Menu Styling Starts --------------
+-----------------------------------------------------------*/
+
+.nav-trigger {
+  width: 40px;
+  height: 40px;
+	z-index: 31;
+  position: fixed;
+  right: 10px;
+	top: 20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .7s cubic-bezier(.77,0,.175,1);
+  -moz-transition: .7s cubic-bezier(.77,0,.175,1);
+  -o-transition: .7s cubic-bezier(.77,0,.175,1);
+  transition: .7s cubic-bezier(.77,0,.175,1);
+  cursor: pointer;
+}
+
+.nav-trigger span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  height: 2px;
+  width: 28px;
+  background: #999;
+  border-radius: 0px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.nav-trigger span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-trigger span:nth-child(2) {
+  top: 8px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-trigger span:nth-child(3) {
+  top: 16px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav-trigger.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -4px;
+  left: 2px;
+  background: #FFF;
+}
+
+.nav-trigger.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+  background: #FFF;
+}
+
+.nav-trigger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 2px;
+  background: #FFF;
+}
+
+
+/* ---------------------------------------------------------
+--------------- Hamburger Menu Styling Ends ---------------
+-----------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------
+--------4. Overlay Menu & Navigation Styling Start ---------
+-----------------------------------------------------------*/
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.98);
+  opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.menu-container {
+  height: 100%;
+	max-width: 250px;
+	margin: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 150px;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.menu-active .menu {
+  opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.menu-active .menu .menu-container {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+  transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+}
+
+.menu-list li {
+	background: transparent;
+	padding: 0.75em;
+  font-family: Poppins;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.4;
+	-webkit-transform: translateY(50%) rotateX(75deg);
+	transform: translateY(50%) rotateX(75deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.menu-active .menu-list li {
+  opacity: 1;
+	-webkit-transform: translateY(0) rotateX(0deg);
+	transform: translateY(0) rotateX(0deg);
+}
+
+.menu-container a {
+	position: relative;
+	text-decoration: none;
+	color: #FFF;
+	transition: all 0.5s;
+}
+
+.menu-container a:hover {
+	color: #FFF;
+}
+
+.menu-container a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: #d31b33;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.menu-container li:hover a::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.menu-social ul {
+  margin-top: 50px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu-social li {
+  display: inline;
+}
+
+.menu-social i, .menu-social a {
+  font-size: 24px;
+  padding-right: 0.3em;
+  color: #FFF;
+  z-index: 21;
+}
+
+.menu-social i:hover {
+  color: #d31b33;
+}
+
+.menu-social a::before {
+  display: none;
+}
+
+
+/* ---------------------------------------------------------
+-------------- Menu & Navigation Styling End --------------
+-----------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------
+----- 5. Off canvas Menu & Navigation Styling Start --------
+-----------------------------------------------------------*/
+
+
+#nav-menu {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  /* the secondary navigation is covered by the main element */
+  z-index: 11;
+  width: 260px;
+  background-color: #F1F1F1;
+  overflow-y: auto;
+	box-shadow: 0px 0px 5px #111;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform .5s 0s, visibility 0s .5s;
+  -moz-transition: -moz-transform .5s 0s, visibility 0s .5s;
+  transition: transform .5s, visibility 0s .5s cubic-bezier(.77,0,.175,1);
+	-webkit-transition:.5s, visibility 0s .5s cubic-bezier(.77,0,.175,1);
+  /* this creates the subtle slide in animation of the navigation */
+  -webkit-transform: translateX(280px);
+  -moz-transform: translateX(280px);
+  -ms-transform: translateX(280px);
+  -o-transform: translateX(280px);
+  transform: translateX(280px);
+}
+
+#nav-menu .navigation {
+  margin-top: 175px;
+}
+
+
+#nav-menu li {
+  padding-bottom: 1em;
+}
+
+#nav-menu li {
+  display: block;
+  line-height: 2em;
+  font-family: Poppins;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 2;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  color: #111;
+}
+
+#nav-menu a {
+  color: #111;
+	text-decoration: none;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+
+
+#nav-menu a.current {
+  background-color: #3a4a4d;
+  color: #FFF;
+}
+
+.no-touch #nav-menu a:hover {
+  color: #000;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #nav-menu .navigation {
+    margin-top: 175px;
+  }
+}
+
+#nav-menu.is-active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+  -webkit-transition: -webkit-transform .4s 0s, visibility 0s 0s;
+  -moz-transition: -moz-transform .4s 0s, visibility 0s 0s;
+  transition: transform .9s 0s, visibility 0s 0s;
+  /* smooth the scrolling on touch devices - webkit browsers */
+  -webkit-overflow-scrolling: touch;
+}
+
+#nav-menu .copyright-text {
+  font-family: Lato;
+  font-size: 12px;
+  padding: 1em;
+}
+
+/* ---------------------------------------------------------
+-------------- Menu & Navigation Styling Ends --------------
+-----------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------
+-------------- 6. Homepage Slider Styling Start ------------
+-----------------------------------------------------------*/
+
+/* Intro Section Styling */
+
+.intro {
+  width: 100%;
+  height: 100%;
+	padding-top: 250px;
+	padding-bottom: 120px;
+}
+
+
+.slider-pro h2.sp-layer {
+	font-family: Poppins;
+	font-size: 34px !important;
+	color: #FFF;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1.3;
+	text-align: left;
+}
+
+.slider-pro a {
+	text-decoration: none;
+	color: #FFF;
+	-webkit-transition: 0.5s !important;
+	-moz-transition: 0.5s !important;
+	transition: 0.5s !important;
+}
+
+.slider-pro .link-color {
+	text-decoration: none;
+	color: #111;
+	-webkit-transition: 0.5s !important;
+	-moz-transition: 0.5s !important;
+	transition: 0.5s !important;
+}
+
+.slider-pro a:hover {
+	color: #666;
+}
+
+
+/* ---------------------------------------------------------
+----------- --- Homepage Slider Styling Ends --------------
+-----------------------------------------------------------*/
+
+
+.section-1 {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------------------------------------------------
+-------------- 7. Agency Homepage Styling Start -------------
+-----------------------------------------------------------*/
+
+.pta-jarallax {
+  position: relative;
+	background: url(../img/main.jpg);
+  position: relative;
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+
+.main {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.main-intro h1 {
+  font-family: Poppins;
+  font-size: 3em;
+  font-weight: 700;
+  color: #FFF;
+  letter-spacing: -2px;
+  line-height: 0.9em;
+  margin: 0 0 20px;
+}
+
+.main-intro span {
+  color: #d31b33;
+}
+
+.main-intro h4 {
+  font-family: Poppins;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #666;
+  letter-spacing: 0px;
+  line-height: 1.2em;
+}
+
+@media only screen and (min-width: 767px) {
+
+  .main {
+    padding-top: 200px;
+  }
+
+  .main-intro {
+    padding: 2em;
+  }
+
+  .main-intro h1 {
+    font-size: 9em;
+    letter-spacing: -8px;
+    line-height: 0.8em;
+    margin: 0 0 50px;
+  }
+
+  .main-intro h4 {
+    font-size: 2em;
+    letter-spacing: -2px;
+    line-height: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .main-intro h1 {
+    font-size: 5em;
+    letter-spacing: -4px;
+    line-height: 0.8em;
+    margin: 0 0 50px;
+  }
+  .main-intro h4 {
+    font-size: 1.5em;
+    letter-spacing: -2px;
+    line-height: 1.2em;
+  }
+}
+
+
+
+/* ---------------------------------------------------
+----------- About Intro Styling Begins Here ----------
+------------------------------------------------------*/
+
+.pta-about {
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #FFF;
+}
+
+.pta-about-intro {
+	height: 100%;
+  padding: 1em;
+}
+
+.pta-about-title h4 {
+	font-family: Poppins;
+	font-size: 18px;
+	font-weight: 600;
+  color: #d31b33;
+  text-transform: uppercase;
+	letter-spacing: -1px;
+	margin-bottom: 1em;
+}
+
+.pta-about-title h1 {
+	font-family: Poppins;
+	font-size: 26px;
+	font-weight: 600;
+  color: #000000;
+	line-height: 1.3;
+	letter-spacing: -1px;
+	margin-bottom: 1em;
+}
+
+.pta-about-intro p {
+	font-family: Roboto;
+	font-size: 1em;
+	font-weight: 500;
+	line-height: 30px;
+	color: #444;
+}
+
+
+.pta-about-button {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 1em;
+  padding: 6px 12px;
+  border: 3px solid;
+  border-color: #d31b33;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-fill {
+  color: #FFF;
+  background: #d31b33;
+}
+
+.pta-about-button:hover, .pta-about-button:focus {
+  background: transparent;
+  color: #111;
+  text-decoration: none;
+}
+
+
+
+@media only screen and (min-width: 767px) {
+
+  .pta-about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .pta-about-intro {
+    padding: 2em;
+  }
+
+  .pta-about-title {
+  	padding-top: 2em;
+  }
+
+  .pta-about-title h4 {
+  	font-size: 21px;
+  }
+
+  .pta-about-title h1 {
+  	font-size: 38px;
+  	line-height: 1.3;
+  	letter-spacing: -1px;
+  }
+
+  .pta-about-button {
+    font-size: 18px;
+    padding: 4px 8px;
+  }
+}
+
+/* ----- About Intro Ends Here -----*/
+
+
+/* ---------------------------------------------------------
+--------------  Agency Homepage Styling Ends -------------
+-----------------------------------------------------------*/
+
+
+
+/* ---------------------------------------------------------
+----------- 8. Personal Home Intro Section Styling -------------
+-----------------------------------------------------------*/
+
+.jarallax {
+  position: relative;
+	background: url(../img/bg.jpg);
+  position: relative;
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-position: 50% 50%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+
+.intro-personal {
+	width: 100%;
+	height: 100%;
+	padding-top: 200px;
+	margin-bottom: 100px;
+}
+
+.intro-personal h2 {
+	font-family: Montserrat;
+	font-size: 3em;
+	color: #FFF;
+	line-height: 1.3;
+}
+
+.intro-personal p {
+	font-family: Work Sans;
+	font-size: 16px;
+	padding-top: 1em;
+	color: #FFF;
+}
+
+
+.intro-content {
+  padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 1em;
+}
+
+.intro-content h2 {
+  font-size: 54px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #FFF;
+  line-height: 1.2em;
+}
+
+.intro-content h2 span {
+	color: #FFF;
+}
+
+.intro-content p {
+  font-family: Poppins;
+  font-size: 1.1em;
+  color: #FFF;
+  padding-top: 1em;
+	padding-right: 1em;
+	line-height: 25px;
+}
+
+
+/* ---------------------------------------------------------
+------------- 9.Portfolio Section Styling Start --------------
+-----------------------------------------------------------*/
+
+
+.portfolio {
+  width: 100%;
+  height: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.portfolio-intro-2 {
+  padding-top: 50px;
+	padding-bottom: 100px;
+
+}
+
+.portfolio-intro-2 h1 {
+	transform: rotate(270deg);
+  font-family: Raleway;
+  font-size: 1.2em;
+	text-transform: uppercase;
+  color: #2C303A;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+	-webkit-transform-origin: top left 0;
+	 transform-origin: top left 0;
+	 display: inline-block;
+}
+
+.portfolio-intro-description {
+	padding-top: 50px;
+	max-width: 350px;
+}
+
+.portfolio-intro-description h2 {
+	font-family: Poppins;
+	font-size: 2em;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: -1px;
+	line-height: 40px;
+}
+
+.portfolio-intro-description h2:before {
+	content: "";
+	display: block;
+	height: 40px;
+	width: 190px;
+	background: #C8F6F4;
+	margin-bottom: -1.2em;
+}
+
+.portfolio-intro-description p {
+  font-family: Raleway;
+  font-size: 15px;
+	font-weight: 500;
+	font-weight: lighter;
+  color: #222;
+  line-height: 18px;
+	padding-top: 1em;
+}
+
+.pta-portfolio-button {
+	display: inline-block;
+	background: #2C303A;
+	padding: 10px 20px;
+	margin: 3em 0;
+	box-shadow: 0px 2px 5px #999;
+	text-decoration: none;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.pta-portfolio-button span {
+	font-family: Roboto;
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 14px;
+}
+
+.pta-portfolio-button:hover {
+	text-decoration: none;
+}
+
+.pta-portfolio-button:focus {
+	text-decoration: none;
+}
+
+
+.overlay {
+	background: rgba(255, 255, 255, 0.90);
+  transform: translateY(10%);
+	position:absolute;
+	top: 10px;
+	left: 10px;
+	height: calc(100% - 20px);
+	width: calc(100% - 20px);
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.overlay-items {
+	height: 300px;
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+}
+
+.overlay-items h1 {
+	font-family: Roboto;
+	display: block;
+	color: #222;
+	font-size: 16px;
+  font-weight: bold;
+	text-decoration: none;
+  -webkit-transition: all .5s ease-in-out .3s;
+  transition: all .5s ease-in-out .3s;
+  opacity: 0;
+}
+
+.overlay-items p {
+	margin-top: 1em;
+	opacity: 0;
+	font-size: 12px;
+	font-family: Roboto;
+	letter-spacing: 2px;
+	color: #FFF;
+	padding: 5px 5px;
+	background: #d31b33;
+	display: inline-block;
+	transition: 0.5s;
+	transition-delay: 0.2s;
+}
+
+.grid img {
+	-webkit-filter: grayscale(25%);
+    filter: grayscale(25%);
+}
+
+
+.grid a:focus, .grid a:hover {
+     text-decoration: none;
+}
+
+.grid a:hover .overlay {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.grid a:hover h1, .grid a:hover p {
+opacity: 1
+}
+
+@media only screen and (max-width: 767px) {
+
+	.portfolio {
+		padding-top: 50px;
+	}
+
+	.portfolio-intro-2 {
+	  padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.portfolio-intro-description h2 {
+		font-size: 1.5em;
+		line-height: 30px;
+	}
+	.portfolio-intro-description h2::before {
+		height: 30px;
+		width: 140px;
+	}
+}
+
+/* ---------------------------------------------------------
+------------- Portfolio Section Styling Ends --------------
+-----------------------------------------------------------*/
+
+
+/* ------ Work Section Styling -----*/
+
+.work {
+	width: 100%;
+	height: 400px;
+	background: #EFEFEF;
+}
+
+
+/* ---------------------------------------------------
+--------- 10. About Me Page Styling goes here ------------
+---------------------------------------------------- */
+
+.about-me {
+    padding-top: 20px;
+		padding-bottom: 0px;
+}
+
+.about-section-1 {
+	width: 100%;
+    height: 900px;
+    background: url(../img/about-me.jpg) no-repeat center center;
+		background-size: cover;
+}
+
+.about-section-2 {
+    background: #F2F2F2;
+		height: 900px;
+		padding-top: 50px;
+}
+
+.about-details {
+	padding: 50px;
+}
+
+.about-details h1 {
+	font-family: Montserrat;
+	font-size: 3em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	color: #000;
+	padding-top: 0em;
+}
+
+.about-details h4 {
+  font-family: Roboto;
+	font-size: 1.2em;
+	padding-top: 0.6em;
+	color: #000000;
+}
+
+.about-details h4:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 75px;
+	background: #333333;
+	margin-top: 1em;
+}
+
+.about-details p {
+	font-family: Roboto;
+	font-size: 16px;
+	color: #333;
+	padding-top: 2em;
+	line-height: 25px;
+}
+
+.signature {
+	padding-top: 50px;
+}
+
+@media only screen and (max-width: 801px) {
+	.about-me {
+	    padding-top: 0px;
+			padding-bottom: 0px;
+	}
+
+	.about-section-1 {
+	  	width: 100%;
+			height: 900px;
+	}
+
+	.about-section-2 {
+	  	width: 100%;
+			height: 800px;
+		  margin-left: 0;
+			padding: 1em;
+	}
+
+	.about-details {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media only screen and (max-width: 600px ) {
+
+  .about-section-2 {
+  height: 1000px;
+  }
+	.about-details {
+	 padding: 10px;
+	}
+}
+
+@media only screen and (max-width: 421px ) {
+
+  .about-section-2 {
+      height: 920px;
+  }
+	.about-details {
+	padding: 10px;
+	}
+}
+
+@media only screen and (max-width: 300px ) {
+
+  .about-section-2 {
+      height: 100%;
+  }
+	.about-details {
+	padding: 10px;
+	}
+}
+
+/* ---------------------------------------------------
+--------- About Me Page Styling Ends here ------------
+---------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------
+--------- 11. Services Page Styling Starts here ----------
+---------------------------------------------------- */
+
+.services {
+	width: 100%;
+	background: #FFF;
+  padding-bottom: 50px;
+}
+
+.service-intro {
+	padding-top: 50px;
+  padding-bottom: 50px;
+  background: linear-gradient( to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../img/services-bg.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.service-intro h1 {
+	font-family: Poppins;
+	font-size: 42px;
+  text-transform: uppercase;
+	color: #FFF;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  padding: 1em;
+}
+
+.service-intro h1::after {
+
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100px;
+  background: #d31b33;
+}
+
+.service-intro i {
+  font-size: 34px;
+  color: #FFF;
+}
+
+.spacer-1 {
+	width: 100%;
+	height: 50px;
+}
+
+.spacer-2 {
+	width: 100%;
+	height: 100px;
+}
+
+.service-block {
+	position: relative;
+	margin-bottom: 4em;
+	cursor: pointer;
+}
+
+.service-block:after {
+	content: "";
+	display: block;
+	height: 1.4px;
+	width: 25%;
+	background: #111;
+	margin-top: 1em;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.service-icon {
+	font-size: 42px;
+	font-weight: bolder;
+	color: #111;
+	float: left;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-description {
+	padding-top: 0.8em;
+}
+
+.service-description h2 {
+	font-family: Quicksand;
+	font-size: 16px;
+	font-weight: 600;
+	color: #000000;
+	text-align: left;
+	padding-left: 4em;
+	padding-bottom: 2em;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-description p {
+	font-family: Quicksand;
+	font-size: 14px;
+	font-weight: 400;
+  color: #000;
+	text-align: left;
+	padding-left: 0em;
+	line-height: 1.5;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-block:hover::after {
+    width: 50%;
+}
+
+.service-block:hover .service-icon, .service-block:hover .service-description h2  {
+    color: #d31b33;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .service-intro h1 {
+  	font-size: 34px;
+    margin: 0.5em;
+    padding: 0;
+  }
+
+	.service-block {
+		position: relative;
+		margin-bottom: 3em;
+	}
+
+	.service-block:after {
+		margin: 0 auto;
+		margin-top: 1em;
+	}
+
+	.service-icon {
+		float: none;
+	}
+
+	.service-description {
+		padding-top: 0.8em;
+	}
+
+	.service-description h2 {
+		text-align: center;
+		padding-bottom: 1em;
+		padding-left: 0;
+	}
+
+	.service-description p {
+		max-width: 500px;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+
+/* ---------------------------------------------------
+--------- Services Page Styling Ends here ----------
+---------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------
+--------- 12. Agency Work Styling Starts here --------
+---------------------------------------------------- */
+
+
+.agency-work {
+	width: 100%;
+	height: 100%;
+}
+
+.agency-img-section img {
+	max-width:100%;
+	max-height:100%;
+}
+
+.agency-work-section {
+	background: #EFEFEF;
+			padding: 3em;
+}
+
+.agency-work-section h2 {
+	font-family: Raleway;
+	font-size: 2em;
+	font-weight: 400;
+	color: #189E5B;
+	text-transform: uppercase;
+	padding-top: 1em;
+}
+
+.agency-work-section h4 {
+	font-family: Raleway;
+	font-size: 1em;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-top: 1em;
+}
+
+.agency-work-section p {
+	font-family: Roboto;
+	font-size: 16px;
+	color: #222;
+	padding-top: 2em;
+	line-height: 20px;
+}
+
+
+.agency-work-button {
+	display: inline-block;
+  background: #189E5B;
+  padding: 10px 20px;
+  margin: 2em 0;
+	box-shadow: 2px 5px 5px #999;
+  text-decoration: none;
+}
+
+.agency-work-button span {
+	font-family: Roboto;
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 14px;
+}
+
+.agency-work-button:hover {
+	text-decoration: none;
+}
+
+
+@media only screen and (max-width: 801px) {
+	.agency-img-section {
+		position: relative;
+	  	width: 100%;
+	    float: none;
+			overflow: hidden;
+	}
+	.agency-work-section {
+	  	width: 100%;
+		  margin-left: 0;
+			padding: 1em;
+	}
+}
+
+/* ---------------------------------------------------
+------------ Agency Work Styling Ends here -----------
+----------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+--------13. Portfolio Single Styling Starts here --------
+------------------------------------------------------ */
+/*
+.pt-single-head {
+	width: 100%;
+	height: 100%;
+	padding-top: 200px;
+	padding-bottom: 100px;
+	background: #F6F6F6;
+}
+
+.pt-single-intro {
+	padding-top: 0em;
+	padding-bottom: 5em;
+	padding-left: 1em;
+}
+
+.pt-single-intro h2 {
+	font-family: Montserrat;
+	font-size: 2.5em;
+	letter-spacing: -1.5px;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #222;
+}
+
+.pt-single-intro p {
+	font-family: Montserrat;
+	font-size: 14px;
+	padding-top: 1em;
+	line-height: 20px;
+}
+
+.pt-image img {
+	display: block;
+	    width: 100%;
+			height: auto;
+}
+
+.pt-details {
+	padding-left: 2em;
+	padding-top: 2em;
+}
+
+.pt-details h2 {
+	font-family: Montserrat;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: -1.5px;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #222;
+}
+
+.pt-details p {
+	font-family: Raleway;
+	font-size: 14px;
+	padding-top: 1em;
+	line-height: 30px;
+}
+
+.pt-details h4 {
+	font-family: Montserrat;
+	font-size: 1em;
+	font-weight: bold;
+	padding-top: 1.5em;
+	color: #222;
+}
+
+.pt-details span {
+	font-family: Raleway;
+	font-size: 14px;
+	color: #222;
+	font-weight: normal;
+}
+
+.pt-button {
+  display: inline-block;
+  background: #222;
+  padding: 10px 15px;
+  margin: 2em 0;
+  text-decoration: none;
+  box-shadow: 0px 2px 6px #999;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pt-button span {
+  font-family: Raleway;
+  font-size: 13px;
+	font-weight: bold;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.pt-button:hover {
+  text-decoration: none;
+  box-shadow: 0px 5px 7px #999;
+}
+*/
+/* ---------------------------------------------------
+-------- Portfolio Single Styling Ends here --------
+------------------------------------------------------ */
+
+
+/* ---------------------------------------------------------
+------14. Portfolio Masonry Page Styling Starts here -------
+----------------------------------------------------------- */
+
+
+.portfolio-msnry-head {
+	width: 100%;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	background: #F3F3F3;
+}
+
+.portfolio-msnry-head h1 {
+	font-family: Poppins;
+	font-size: 2em;
+	font-weight: 600;
+	color: #FFF;
+	background-color: #d31b33;
+	display: inline;
+	line-height: 2;
+	text-transform: uppercase;
+}
+
+.portfolio-msnry-head p {
+	font-family: Quicksand;
+	font-size: 16px;
+  font-weight: 400;
+	padding: 1em;
+	color: #111;
+	line-height: 20px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.portfolio-msnry-head p:after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 75px;
+	background: #999;
+	margin: 0 auto;
+  margin-top: 1em;
+}
+
+.portfolio-masonry {
+	padding-top: 0px;
+	padding-bottom: 50px;
+	background: #F3F3F3;
+}
+
+
+/* ---------------------------------------------------------
+--------- Portfolio Masonry Page Styling Ends here ---------
+------------------------------------------------------------ */
+
+
+
+
+/* ------------------------------------------------------------
+--------- 15. Portfolio Single Item Styling Starts ------------
+---------------------------------------------------------------*/
+
+.pt-portfolio-single {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  margin-top: 150px;
+}
+
+.pt-portfolio-single h3 {
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-weight: 700;
+  color: #d31b33;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 2em 0;
+}
+
+.pt-portfolio-single h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.4;
+  margin: 0 0 25px 0;
+}
+
+.pt-portfolio-single h1::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 2px;
+  left: 0;
+  margin-top: 0.3em;
+  background-color: #d31b33;
+  -webkit-transition: .5s;
+  -moz-transition: 0.5s;
+  transition: .5s;
+}
+
+.pt-portfolio-single h1:hover::after {
+  width: 150px;
+}
+
+
+.pt-portfolio-details {
+  padding: 1em;
+}
+
+.pt-portfolio-details h2 {
+  font-family: Source Sans Pro;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #d31b33;
+  line-height: 1.2;
+  margin: 0 0 1em 0;
+}
+
+.pt-portfolio-details p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+}
+
+.pt-portfolio-details h6 {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 600;
+  color: #888DA1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.pt-portfolio-details h6 span{
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.pt-portfolio-details a {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+
+.pt-portfolio-item {
+  padding: 1em;
+}
+
+.pt-portfolio-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* ------------------------------------------------------------------
+------------------  Portfolio Single Item Styling Ends ----------------------
+--------------------------------------------------------------------*/
+
+
+
+/* ---------------------------------------------------------
+-----------16. About Us Page Styling Starts here ------------
+------------------------------------------------------------ */
+
+
+.about-us {
+	width: 100%;
+	height: 100%;
+  padding-top: 200px;
+	padding-bottom: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/about-bg.png) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+  position: static;
+}
+
+.about-intro {
+  padding: 0em;
+}
+
+.about-intro h1 {
+	font-family: Montserrat;
+	font-size: 28px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+.about-intro p {
+	font-family: Roboto;
+	font-size: 14px;
+	padding-top: 2em;
+	font-weight: 400;
+	color: #FFF;
+	letter-spacing: 1px;
+	line-height: 1.8;
+}
+
+
+/* ----- About Us Page work section styling -----*/
+
+.work-section {
+	background: #FFF;
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+
+.work-intro {
+	padding-left: 1em;
+	padding-top: 50px;
+}
+
+.work-section h4 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: #d31b33;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+}
+
+.work-section h1 {
+	font-family: Montserrat;
+	font-size: 34px;
+	line-height: 1.2;
+	color: #000;
+}
+
+
+.work-section p {
+	font-family: Roboto;
+	font-size: 14px;
+	padding-top: 1em;
+	padding-bottom: 50px;
+	font-weight: 400;
+	color: #888;
+	letter-spacing: 1px;
+	line-height: 1.5;
+
+}
+
+.work-section p::after {
+  content: "";
+  display: block;
+	height: 2px;
+	width: 50px;
+	background: #666;
+	margin-top: 1em;
+}
+
+.work-item {
+	padding: 1em;
+  position: relative;
+  display: inline-block;
+	cursor: pointer;
+  padding-top: 1em;
+	padding-bottom: 1em;
+  margin-bottom: 1em;
+	background: #F9F9F9;
+	-webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.w-icon {
+  padding: 1em;
+}
+
+.w-icon i {
+  font-size: 42px;
+  color: #d31b33;
+}
+
+
+.work-item h2 {
+	font-family: Montserrat;
+	font-size: 18px;
+	color: #000;
+	padding-top: 1em;
+	font-weight: 300;
+	-webkit-transition: 0.9s;
+	-moz-transition: 0.9s;
+	transition: 0.9s;
+}
+
+.work-item p {
+	font-family: Roboto;
+	font-size: 14px;
+	color: #333;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	line-height: 20px;
+	font-weight: 300;
+}
+
+.work-item p:after {
+	display: none;
+}
+
+.work-item a {
+	font-family: Montserrat;
+	font-size: 13px;
+	color: #444;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.work-item a::after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 25px;
+	background: #d31b33;
+	margin-top: 0.2em;
+	opacity: 0;
+	-webkit-transition: 0.9s;
+	-moz-transition: 0.9s;
+	transition: 0.9s;
+}
+
+.work-item:hover a:after {
+	width: 70px;
+	opacity: 1;
+}
+
+/* ----- Counter Section Styling -----*/
+
+.counter-section {
+ width: 100%;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ background: #FFF;
+}
+
+.counter {
+  font-family: Quicksand;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #d31b33;
+}
+
+.counter-icon {
+  padding: 0.5em;
+}
+
+.counter-icon i {
+  font-size: 42px;
+  color: #d31b33;
+}
+
+.counter-text {
+  margin-bottom: 2em;
+}
+
+.counter-text h4 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0.5em;
+  color: #111111;
+}
+
+
+.pta-counter-section {
+  background: #000;
+}
+
+
+.pta-counter-section .counter {
+  color: #FFF;
+}
+
+.pta-counter-section .counter-icon i {
+  font-size: 48px;
+  color: #d31b33;
+}
+
+.pta-counter-section .counter-icon:hover i {
+  color: #FFF;
+}
+
+.pta-counter-section .counter-text h4 {
+  color: #FFF;
+}
+
+/* ----- Call to action section styling -----*/
+
+.cta-section {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	background: #000;
+}
+
+.cta-content {
+	padding: 1em;
+}
+
+.cta-content h4 {
+	font-family: Poppins;
+	font-size: 18px;
+	color: #d31b33;
+	font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.cta-content h2 {
+	font-family: Poppins;
+	font-size: 28px;
+	color: #FFF;
+	font-weight: 600;
+  letter-spacing: -1px;
+	line-height: 1.2;
+}
+
+.cta-content p {
+	font-family: Poppins;
+	font-size: 16px;
+  color: #FFF;
+	font-weight: 300;
+	padding-top: 1em;
+}
+
+
+.cta-button {
+	display: inline-block;
+	background: #d31b33;
+	padding: 10px 16px;
+	margin: 1em 0;
+	text-decoration: none;
+	font-family: Poppins;
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 600;
+  border: 3px solid #d31b33;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.cta-button:hover, .cta-button:focus {
+  text-decoration: none;
+  color: #FFF;
+  border-color: #d31b33;
+  background: transparent;
+}
+
+
+.about-button {
+	display: inline-block;
+	background: #d31b33;
+	padding: 10px 12px;
+	margin: 3em 0;
+	text-decoration: none;
+	text-transform: uppercase;
+  font-family: Poppins;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 400;
+	transition: 0.5s;
+}
+
+.about-button:hover, .about-button:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* ----- About-Section-2 Media Queries -----*/
+
+
+
+@media only screen and (min-width: 767px ) {
+
+  .about-intro h1 {
+  	font-size: 58px;
+  }
+
+	.work-section h1 {
+		font-size: 48px;
+    letter-spacing: -1px;
+	}
+
+  .work-section h4 {
+    font-size: 18px;
+  }
+  .counter-up {
+    margin-bottom: 2em;
+  }
+
+  .cta-content h2 {
+  	font-size: 48px;
+  }
+  .counter-text {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .work-item {
+    padding: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+  }
+}
+
+
+
+/* -------- About Team Styling Starts Here -------- */
+
+.team {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #E9EBEE;
+}
+
+.team-intro {
+	padding: 1em;
+}
+
+.team-intro h4 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: #d31b33;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+}
+
+.team-intro h1 {
+	font-family: Poppins;
+  font-weight: 600;
+	font-size: 34px;
+	color: #000;
+	letter-spacing: -1px;
+}
+
+.team-intro p {
+	font-family: Roboto;
+	font-size: 14px;
+	color: #222;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	padding-top: 1em;
+}
+
+.team-intro p:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 75px;
+	background: #666;
+	margin-top: 1em;
+}
+
+.team-member {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.team-member img {
+	max-width: 100%;
+	height: auto;
+	-webkit-filter: grayscale(75%);
+    filter: grayscale(75%);
+}
+
+.team-profile {
+	background: #FFF;
+	padding-top: 30px;
+	z-index: -111;
+	transition: 0.5s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.team-profile h2 {
+	font-family: Montserrat;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.team-profile h4 {
+	font-family: Roboto;
+	font-size: 1em;
+	padding-top: 1em;
+	letter-spacing: 1px;
+}
+
+.team-overlay {
+	transition: 0.5s;
+}
+
+.team-overlay ul {
+	list-style: none;
+	padding: 20px;
+}
+
+.team-overlay li {
+	display: inline;
+	font-family: Roboto;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.team-overlay i {
+	font-size: 16px;
+	padding: 5px;
+	color: #111;
+}
+
+.team-overlay i:hover {
+	opacity: 0.7;
+}
+
+.team-member:hover .team-profile {
+	opacity: 1;
+	-webkit-transform: translate3d(0,-50px,0);
+		transform: translate3d(0,-50px,0);
+}
+
+@media only screen and (min-width: 768px) {
+	.team-intro h1 {
+    font-size: 48px;
+  }
+  .team-profile h2 {
+  	font-size: 1.2em;
+  }
+}
+
+/* -------About Team Styling Ends Here -------- */
+
+
+/* ----- Testimonials Section Styling Starts Here -----*/
+
+.testimonials {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.test-single {
+  background: #F9F9F9;
+  padding: 2em;
+  border-bottom: 2px solid;
+  border-color: transparent;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+.test-image {
+  padding: 2em;
+}
+
+.test-image img {
+  height: 100px;
+  width: 100px;
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+      transition: 0.5s;
+}
+
+.test-single:hover img {
+  -webkit-filter: grayscale(35%);
+    filter: grayscale(35%);
+    transform: translateY(-10%);
+}
+
+.test-single:hover {
+  background: #F2F2F2;
+  border-bottom: 2px solid #d31b33;
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  transform: translateY(-5%);
+}
+
+.test-content h3 {
+  font-family: Roboto;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  color: #111;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.test-content p {
+  font-family: Quicksand;
+  font-size: 14px;
+  color: #111;
+  line-height: 1.3;
+  padding: 1em;
+}
+
+@media only screen and (min-width: 801px) and (max-width: 991px) {
+  .test-single {
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .test-single {
+    margin-bottom: 1em;
+  }
+}
+
+/* ----- Testimonials Section Styling Ends Here -----*/
+
+
+/* ---------------------------------------------------------
+----------- About Us Page Styling Ends here ------------
+------------------------------------------------------------ */
+
+
+
+/* -------------------------------------------------------
+---------- 17. Contact Page Styling Starts Here -----------
+---------------------------------------------------------*/
+
+.contact-us {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: #FFFFFF;
+}
+
+.contact-bg {
+  background: #F2F2F2;
+}
+
+.ct-intro {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  background-size: cover;
+  background-position: left;
+}
+
+.ct-intro h5 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #d31b33;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+
+.ct-intro h2 {
+  font-family: Poppins;
+  font-size: 2em;
+  color: #111;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+
+.aft-line {
+  height: 2px;
+  width: 50px;
+  background: #d31b33;
+  margin-top: 1em;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.ct-intro:hover .aft-line {
+  width: 100px;
+}
+
+.ct-section-1 {
+  width: 100%;
+  height: 100%;
+}
+
+.ct-section-title {
+  padding: 0em;
+}
+
+.ct-section-title i {
+  font-size: 48px;
+  color: #6F4E37;
+}
+
+
+.ct-section-title h2 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 2em;
+  color: #111;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.ct-section-content {
+  padding: 0em;
+}
+
+.ct-section-content span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ct-section-content p {
+  font-family: Raleway;
+  font-size: 13px;
+  color: #111;
+  padding-top: 1em;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+@media only screen and (min-width: 767px) {
+  .ct-intro {
+    padding: 1em;
+  }
+
+  .ct-intro h2 {
+    font-size: 3em;
+  }
+
+  .ct-intro h2 span {
+    font-size: 1em;
+  }
+
+  .ct-section-title {
+    padding: 0em;
+  }
+}
+
+/* ------------ Contact Form Styling --------*/
+
+
+label {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.form-control {
+  border: 0px;
+  border-radius: 0px;
+  margin-top: 10px;
+  background: transparent;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+  box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.form-control:focus {
+  border-color: #d31b33;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-family: Quicksand;
+  font-size: 13px;
+  color: #999999;
+}
+.form-control:-moz-placeholder {
+  font-family: Quicksand;
+  font-size: 13px;
+  color: #999999;
+}
+.form-control::-moz-placeholder {
+  font-family: Quicksand;
+  font-size: 13px;
+  color: #999999;
+}
+.form-control:-ms-input-placeholder {
+  font-family: Quicksand;
+  font-size: 13px;
+  color: #999999;
+}
+
+.text-muted {
+  font-family: Quicksand;
+  font-size: 13px;
+  color: #222;
+}
+
+.text-muted strong {
+  color: #FF3333;
+}
+
+.btn-send {
+  font-family: Quicksand;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  color: #FFF;
+  background: #d31b33;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.btn-send:hover, .btn-send:focus {
+  color: #FFFFFF;
+  background: #000000;
+  outline: none !important;
+}
+
+
+
+/* ----- Contact Form Styling Ends Here -----*/
+
+
+/* -------------------------------------------------------
+----------- Contact Page Styling Ends Here -------------
+---------------------------------------------------------*/
+
+
+
+/* -------------------------------------------------------
+------- 18. Portfolio-1 Page Styling Starts Here ---------
+---------------------------------------------------------*/
+
+
+.pta-portfolio-page {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background: rgba(245, 245, 245, 0.8);
+}
+
+
+.pta-portfolio-page h4 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #d31b33;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+}
+
+.pta-portfolio-page h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+
+.pta-portfolio-page nav, .pta-portfolio nav {
+  padding: 20px;
+  text-align: center;
+}
+
+.pta-portfolio .categories ul li {
+  display: inline;
+    list-style: none;
+}
+
+.pta-portfolio .categories ul li a {
+    display: inline;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2.5;
+    text-decoration: none;
+    color: #666666;
+    margin-left: 20px;
+}
+
+.pta-portfolio .categories ul li a.active {
+    text-decoration: line-through;
+    color: #000000;
+}
+
+.pta-portfolio_filter {
+    padding-left: 0;
+}
+
+@media (max-width: 991px) {
+    .pta-portfolio span {
+        margin-bottom: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .pta-portfolio .categories ul li {
+        text-align: center;
+    }
+    .pta-portfolio .categories ul li a {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+  .pta-portfolio .categories ul li {
+    display: block;
+      text-align: center;
+  }
+  .pta-portfolio .categories ul li a {
+    display: block;
+    line-height: 1;
+    padding: 5px 25px;
+      margin-left: 0px;
+      margin-bottom: 20px;
+  }
+}
+
+.pta-portfolio_item {
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+.pta-portfolio-overlay {
+	background: rgba(255, 255, 255, 0.95);
+  transform: scale(0.5);
+	position:absolute;
+	top: 10px;
+	left: 15px;
+	height: calc(100% - 30px);
+	width: calc(100% - 30px);
+	opacity: 0;
+	-webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+    transition: 0.5s;
+
+}
+
+.pta-overlay-items {
+	height: 300px;
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+}
+
+.pta-overlay-items h5 {
+	font-family: Work Sans;
+	display: block;
+	color: #000000;
+	font-size: 16px;
+	text-decoration: none;
+  -webkit-transition: all .5s ease-in-out .3s;
+  transition: all .5s ease-in-out .3s;
+  opacity: 0;
+}
+
+.pta-overlay-items p {
+	margin-top: 1em;
+	opacity: 0;
+	font-size: 12px;
+	font-family: Poppins;
+	letter-spacing: 2px;
+	color: #FFF;
+	padding: 5px 5px;
+	background: #d31b33;
+	display: inline-block;
+	transition: 0.5s;
+	transition-delay: 0.2s;
+}
+
+.pta-portfolio_item:focus, .pta-portfolio_item:hover {
+     text-decoration: none;
+}
+
+.pta-portfolio_item:hover .pta-portfolio-overlay {
+  transform: scale(1);
+	opacity: 1;
+}
+
+.pta-portfolio_item:hover h5, .pta-portfolio_item:hover p {
+  opacity: 1
+}
+
+
+@media only screen and (min-width: 767px) {
+
+  .pta-portfolio-page {
+    background: #FFFFFF;
+  }
+
+  .pta-portfolio-page h4 {
+    font-size: 21px;
+  }
+  .pta-portfolio-page h1 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+}
+
+
+/* -------------------------------------------------------
+----------- Portfolio Page Styling Ends Here --------------
+---------------------------------------------------------*/
+
+
+/* -------------------------------------------------------
+---------  Call To Action Styling Starts Here ------------
+---------------------------------------------------------*/
+
+
+.pta-cta h4 {
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 600;
+  color: #d31b33;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+}
+
+.pta-cta h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.pta-button {
+	display: inline-block;
+	background: #d31b33;
+  padding: 3px;
+	margin: 0.1em 0;
+	text-decoration: none;
+	font-family: Poppins;
+	color: #FFF;
+	font-size: 24px;
+	font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  border: 3px solid #d31b33;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.pta-button:hover, .pta-button:focus {
+  text-decoration: none;
+  color: #000;
+  border-color: #d31b33;
+  background: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .pta-cta {
+    padding: 10px;
+  }
+
+  .pta-cta h1 {
+    font-size: 38px;
+    letter-spacing: -1px;
+    line-height: 1.4;
+  }
+
+  .pta-button {
+  	font-size: 28px;
+    line-height: 1.5;
+    padding: 3px 9px;
+  }
+}
+
+
+
+/* -------------------------------------------------------
+---------  Call To Action Styling Starts Here ------------
+---------------------------------------------------------*/
+
+
+/* -------------------------------------------------------
+----------- Testimonials Styling Starts Here -------------
+---------------------------------------------------------*/
+
+
+.pta-testimonials {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+
+.pta-testimonial-inner {
+  width: 100%;
+  height: 100%;
+  padding: 100px 0 100px 0;
+}
+
+.pta-testimonial {
+  padding: 10px;
+}
+
+
+.pta-testimonial img {
+  height: 120px;
+  width: 120px;
+}
+
+.pta-testimonial h2 {
+  font-family: Poppins;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.pta-testimonial h4 {
+  font-family: Poppins;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #666666;
+  margin: 1em 0 0 0;
+}
+
+.pta-testimonial p {
+  font-family: Work Sans;
+  font-weight: 200;
+  font-size: 18px;
+  color: #EFEFEF;
+  letter-spacing: 0px;
+  line-height: 1.4;
+  margin: 50px 0 30px 0;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .pta-testimonial {
+    padding: 10px;
+  }
+
+  .pta-testimonial h2 {
+    font-size: 18px;
+  }
+
+  .pta-testimonial p {
+    font-size: 18px;
+  }
+}
+
+/* -------------------------------------------------------
+------------ Testimonials Styling Ends Here --------------
+---------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------
+-----------19.  Portfolio Single Item Styling Starts ----------------
+--------------------------------------------------------------------*/
+
+.pta-portfolio-single {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  margin-bottom: 100px;
+}
+
+.pta-portfolio-single h3 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  color: #d31b33;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 0 2em 0;
+}
+
+.pta-portfolio-single h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.3;
+}
+
+.pta-portfolio-single h1::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 2px;
+  left: 0;
+  margin-top: 0.3em;
+  background-color: #d31b33;
+  -webkit-transition: .5s;
+  -moz-transition: 0.5s;
+  transition: .5s;
+}
+
+.pta-portfolio-single h1:hover::after {
+  width: 150px;
+}
+
+
+.pta-portfolio-details {
+  padding: 10px;
+}
+
+.pta-portfolio-details h2 {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #d31b33;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin: 0 0 1em 0;
+}
+
+.pta-portfolio-details p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+}
+
+.pta-portfolio-details h6 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  color: #888DA1;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.pta-portfolio-details h6 span{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.pta-portfolio-details a {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 0px;
+  line-height: 1.2;
+}
+
+.pta-portfolio-item {
+  padding: 1em;
+}
+
+.pta-portfolio-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen and (min-width:767px) {
+
+  .pta-portfolio-single {
+    padding: 1em;
+    padding-top: 150px;
+    margin-bottom: 100px;
+  }
+
+  .pta-portfolio-single h1 {
+    font-size: 48px;
+  }
+}
+
+/* ------------------------------------------------------------------
+------------------  Portfolio Single Item Styling Ends ----------------------
+--------------------------------------------------------------------*/
+
+
+
+/* -------------------------------------------------------
+---------20. Footer Section Styling Starts Here ----------
+---------------------------------------------------------*/
+
+.footer {
+	width: 100%;
+	height: auto;
+  position: fixed;
+  bottom: 0px;
+  z-index: 112;
+}
+
+.footer p {
+	font-family: Quicksand;
+	font-size: 13px;
+  font-weight: 700;
+	color: #000000;
+	z-index: 21;
+  margin-top: 11px;
+}
+
+
+.footer-social ul {
+  padding: 0.6em;
+  list-style-type: none;
+  text-align: right;
+}
+
+.footer-social li {
+  display: inline;
+}
+
+.footer-social i, .footer-social a {
+  font-size: 18px;
+  padding-left: 0.35em;
+  color: #111;
+  z-index: 21;
+}
+
+.footer-social a:hover {
+  color: #999;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer p {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .footer-social ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .footer p {
+    text-align: center;
+    margin-bottom: 2px;
+  }
+}
+
+/* -------------------------------------------------------
+----------- Footer Section Styling Ends Here -------------
+---------------------------------------------------------*/
+
+
+
+/* -------------------------------------------------------
+-------21. 2nd Footer Section Styling Starts Here --------
+---------------------------------------------------------*/
+
+
+.footer-minimal {
+	width: 100%;
+  height: 100%;
+	background: rgba(0, 0, 0, 1);
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.footer-min-content h2 {
+	font-family: Poppins;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.footer-min-content h6 {
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.footer-min-content p {
+	font-family: QuickSand;
+	font-size: 14px;
+	font-weight: 400;
+	color: #FFFFFF;
+	line-height: 25px;
+}
+
+
+.footer-min-content ul {
+	list-style: none;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.footer-min-content li {
+	display: inline;
+}
+
+.footer-min-content a {
+	display: inline;
+	font-family: Quicksand;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 5px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.footer-min-content a:hover {
+	color: #d31b33;
+  text-decoration: line-through;
+}
+
+/* ----- Footer light Bg -----*/
+
+.light-bg {
+  background: #FFF;
+}
+
+.light-bg h2 {
+	font-family: Poppins;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #111;
+	letter-spacing: 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.light-bg h6 {
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #111;
+	letter-spacing: 0;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.light-bg p {
+	font-family: QuickSand;
+	font-size: 14px;
+	font-weight: 400;
+	color: #111;
+	line-height: 25px;
+}
+
+
+.light-bg ul {
+	list-style: none;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.light-bg li {
+	display: inline;
+}
+
+.light-bg a {
+	display: inline;
+	font-family: Quicksand;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 5px;
+	color: #111;
+	text-decoration: none;
+}
+
+.light-bg a:hover {
+	color: #d31b33;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------
+-------- 2nd Footer Section Styling Ends Here ----------
+---------------------------------------------------------*/
+
+
+/* -------------------------------------------------------
+----------- Bact-to-Top Styling Starts Here --------------
+---------------------------------------------------------*/
+
+
+.back-to-top {
+background: rgba(0, 0, 0, 0.1);
+margin: 0;
+position: fixed;
+bottom: 30px;
+right: 30px;
+width: 35px;
+height: 35px;
+z-index: 90;
+display: none;
+text-decoration: none;
+color: #0E1729;
+}
+
+.back-to-top i {
+	position: relative;
+	left: 13px;
+	top: 8px;
+	font-size: 24px;
+	color: #FFF;
+}
+
+.back-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.back-to-top:focus {
+    color: #fff;
+}
+
+@media only screen and (max-width: 420px) {
+	.back-to-top {
+		right: 10px;
+	}
+}
+
+/* -------------------------------------------------------
+----------- Bact-to-Top Styling Ends Here --------------
+---------------------------------------------------------*/
+
+
+
+/* ---------------------------------------------------------
+------------ Media Queries homepage elements --------------
+-----------------------------------------------------------*/
+
+
+@media only screen and (min-width: 767px) {
+
+  #left, #right {
+  		top: 0; bottom: 0;
+  		width: 20px;
+  		}
+  #left { left: 0; }
+  #right { right: 0; }
+
+  #top {
+  		left: 0; right: 0;
+  		height: 20px;
+  		}
+  #bottom {
+    	left: 0; right: 0;
+    	height: 20px;
+    	}
+
+
+    /* ----- Bigger Body Border -----*/
+
+    #top-big, #bottom-big, #left-big, #right-big {
+    	background: #FFFFFF;
+    	position: fixed;
+      z-index: 111;
+    	}
+    #left-big, #right-big {
+    		top: 0; bottom: 0;
+    		width: 20px;
+    		}
+    #left-big { left: 0; }
+    #right-big { right: 0; }
+
+    #top-big {
+    		left: 0; right: 0;
+    		height: 20px;
+    	}
+    #bottom-big {
+    		left: 0; right: 0;
+    		height: 40px;
+    	}
+
+    #top-big { top: 0; }
+    #bottom-big { bottom: 0; }
+
+    /* ----- Bigger Body Border -----*/
+
+
+	.logo {
+		left: 40px;
+		top: 40px;
+		position: absolute;
+	}
+
+	.intro {
+		padding-bottom: 100px;
+	}
+
+	.nav-trigger {
+		right: 30px;
+		top: 40px;
+		z-index: 31;
+	}
+
+	.intro-content h2 {
+		font-size: 58px;
+	}
+
+	.intro-personal h2 {
+		font-size: 4em;
+	}
+
+  .pt-portfolio-single {
+    margin-top: 200px;
+  }
+
+  .pt-portfolio-single h3 {
+    font-size: 18px;
+  }
+
+  .pt-portfolio-single h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0 0 50px 0;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+	.intro-content {
+		padding-left: 2.5em;
+	}
+
+	.intro-content p {
+	padding-right: 2em;
+	}
+}
+
+@media only screen and (max-width: 767px ) {
+
+  .intro-personal {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .intro-personal h2 {
+    font-size: 2.5em;
+  }
+
+  .intro-personal p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 420px ) {
+
+  #top, #bottom, #left, #right {
+    background: #FFF;
+    position: fixed;
+    z-index: 11;
+  }
+  #left, #right {
+      top: 0; bottom: 0;
+      width: 0px;
+    }
+  #left { left: 0; }
+  #right { right: 0; }
+
+  #top {
+      left: 0; right: 0;
+      height: 0px;
+    }
+  #bottom {
+      left: 0; right: 0;
+      height: 0px;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .nav-trigger {
+    right: 5px;
+    top: 20px;
+  }
+
+  .intro-personal {
+    padding-top: 100px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .intro-personal h2 {
+  	font-size: 2em;
+  }
+
+  .intro-personal p {
+  	font-size: 16px;
+  }
+}
+
+.intro-button {
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+  margin-right: 1em;
+  padding: 6px 12px;
+  border: 3px solid;
+  border-color: #d31b33;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.intro-button:hover, .intro-button:focus {
+  background: #d31b33;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.intro-button {
+  font-size: 20px;
+  padding: 8px 20px;
+}
+
+@media only screen and (max-width: 320px) {
+  .intro-button {
+    display: block;
+    padding: 8px 24px;
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto 10px;
+  }
+}
+
+
+
+/* ---------------------------------------------------------
+---------- Media Queries homepage elements Ends ------------
+-----------------------------------------------------------*/

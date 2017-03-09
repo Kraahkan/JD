@@ -1,0 +1,69 @@
+.logo span {
+	color: #FFF;
+	background: #F41D07;
+}
+
+.logo span:hover, .logo span:focus {
+	color: #FFF;
+}
+
+#top-nav a:before {
+  background-color: #F41D07;
+}
+
+
+.nav-logo span {
+	color: #FFF;
+	background: #F41D07;
+}
+
+
+#nav-menu a:before {
+  background-color: #F41D07;
+}
+
+.main h1 a {
+  color: #F41D07;
+}
+
+
+.main h1 a:before {
+  background-color: #F41D07;
+}
+
+.intro-button {
+  color: #111;
+  border-color: #F41D07;
+}
+
+.btn-fill {
+  color: #FFF;
+  background: #F41D07;
+}
+
+.intro-button:hover, .intro-button:focus {
+  background: #F41D07;
+  color: #FFF;
+}
+
+.btn-fill:hover {
+  color: #F41D07;
+  border-color: #F41D07;
+  background: #FFF;
+}
+
+.pt-work-intro h2::after {
+  background-color: #F41D07;
+}
+
+.overlay {
+	background: rgba(244, 29, 7, 0.90);
+}
+
+.overlay-items p {
+	color: #F41D07;
+}
+
+.footer-social i, .footer-social a {
+  color: #F41D07;
+}
