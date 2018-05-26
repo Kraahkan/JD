@@ -1,126 +1,638 @@
-
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>I make stuff on the internet - J.D. Lindsay</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Site Description Here">
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-    <body class=" ">
-        <a id="start"></a>
-        
-        <div class="main-container">
-            <section class="imageblock switchable feature-large">
-                <div class="imageblock__content col-md-6 col-sm-4 pos-right">
-                    <div class="background-image-holder">
-                        <img alt="image" src="img/black.jpg" />
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5 col-sm-7">
-                           <h1 class="editable"><b>J.D. Lindsay</b></h1>
-                            
-                            <p class="lead editable">Hey, my name's Josh! I make stuff on the internet: apps, games, music, and words. 
-                            
-                            </p>
-                            <ul class="social-list list-inline list--hover">
-                                <li data-tooltip="@kraahkan">
-                                    <a href="https://www.instagram.com/kraahkan/">
-                                        <i class="socicon socicon-instagram icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li data-tooltip="Overture">
-                                    <a href="http://soundcloud.com/overture-sound">
-                                        <i class="socicon socicon-soundcloud icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li data-tooltip="Medium">
-                                    <a href="https://medium.com/@kraahkan">
-                                        <i class="socicon socicon-medium icon icon--xs"></i>
-                                    </a>
-                                </li>
-                                <li data-tooltip="me@jdlindsay.com">
-                                    <a href="mailto:me@jdlindsay.com">
-                                        <i class="socicon socicon-mail icon icon--xs"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="heading-block"></div>
-                            <a href="http://reduxdigital.ca" class="block ">
-                                <div class="feature feature--featured boxed boxed--border bg--secondary">
-                                    <span class="label">Coming Soon</span>
-                                    <h5 class="editable">Redux Digital</h5>
-                                    <p class="editable">
-                                        Websites for small business, freelancers, and creative people.
-                                    </p>
-                                </div>
-                                <!--end feature-->
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.reduxgames.brainblocks" class="block ">
-                                <div class="feature boxed boxed--border bg--secondary">
-                                    
-                                    <h5 class="editable">Brain Blocks</h5>
-                                    <p class="editable">
-                                        Composed original soundtrack.
+<html class="no-js" lang="en-US">
+<head>
 
-                                    </p>
-                                </div>
-                                <!--end feature-->
-                            </a>
-                         
-                            <a href="#" class="block ">
-                                <div class="feature boxed boxed--border bg--secondary">
-                                    <h5 class="editable">Chronicle</h5>
-                                    <p class="editable">
-                                        Allows news organizations, influencers, and bloggers to better engage with their audiences. 
-                                    </p>
-                                </div>
-                                <!--end feature-->
-                            </a>
-                            
-                            <br>
-                            <br>
-                           <br>
-                            
+    <!-- DEFAULT META TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!-- FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500" rel="stylesheet" type="text/css">
+       
+    <!-- CSS -->
+    <link rel="stylesheet" id="default-style-css"  href="files/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="fontawesome-style-css" href="files/css/font-awesome.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="revolution-slider-main-css" href="files/revolution/css/settings.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="revolution-slider-layer-css" href="files/revolution/css/layers.css" type="text/css" media="all" />
+	<link rel="stylesheet" id="revolution-slider-nav-css" href="files/revolution/css/navigation.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="lightcase-css" href="files/css/lightcase.css" type="text/css" media="all" />
+	<link rel="stylesheet" id="owlcarousel-css" href="files/css/owl.carousel.css" type="text/css" media="all" />
+    <link rel="stylesheet" id="responisve-style-css" href="files/css/mqueries.css" type="text/css" media="all" />
+     
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="files/uploads/favicon.png"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="files/css/material-icons.css">
+    <link rel="stylesheet" media="all" href="files/css/app.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <style>
+      .lw-widget {
+        font-family: 'Fira Sans', serif;
+      }
+      .lw-widget button,
+      .lw-widget input,
+      .lw-widget textarea,
+      .lw-widget select {
+        font-family: inherit;
+      }
+    </style>
+    
+    
+    <!-- DOCUMENT TITLE -->
+    <title>Hey there, I'm Josh </title>
+
+    
+    <script type="text/javascript" src="files/js/app.js"></script>
+    
+</head>
+
+<body>
+
+<!-- PAGE LOADER -->
+<div id="page-loader" class="pulsing">
+	<div class="loader-name"><!--<img src="files/uploads/logo-dani-dark.png" srcset="files/uploads/logo-dani-dark.png 1x, files/uploads/logo-dani-dark@2x.png 2x" alt="Loader Logo">--></div>
+    <div class="loader-circle">
+    	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 253.4 253.4" style="enable-background:new 0 0 253.4 253.4;" xml:space="preserve"><circle cx="126.7" cy="126.7" r="124.2"/>
+		</svg>
+   	</div>
+</div>
+<!-- PAGE LOADER -->
+
+
+<!-- PAGE CONTENT -->
+<div id="page-content">
+    
+    
+     <!-- WIDGET -->
+        
+        <div class="lw-widget" data-lw-onload>
+      <div class="lw-overlay" data-lw-close></div>
+      <div class="lw-container">
+        <div class="lw-item lw-item_white" style="background: #1054EB"><button class="lw-close lw-close_white" data-lw-close><i class="material-icons">close</i></button>
+          <div class="lw-user">
+            <div class="lw-user__preview"><img class="lw-user__pic lw-pic" src="../img/user.jpg"></div>
+            <div class="lw-user__wrap">
+              <div class="lw-user__content"><strong>Vladimir</strong> brings all your team's communication together.</div>
+            </div>
+          </div>
+          <div class="lw-foot lw-foot_flex"><button class="lw-btn lw-btn_md lw-btn_color" data-lw-ripple>Connect</button></div>
+        </div>
+      </div>
+    </div>
+   
+	
+	<!-- HEADER -->
+	<header id="header" class="wrapper transparent text-light not-sticky">        
+		<div class="header-inner clearfix">
+			
+            <!-- LOGO --><!--
+            <div id="logo">
+                <a href="index.html">
+                	<img id="dark-logo" src="files/uploads/logo-dani-dark.png" srcset="files/uploads/logo-dani-dark.png 1x, files/uploads/logo-dani-dark@2x.png 2x" alt="Logo Dark">
+                	<img id="light-logo" src="files/uploads/logo-dani-light.png" srcset="files/uploads/logo-dani-light.png 1x, files/uploads/logo-dani-light@2x.png 2x" alt="Logo light">
+                </a>
+            </div>-->
+            
+            <!-- MAIN NAVIGATION -->
+           <!-- <div id="menu" class="clearfix">
+            
+            	<div class="menu-actions clearfix">
+            		<div class="menu-language">
+						<a href="#" class="show-language">en</a>            
+						<div class="menu-language-content">
+							<ul class="lang-select">
+								<li><a href="#">de</a></li>
+								<li><a href="#">fr</a></li>
+							</ul>
+						</div>
+					</div>
+           		
+            		<div class="menu-toggle"><span class="hamburger"></span><span class="cross"></span></div>
+                </div> <!-- END .menu-actions -->
+                <!--
+                <div id="menu-inner">
+                    <nav id="main-nav">
+                        <ul>
+                            <li class="menu-item-has-children"><a href="index.html">Home</a>
+                            	<ul class="sub-menu">
+                                	<li><a href="index.html">Agency</a></li>
+                                	<li><a href="index-portfolio.html">Portfolio</a></li>
+                                	<li><a href="index-agency-clean.html">Clean Agency</a></li>
+                                	<li><a href="index-freelancer.html">Freelancer / Artists</a></li>
+                                	<li><a href="index-video.html">Video Agency</a></li>
+                                	<li><a href="index-photography.html">Photography</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="portfolio-smartscroll-col2.html">Portfolio</a>
+                            	<ul class="sub-menu">
+                                	<li class="menu-item-has-children"><a href="portfolio-smartscroll-col2.html">Smart Scroll</a>
+                                    	<ul class="sub-menu">
+                                        	<li><a href="portfolio-smartscroll-col2.html">2 Columns Smart Scroll</a></li>
+                                        	<li><a href="portfolio-smartscroll-col3.html">3 Columns Smart Scroll</a></li>
+                                        	<li><a href="portfolio-smartscroll-minimal.html">Minimal Smart Scroll</a></li>
+                                        	<li><a href="portfolio-smartscroll-spaced.html">Smart Scroll Spaced</a></li>
+                                        </ul>
+                                    </li>
+                                	<li class="menu-item-has-children"><a href="portfolio-masonry-col3.html">Masonry / Grid</a>
+                                    	<ul class="sub-menu">
+                                        	<li><a href="portfolio-masonry-col2.html">2 Columns Masonry</a></li>
+                                        	<li><a href="portfolio-masonry-col3.html">3 Columns Masonry</a></li>
+                                        	<li><a href="portfolio-masonry-col4.html">4 Columns Masonry</a></li>
+                                        	<li><a href="portfolio-masonry-sticky.html">Sticky Masonry (no space)</a></li>
+                                        	<li><a href="portfolio-grid-col3.html">Equal grid</a></li>
+                                        	<li><a href="portfolio-load-more.html">Load More</a></li>
+                                        	<li><a href="portfolio-load-infinite.html">Infinite Load</a></li>
+                                        </ul>
+                                    </li>
+                                	<li><a href="portfolio-grid-video.html">Video Grid</a></li>
+                                	<li class="menu-item-has-children"><a href="portfolio-single-classic.html">Single Portfolio</a>
+                                    	<ul class="sub-menu">
+                                        	<li><a href="portfolio-single-classic.html">Classic Single</a></li>
+                                        	<li><a href="portfolio-single-casestudy.html">Casestudy Single</a></li>
+                                        	<li><a href="portfolio-single-video.html">Video Single</a></li>
+                                        	<li><a href="portfolio-single-left-fullwidth.html">Left Image</a></li>
+                                        	<li><a href="portfolio-single-right-fullwidth.html">Right Image</a></li>
+                                        </ul>	
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="page-about.html">Pages</a>
+                            	<ul class="sub-menu">
+                                    <li><a href="page-about.html">About</a></li>
+                                    <li><a href="page-services.html">Services</a></li>
+                                    <li><a href="page-contact-1.html">Contact 1</a></li>
+                                    <li><a href="page-contact-2.html">Contact 2</a></li>
+                                    <li><a href="page-jobs.html">Jobs</a></li>
+                                    <li><a href="page-404.html">404</a></li>
+                                    <li><a href="page-maintenance.html">Maintenance</a></li>
+                              	</ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="element-buttons.html">Elements</a>
+                            	<ul class="sub-menu">
+                                    <li><a href="element-alert.html">Alert</a></li>
+                                    <li><a href="element-buttons.html">Buttons</a></li>
+                                    <li><a href="element-tabs-accordion.html">Tabs & Accordion</a></li>
+                                    <li><a href="element-team.html">Team Member</a></li>
+                                    <li><a href="element-social.html">Social Links</a></li>
+                              	</ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="blog-minimal-grid.html">Blog</a>
+                            	<ul class="sub-menu">
+                                    <li><a href="blog-right-sidebar.html">Classic Blog</a></li>
+                                    <li><a href="blog-masonry.html">Masonry Blog</a></li>
+                                    <li><a href="blog-minimal-grid.html">Minimal Grid</a></li>
+                                    <li><a href="blog-minimal-list.html">Minimal List</a></li>
+                                    <li class="menu-item-has-children"><a href="blog-single-classic.html">Single Blog</a>
+                                    	<ul class="sub-menu">
+                                        	<li><a href="blog-single-classic.html">Classic Single</a></li>
+                                        	<li><a href="blog-single-hero.html">Hero Image</a></li>
+                                        	<li><a href="blog-single-quote.html">Quote Post</a></li>
+                                        	<li><a href="blog-single-gallery.html">Gallery Post</a></li>
+                                        	<li><a href="blog-single-slider.html">Slider Post</a></li>
+                                        	<li><a href="blog-single-video.html">Video Post</a></li>
+                                        	<li><a href="blog-single-Audio.html">Audio Post</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="menu-widget">
+                    	<div class="widget widget_social">
+                        	<ul class="socialmedia-widget">
+                            	<li class="facebook"><a href="#"></a></li>
+                            	<li class="twitter"><a href="#"></a></li>
+                            	<li class="behance"><a href="#"></a></li>
+                            	<li class="pinterest"><a href="#"></a></li>
+                            </ul>
                         </div>
                     </div>
-                    <!--end of row-->
                 </div>
-                <!--end of container-->
-            </section>
+            </div>--><!-- END #menu -->
+            
+		</div> <!-- END .header-inner -->
+	</header>
+	<!-- HEADER end -->
+    
+    <!-- HERO  -->
+	<section id="hero" class="hero-big parallax-section text-light" data-parallax-image="http://www.spab-rice.com/wordpress/dani/demo/wp-content/uploads/2016/08/blog-hero-1.jpg" data-speed="0.6" style="height: auto; position: relative; z-index: 2;">
+    	
+                
+    	        <div id="page-title" class="wrapper  title-bottom">
+             <h3>Hey there, I’m <strong>Josh &nbsp;  <i style="height: 1.3em; width: 1.3em; padding-bottom: 10px" class="em em-wave"></i> <i style="height: 1.3em; width: 1.3em" class="em em-flag-ca"></i></strong></h3>
+<h1>I help businesses <b><em>grow online</em></b></h1>
+                    
+                   
+                    
+<div class="spacer-small"></div>
+<h5 class="title-alt">Beautiful websites, social media growth & business automation</h5>
+                    <br><p >
+                    <a style="border-bottom: 1px solid rgba(255,255,255,1)" href="https://reduxdigital.typeform.com/to/KppGTC" target="_blank" class="  button-medium-button"><strong>Book Now</strong></a> 
+                    &nbsp;|&nbsp;
+                    <a style="border-bottom: 1px solid rgba(255,255,255, 1)" href="#services" class="button-medium-button"><strong>See How</strong></a>
+                    </p>
+                    
+        </div> <!-- END #page-title -->
+                
+                
+                
+    <div class="parallax-content" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -1; overflow: hidden;"><div class="parallax-image" style=" background:url(https://source.unsplash.com/PjTBdhXI_7s/1920x1080); center center / cover; width: 100%; height: 667px; position: relative; top: -83.5px; "></div></div><a href="#" id="scrolldown" class="center scroll-light"></a></section>
+    <!-- HERO -->
+    
+    
+    <div class="spacer-big"></div>
+                        
+      <div class="wrapper-big"><div id="" class="column-section clearfix spaced-normal "><div class="column one-full last-col ">
+          <h6 class="title-alt align-left  uppercase">My Portfolio</h6>
+<h2><strong>Awesome people</strong> I've worked with</h2>
+</div></div></div>
+    <div class="spacer spacer-medium"></div>
+   
+        
+        
+        <div id="smartscroll" class="smartscroll-grid portfolio-container smartscroll-spaced portfolio-animation smartscroll-container smartgenerated active action" data-columns="2" data-offsettop="false" data-offsetbottom="false" data-breakpoint="770" style="overflow: hidden; height: 700px;">
+        	
+            
+        
+                                       
+       <div class="smart-col" style="transform: translate3d(0px, , 0px);">
+           <div class="smartscroll-item portfolio-item portfolio-smart-item col-1 animated" data-startposition="1">
+               	<div class="portfolio-item-inner item-inner">
+                    <a href="http://lyonslandscaping.com" target="_blank"  class="thumb-hover text-light">
+                        <img src="files/assets/lyons.jpg" alt="SEO" style="filter: brightness(50%); background: #000000 !important">
+                        <div class="overlay-caption bottom align-left">
+                            <span class="caption-sub portfolio-category text-animation animated" aria-label="Web Design"><span class="line1 line-animation" aria-hidden="true"><span>Web Design, Social Media Growth</span></span></span>
+                            <h2 class="caption-name portfolio-name text-animation animated"><strong aria-label="Central Station"><span class="line1 line-animation" aria-hidden="true"><span>Lyons Landscaping</span></span></strong></h2>
+                        </div>
+                    </a>
+                </div>
+            </div><div class="smartscroll-item portfolio-item portfolio-smart-item col-1 animated" data-startposition="2">
+               <div class="portfolio-item-inner item-inner">
+                    <a href="http://alyshaphotography.com" target="_blank" class="thumb-hover text-light">
+                        <img src="files/assets/alysha.jpg" alt="SEO" style="filter: brightness(50%); background: #000000 !important">
+                        <div class="overlay-caption bottom align-left">
+                            <span class="caption-sub portfolio-category text-animation animated" aria-label="Web Design"><span class="line1 line-animation" aria-hidden="true"><span>Web Design</span></span></span>
+                            <h2 class="caption-name portfolio-name text-animation animated"><strong aria-label="Central Station"><span class="line1 line-animation" aria-hidden="true"><span>Alysha Photography</span></span></strong></h2>
+                        </div>
+                    </a>
+                </div>
+          
+            </div></div><div class="smart-col lowestcol"><div class="smartscroll-item portfolio-item portfolio-smart-item col-2 animated" data-startposition="2">
+               	
+            
+            	<div class="portfolio-item-inner item-inner">
+                    <a href="http://qmarine.com" target="_blank" class="thumb-hover text-light">
+                        <img src="files/assets/qmarine.jpg" alt="SEO" style="filter: brightness(50%); background: #000000 !important">
+                        <div class="overlay-caption bottom align-left">
+                            <span class="caption-sub portfolio-category text-animation animated" aria-label="Web Design"><span class="line1 line-animation" aria-hidden="true"><span>Web Design</span></span></span>
+                            <h2 class="caption-name portfolio-name text-animation animated"><strong aria-label="Central Station"><span class="line1 line-animation" aria-hidden="true"><span>Queensboro Marine</span></span></strong></h2>
+                        </div>
+                    </a>
+                </div>
+            
+            
+            </div><div class="smartscroll-item portfolio-item portfolio-smart-item col-2 animated" data-startposition="2">
+               	<div class="portfolio-item-inner item-inner">
+                    <a href="http://coracleaning.com"  target="_blank" class="thumb-hover text-light">
+                        <img src="files/assets/cora.jpg" alt="SEO" style="filter: brightness(50%); background: #000000 !important">
+                        <div class="overlay-caption bottom align-left">
+                            <span class="caption-sub portfolio-category text-animation animated" aria-label="Web Design"><span class="line1 line-animation" aria-hidden="true"><span>Web Design</span></span></span>
+                            <h2 class="caption-name portfolio-name text-animation animated"><strong aria-label="Central Station"><span class="line1 line-animation" aria-hidden="true"><span>Cora Cleaning</span></span></strong></h2>
+                        </div>
+                    </a>
+                </div>
+            </div></div></div>
+        
+        
+          <div class="fullwidth-section text-light" style="background:url(https://source.unsplash.com/DxxY0Ulyy9g/1920x1080) center center; ">
+            
+            
+            <div class="wrapper" style="padding-top: 64px; padding-bottom: 32px">
+            <h2><strong>Testimonials</strong></h2>
+            </div>
+        
+        	<div class="fullwidth-content" style="padding-top: 0px !important; padding-bottom: 50px !important;">
+                
+                
+               
+              	<div class="owl-slider nav-light content-slider">
+                   <!-- <div>
+                        <blockquote class="align-left">
+                            <p>In any moment of decision, the best thing you can do is the right thing, the next best thing is the wrong thing, and the worst thing you can do is nothing.</p>
+                            <cite>Theodore Roosevelt</cite>
+                        </blockquote>
+                    </div>-->
+                    <div>
+                        <blockquote class="align-left">
+                            <p>Josh did such a great job on my website. He really listened to what my vision was and made it happen. He has a great eye for design and is great to bounce ideas off of. I would highly recommend him for all your digital needs!</p>
+                            <cite>Alysha Vaughn Dennhardt</cite>
+                        </blockquote>
+                    </div>
+            	</div>
+               
+            </div>
+        </div> <!-- END .fullwidth-section -->
+        
+    
+    
+    <div class="spacer spacer-big"></div>
+    
+    
+    <div class="wrapper-big"><div id="" class="column-section clearfix spaced-big "><div class="column one-third  " style="width: calc(40% - 50px) !important">
+<p><img class="alignnone size-full wp-image-98" src="files/assets/personal.jpg" alt="face" width="1100" height="1100" ></p>
+</div><div class="column one-half last-col " style="width: calc(60% - 50px) !important">
+
+        <h3>I want <em>you</em> to succeed in that thing you love, are good at, and the world desperately needs.</h3>  
+            <p class="title-alt">As a child I loved making stuff: games, stories, photos. . . &nbsp;It made me happy, but I rarely completed or shared anything. My creations were my own, never improved or appreciated by others. <i style="height: 1em; width: 1em; padding-bottom: 15px" class="em em-lock"></i> </p>
+             
+        <p class="title-alt">So in 2014, I decided to experiment openly: <a href="https://instagram.com/late.night.piano" target="_blank">writing music, <a href="https://heroic-rpg.com" target="_blank">designing games</a>, <a href="https://reduxgames.ca" target="_blank">making apps with friends</a>, and much more - all avaliable online. Doing it publically allowed me to master the art of building persuasive websites and started me on my marketing journey. <i style="height: 1em; width: 1em; padding-bottom: 10px" class="em em-rocket"></i></p>
+              
+        <p class="title-alt">Since 2017, I've started amplifying other people's voices. I've built websites and ran marketing for companies including <a href="https://lyonslandscaping.com" target="_blank">Lyons Landscaping</a> and <a href="http://qmarine.com" target="_blank">Queensboro Marine</a>. My ultimate goal is to help both individuals and businesses at bettering our world. <i style="height: 1em; width: 1em; padding-bottom: 10px" class="em em-evergreen_tree"></i></p>
+             
+ 
+        
+<h5 class="title-alt align-left">Social</h5><ul class="socialmedia-widget align-left text-style"><li class="facebook"><a href="mailto:me@jdlindsay.com">Email: me@jdlindsay.com</a></li><li class="twitter"><a href="https://twitter.com/kraahkan" target="_blank" >Twitter</a></li><li class="twitter"><a href="https://facebook.com/kraahkaan" target="_blank" >Facebook</a></li><li class="twitter"><a href="https://instagram.com/kraahkan" target="_blank" >Instagram</a></li>
+        
+   
+  </div></div></div>
+        
+             
+        
+<div class="spacer spacer-big"></div>
+        
+             
+              <div class="fullwidth-section text-light" style="background:url(https://source.unsplash.com/F9hLcEPi_VU/1920x1080) center center;background-size:cover;"><div class="fullwidth-content" style="padding-top:100px;padding-bottom:100px;"><div class="wrapper-small"><div id="" class="column-section clearfix spaced-normal "><div class="column one-full last-col ">
+<h3 style="text-align: left">Hire a professional to manage your social media outreach and growth.</h3>
+<div class="spacer spacer-small"></div>
+<p style="text-align: left;"><a href="https://reduxdigital.typeform.com/to/KppGTC" target="_blank" class="sr-button-with-arrow  button-medium-button">Get in touch with me</a></p>
+</div></div></div></div></div>
+             
+       
+    
+    
+    
+	
+	<!-- PAGEBODY -->
+	<section id="page-body" >
+    	
+
+         <div class="spacer-big"></div>
+        
+        
+    
+        
+            <a id="services"></a>
+        
+         <div class="wrapper align-center"><div id="" class="column-section clearfix spaced-normal "><div class="column one-full last-col ">
+<h2 style="text-align: center;">
+    
+
+    <h6 class="title-alt align-left  uppercase">My Services</h6>
+    <h3><strong>Find new customers and build an audience who trusts you.</strong></h3>
+    <h4>Reaching people online seems difficult, <em>but it's actually easier than ever.</em></h4>
+          
+    <div class="spacer-medium"></div>
+    
+    
+    <div class="spacer-left"></div>
+     	<div class="wrapper">
+       
+       		<div class="column-section clearfix">
+            	<div class="column one-fourth align-center">
+                	<i class="ion ion-ios-monitor-outline ion-6x"></i>
+                	<h4>Web Design</h4>
+                    <p>Use your story and purpose to connect with your audience.</p>
+                </div>
+                <div class="column one-fourth align-center">
+                    <i class="ion ion-ios-list-outline ion-6x"></i>
+                	<h4>Social Posts</h4>
+                    <p>Send me photos, have them published daily on every social network.  </p>
+                </div>
+                <div class="column one-fourth align-center">
+                	<i class="ion ion-ios-speedometer-outline ion-6x"></i>
+                	<h4>Social Growth</h4>
+                    <p>I'll keep your audience involved by engaging on your behalf.</p>
+                </div>
+                <div class="column one-fourth last-col align-center">
+                	<i class="ion ion-ios-paper-outline ion-6x"></i>
+                	<h4>Advertising</h4>
+                    <p>Reach folks with an interest in your domain with targeted FB ads.</p>
+                </div>
+            </div>
+            
+            <div class="column-section clearfix">
+            	<div class="column one-fourth align-center">
+                	<i class="ion ion-ios-email-outline ion-6x"></i>
+                	<h4>Booking</h4>
+                    <p>Advance the sales process with an eye-catching booking page.</p>
+                </div>
+                <div class="column one-fourth align-center">
+                	<i class="ion ion-ios-cloud-outline ion-6x"></i>
+                	<h4>Branding</h4>
+                    <p>Make a great impression with a beautiful logo, colours & typography.</p>
+                </div>
+                <div class="column one-fourth align-center">
+                	<i class="ion ion-ios-settings ion-6x"></i>
+                	<h4>Content</h4>
+                    <p>Social posts with copywriting that communicates your value.<p>
+                </div>
+                <div class="column one-fourth last-col align-center">
+                	<i class="ion ion-ios-analytics ion-6x"></i>
+                	<h4>Planning</h4>
+                    <p>Delve into your business value and why others should care.</p>
+                </div>
+            </div>
+       
+       	</div> <!-- END .wrapper -->
+
+
+    </div></div></div>
+        
+             
+                 
+                <div class="spacer-big"></div>
+ 
+<div class="fullwidth-section text-light" style="background:url(https://source.unsplash.com/mwWJul4WkqU/1920x1080) center center;background-size:cover;"><div class="fullwidth-content" style="padding-top:100px;padding-bottom:100px;"><div class="wrapper-small"><div id="" class="column-section clearfix spaced-normal "><div class="column one-full last-col ">
+<h3 style="text-align: left">The internet amplifies, use it to your advantage.</h3>
+<div class="spacer spacer-small"></div>
+<p style="text-align: left;"><a href="https://reduxdigital.typeform.com/to/KppGTC" target="_blank" class="sr-button-with-arrow  button-medium-button">Get in touch with me</a></p>
+</div></div></div></div></div>
+             
+        
+        
+          
+
+       
+   
+        <!--
+        <div class="wrapper">
+        
+        	<h2 class="align-center">We work with people who value their craft<br>as much as we value ours.</h2>
+            
+            <div class="column-section clearfix">
+            	<div class="column one-fourth align-center">
+                	<img src="files/uploads/logo-client.png" srcset="files/uploads/logo-client.png 1x, files/uploads/logo-client@2x.png 2x" alt="SEO">
+                </div>
+                <div class="column one-fourth align-center">
+                	<img src="files/uploads/logo-client.png" srcset="files/uploads/logo-client.png 1x, files/uploads/logo-client@2x.png 2x" alt="SEO">
+                </div>
+                <div class="column one-fourth align-center">
+                	<img src="files/uploads/logo-client.png" srcset="files/uploads/logo-client.png 1x, files/uploads/logo-client@2x.png 2x" alt="SEO">
+                </div>
+                <div class="column one-fourth last-col align-center">
+                	<img src="files/uploads/logo-client.png" srcset="files/uploads/logo-client.png 1x, files/uploads/logo-client@2x.png 2x" alt="SEO">
+                </div>
+            </div>
+            
+            <div class="column-section clearfix">
+            	<div class="column one-fourth align-center">
+                	<img src="files/uploads/logo-client.png" srcset="files/uploads/logo-client.png 1x, files/uploads/logo-client@2x.png 2x" alt="SEO">
+                </div>
+                <div class="column one-fourth align-center">
+                	<img src="files/uploads/logo-client.png" srcset="files/uploads/logo-client.png 1x, files/uploads/logo-client@2x.png 2x" alt="SEO">
+                </div>
+                <div class="column one-fourth align-center">
+                	<img src="files/uploads/logo-client.png" srcset="files/uploads/logo-client.png 1x, files/uploads/logo-client@2x.png 2x" alt="SEO">
+                </div>
+                <div class="column one-fourth last-col align-center">
+                	<img src="files/uploads/logo-client.png" srcset="files/uploads/logo-client.png 1x, files/uploads/logo-client@2x.png 2x" alt="SEO">
+                </div>
+            </div>
+                        
+       	</div> <!-- END .wrapper -->
+        
+        
+        
+         
+    
+    
+            
+ 
+    
+
+             
+        
+        
+    
+    
+    <div class="spacer spacer-big"></div>
+    <div class="wrapper-small"><div id="" class="column-section clearfix spaced-normal "><div class="column one-full last-col ">
+<h6 class="title-alt align-left  uppercase">More About Me</h6>
+<h2 class="align-left" style="text-align: left;">Side projects & interests</h2>
+<div class="spacer-small"></div>
+<h5 class="title-alt align-left" style="text-align: left;">My love for business comes from a love to create. Here's some stuff I'm working on:</h5>
+</div></div></div>
+    
+     <div class="spacer-big"></div>
+        
+         
+    
+    <div id="single-pagination" class="portfolio-pagination  image"><ul class="image-pagination">	<li class="do-anim  animated"><a class="thumb-hover text-light">
+								<span class="image-bg"><span style="background-image:url(https://source.unsplash.com/sYCrXsptX4s/1200x900);"></span></span>
+								<div class="overlay-caption bottom align-left">
+									<span class="prev caption-sub">30 question that reveal your value (coming soon)  <span class="icon"></span></span>
+									<h3 class="caption-name portfolio-name">Marketing Playbook</h3>
+								</div>
+							</a></li>	<li class="do-anim animated"><a href="http:/instagram.com/late.night.piano" target="_blank" class="thumb-hover text-light">
+								<span class="image-bg"><span style="background-image:url(https://source.unsplash.com/ReqdkBNkXl0/1200x900);"></span></span>
+								<div class="overlay-caption bottom align-right">
+									<span class="next caption-sub">My musical musings<span class="icon"></span></span>
+									<h3 class="caption-name portfolio-name">Late Night Piano</h3>
+								</div>
+							</a></li></ul></div>
+        
+        
+          <div class="spacer-big"></div>
+       
+    
+        
+          
+        </section>
+	<!-- PAGEBODY -->
+    
+          
+    <!-- FOOTER -->  
+    <footer id="footer">
+      <!-- 	<div class="footer-inner wrapper">
+            <div class="column-section clearfix">
+            	<div class="column one-third">
+               		<div class="widget widget_text">	
+                        
+                        <p><img src="files/uploads/logo-dani-caligraph-dark.png" srcset="files/uploads/logo-dani-caligraph-dark.png 1x, files/uploads/logo-dani-caligraph-dark@2x.png 2x" alt="Logo Dark"></p>
+                       
+                   	</div>
+                </div>
+               
+                <div class="column one-third">
+                    
+                    <div class="widget widget_text">	
+                        
+                        <p>We provide perfect and professional services.<br>Covering areas of the modern communication.</p>
+                       
+                   	</div>
+               		
+                </div>
+                 
+                <div class="column one-third last-col">
+                    
+                    <div class="widget widget_text">	
+                        
+                        <p>Contact us on <a href="http://www.spab-rice.com"><strong>contact@dani-theme.com</strong></a></p>
+                   	</div>
+               		
+                </div>
+            </div>
+        </div>-->
+        
+        <div class="footer-bottom wrapper">
+        	<div class="column-section clearfix">
+            	<div class="column one-half">
+                	<div class="widget widget_social">
+                        <ul class="socialmedia-widget">
+                            <li class="facebook"><a href="https://facebook.com/kraahkaan" target="_blank"></a></li>
+                            <li class="twitter"><a href="https://twitter.com/kraahkan" target="_blank"></a></li>
+                            <li class="instagram"><a href="https://instagram.com/kraahkan" target="_blank"></a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="column one-half last-col align-right">
+                    <small>Made with <i style="height: 1em; width: 1em" class="em em-heart"></i>&nbsp;in Kamloops BC &nbsp;<i style="height: 1em; width: 1em" class="em em-flag-ca"></i></small>
+                </div>
+            </div>
         </div>
-        <!--<div class="loader"></div>-->
-        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
-            <i class="stack-interface stack-up-open-big"></i>
-        </a>
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/flickity.min.js"></script>
-        <script src="js/easypiechart.min.js"></script>
-        <script src="js/parallax.js"></script>
-        <script src="js/typed.min.js"></script>
-        <script src="js/datepicker.js"></script>
-        <script src="js/isotope.min.js"></script>
-        <script src="js/ytplayer.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/granim.min.js"></script>
-        <script src="js/jquery.steps.min.js"></script>
-        <script src="js/countdown.min.js"></script>
-        <script src="js/twitterfetcher.min.js"></script>
-        <script src="js/spectragram.min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+        
+        <a id="backtotop" href="#"></a>
+        
+    </footer>
+    <!-- FOOTER End -->
+    
+</div> <!-- END #page-content -->
+<!-- PAGE CONTENT -->
+
+<!-- SCRIPTS -->
+<script src="files/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="files/js/plugins.js"></script>
+<script type="text/javascript" src="files/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+<script type="text/javascript" src="files/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="files/js/tweenMax.js"></script>
+<script type="text/javascript" src="files/js/jquery.smartscroll.min.js"></script>
+<script type="text/javascript" src="files/js/jquery.owl.carousel.min.js"></script>
+<script type="text/javascript" src="files/js/jquery.lightcase.min.js"></script>
+<script type="text/javascript" src="files/js/jribbble.min.js"></script>
+<script type="text/javascript" src="files/js/script.js"></script>
+<!-- SCRIPTS -->
+
+</body>
 </html>
