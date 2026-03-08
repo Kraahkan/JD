@@ -1,0 +1,2179 @@
+{
+  "LORE_DICTIONARY": {
+    "Vanguard": {
+      "title": "The Vanguard",
+      "loreInfo": "The elite frontline shock troops of the dungeon, clad in thick, rusted iron."
+    },
+    "Sun-King": {
+      "title": "The Sun-King",
+      "loreInfo": "The tyrannical ruler of the surface realm. His light burns the eyes of the deep dwellers."
+    },
+    "The Deep Flame": {
+      "title": "The Deep Flame",
+      "loreInfo": "A primordial, sentient entity of fire that slumbers at the planet's core."
+    },
+    "Order of the Light": {
+      "title": "Order of the Light",
+      "loreInfo": "Fanatical surface zealots sworn to eradicate all dungeon ecology."
+    }
+  },
+  "STAT_TOOLTIP_CONTENT": {
+    "fear": {
+      "title": "Dread",
+      "text": "The terrifying presence you project. Too low, mutiny. Too high, paralysis."
+    },
+    "horde": {
+      "title": "The Swarm",
+      "text": "The endless tide of lowly goblins. Keep them fed and breeding."
+    },
+    "might": {
+      "title": "The Bruisers",
+      "text": "Your heavy hitters—Uruks, trolls, and beasts. Keep them bashing."
+    },
+    "loot": {
+      "title": "The Stash",
+      "text": "Shiny rocks, stolen armor, and moldy cheese. Keep it hoarded."
+    }
+  },
+  "DEATH_EVENTS": {
+    "fear_low": {
+      "title": "The Laughing Stock",
+      "description": "The ranks no longer fear your shadow. They've turned your throne into a communal latrine and are currently using your crown to play 'toss the turnip.' You have been evicted."
+    },
+    "fear_high": {
+      "title": "The Silent Tomb",
+      "description": "Your reign of terror was too successful. The goblins are so paralyzed by fear they've stopped eating, breathing, and moving. You rule a dungeon of petrified statues."
+    },
+    "horde_low": {
+      "title": "The Lonely Overlord",
+      "description": "The last goblin has packed his bindle and left. The dungeon is empty, the torches have flickered out, and you're left arguing with the echoes."
+    },
+    "horde_high": {
+      "title": "The Green Tide Rises",
+      "description": "Overpopulation has reached critical mass. The goblins have eaten the supplies, then the furniture, then... well, you always were the 'Big Meat.'"
+    },
+    "might_low": {
+      "title": "Paper Walls",
+      "description": "A single surface-dweller toddler wandered in and accidentally tripped over your entire defense line. The Vanguard has dissolved into tears. You surrender to a five-year-old."
+    },
+    "might_high": {
+      "title": "Military Coup",
+      "description": "The Vanguard realized that if they can kill a Dragon, they can certainly kill a Boss who spends all day sitting on a throne. You are violently retired."
+    },
+    "loot_low": {
+      "title": "Complete Bankruptcy",
+      "description": "You tried to pay the Uruks in 'exposure' and 'good vibes.' They preferred to pay themselves with your internal organs."
+    },
+    "loot_high": {
+      "title": "The Wyrm's Visit",
+      "description": "Your hoard grew so bright it acted as a beacon for an Ancient Red Wyrm. It didn't even fight you; it just sat on the dungeon until everything flatlined."
+    }
+  },
+  "CHARACTERS": {
+    "char_1": {
+      "name": "Kargoth the Ironclad",
+      "tags": ["orc", "brute"],
+      "flavor": "A towering wall of muscle and rust. He speaks in grunts and violence.",
+      "image": "https://i.imgur.com/5Y5AbxJ.png"
+    },
+    "char_2": {
+      "name": "Snivel the Goblin",
+      "tags": ["goblin"],
+      "flavor": "A wretched creature from the deep warrens.",
+      "image": "https://i.imgur.com/CUqLppA.png"
+    },
+    "char_3": {
+      "name": "Uruk Warlord",
+      "tags": ["orc", "uruk"],
+      "flavor": "A hulking brute demanding tribute or blood.",
+      "image": "https://i.imgur.com/9vi5M3R.png"
+    },
+    "char_4": {
+      "name": "Greenfang Bruiser",
+      "tags": ["orc"],
+      "flavor": "Commander of the green tide. Thinks with his fists.",
+      "image": "https://i.imgur.com/TH3mHnP.png"
+    },
+    "char_5": {
+      "name": "Blood Scarred Orc",
+      "tags": ["orc", "veteran"],
+      "flavor": "A hardened veteran of a hundred surface raids.",
+      "image": "https://i.imgur.com/4H8qi9y.png"
+    },
+    "char_6": {
+      "name": "The Shadow Priest",
+      "tags": ["human", "cultist"],
+      "flavor": "Chanter of the dark litanies and keeper of secrets.",
+      "image": "https://i.imgur.com/9mqz8zo.png"
+    },
+    "char_7": {
+      "name": "Fallen Knight",
+      "tags": ["human", "undead"],
+      "flavor": "An oathbreaker who found a new master in the dark.",
+      "image": "https://i.imgur.com/9AxeNPL.png"
+    },
+    "char_8": {
+      "name": "Dungeon Merchant",
+      "tags": ["human", "merchant"],
+      "flavor": "A greedy peddler of cursed surface goods.",
+      "image": "https://i.imgur.com/tDKtx5p.png"
+    },
+    "char_9": {
+      "name": "The Abyssal Warden",
+      "tags": ["eldritch", "boss"],
+      "flavor": "An ancient evil stirred from its long slumber.",
+      "image": "https://i.imgur.com/boFuT53.png",
+      "imageFx": {
+        "boxShadow": "inset 0 0 100px rgba(180,0,0,0.6)",
+        "background": "rgba(80,0,0,0.3)",
+        "mixBlendMode": "overlay",
+        "shineColor": "rgba(255, 50, 50, 0.4)"
+      }
+    }
+  },
+  "DECK_JSON": [
+    {
+      "charId": "char_1",
+      "prompt": "Kargoth found a stash of rusted halberds. Arm his brutes, or melt them for scrap?",
+      "dialogues": [
+        {
+          "btn": "Where were they?",
+          "text": "Buried under the old latrine."
+        },
+        {
+          "btn": "Are they safe to use?",
+          "text": "Tetanus is a feature, not a bug."
+        }
+      ],
+      "leftChoice": {
+        "text": "Arm them",
+        "effects": {
+          "might": 15,
+          "loot": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Melt them",
+        "effects": {
+          "loot": 20,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "prompt": "Kargoth demands the goblins serve his unit double rations. *The small ones are starving.*",
+      "leftChoice": {
+        "text": "Feed Kargoth",
+        "effects": {
+          "might": 15,
+          "horde": -20
+        }
+      },
+      "rightChoice": {
+        "text": "Deny him",
+        "effects": {
+          "horde": 15,
+          "fear": -15
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "prompt": "Kargoth challenges you to a test of strength. Refuse, or risk your pride in the pit?",
+      "leftChoice": {
+        "text": "Wrestle him",
+        "effects": {
+          "fear": 20,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Decline",
+        "effects": {
+          "fear": -20,
+          "horde": -10
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "prompt": "Kargoth threw a goblin scout into the forge for \"talking back.\" Punish him?",
+      "leftChoice": {
+        "text": "Lash him",
+        "effects": {
+          "fear": 15,
+          "might": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Let it slide",
+        "effects": {
+          "horde": -20,
+          "might": 10
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "prompt": "Kargoth wants to use the elf prisoners as throwing weapons. *\"Aerodynamics good,\"* he grunts.",
+      "leftChoice": {
+        "text": "Arm them",
+        "effects": {
+          "might": 20,
+          "horde": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Deny him",
+        "effects": {
+          "fear": -15,
+          "horde": 10
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "prompt": "Kargoth drank the forge-coolant again. He is glowing and wants to hug a wizard.",
+      "dialogues": [
+        {
+          "btn": "Is he dangerous?",
+          "text": "He is currently melting the floorboards with his feet."
+        }
+      ],
+      "leftChoice": {
+        "text": "Let him",
+        "effects": {
+          "might": 15,
+          "fear": 15
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_1",
+          "prompt": "Radioactive Embrace",
+          "cardText": "Kargoth bear-hugged the Grand Pyromancer. The resulting explosion destroyed the west wing but successfully vaporized the wizard.",
+          "leftChoice": {
+            "text": "Worth it",
+            "effects": {
+              "might": -10,
+              "fear": 10
+            }
+          },
+          "rightChoice": {
+            "text": "Rebuild it",
+            "effects": {
+              "loot": -15,
+              "horde": -10
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Pump stomach",
+        "effects": {
+          "loot": -10,
+          "horde": 10
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "prompt": "Kargoth found a \"pet\" bear. It has already eaten three goblins. Can he keep it?",
+      "dialogues": [
+        {
+          "btn": "Is it house trained?",
+          "text": "It only eats what bleeds. So, no."
+        }
+      ],
+      "leftChoice": {
+        "text": "Yes, good for morale",
+        "effects": {
+          "might": 15,
+          "horde": -15
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_1",
+          "prompt": "A Few Days Later...",
+          "cardText": "The bear broke loose, ate the master armor smith, and escaped into the lower tunnels. We are now down a smith and up a bear problem.",
+          "leftChoice": {
+            "text": "Track it down",
+            "effects": {
+              "might": -15,
+              "horde": -10
+            }
+          },
+          "rightChoice": {
+            "text": "Hire a new smith",
+            "effects": {
+              "loot": -15,
+              "fear": -5
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Kill and eat it",
+        "effects": {
+          "loot": 10,
+          "fear": 10,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "prompt": "Kargoth insists on painting his armor red because \"red goes fasta.\" Do we fund this?",
+      "leftChoice": {
+        "text": "Buy the paint",
+        "effects": {
+          "loot": -15,
+          "might": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Use goblin blood",
+        "effects": {
+          "fear": 15,
+          "horde": -15,
+          "might": 5
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "prompt": "Kargoth is trying to invent \"Orc Yoga.\" The cracking noises are echoing through the whole cave.",
+      "leftChoice": {
+        "text": "Mandatory classes",
+        "effects": {
+          "might": 10,
+          "fear": -15,
+          "horde": -5
+        }
+      },
+      "rightChoice": {
+        "text": "Ban it",
+        "effects": {
+          "fear": 10,
+          "might": -5
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "prompt": "Kargoth accidentally swallowed the armory key. He says he feels \"secure.\"",
+      "leftChoice": {
+        "text": "Wait for it to pass",
+        "effects": {
+          "might": -15,
+          "horde": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Cut it out of him",
+        "effects": {
+          "fear": 20,
+          "might": -15,
+          "loot": 5
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "Master! We found a **shiny rock**, but it burns to touch!",
+      "leftChoice": {
+        "text": "Bring it to me",
+        "effects": {
+          "loot": 15,
+          "horde": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Leave it",
+        "effects": {
+          "horde": 10,
+          "loot": -5
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "We brewed a new mushroom stew! *It glows in the dark!*",
+      "leftChoice": {
+        "text": "Feed it to the cult",
+        "effects": {
+          "fear": -15,
+          "horde": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Dump it in the river",
+        "effects": {
+          "horde": -10,
+          "loot": 5
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "The shiny rocks in the vault... we ate some. Now our tummies hurt *real bad*.",
+      "leftChoice": {
+        "text": "Cut them open",
+        "effects": {
+          "loot": 10,
+          "horde": -20,
+          "might": 5
+        }
+      },
+      "rightChoice": {
+        "text": "Let it pass",
+        "effects": {
+          "loot": -15,
+          "horde": 10
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "Master, we built a **catapult!** It shoots other goblins! Can we test it?",
+      "dialogues": [
+        {
+          "btn": "Who volunteered?",
+          "text": "Gribble said he wanted to see the sun."
+        }
+      ],
+      "leftChoice": {
+        "text": "Fire away!",
+        "effects": {
+          "might": 15,
+          "horde": -20
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_2",
+          "prompt": "Incoming!",
+          "cardText": "Gribble hit the ceiling, bounced off a stalactite, and landed directly in the gold vault, crushing our favorite treasure chest.",
+          "leftChoice": {
+            "text": "Clean it up",
+            "effects": {
+              "loot": -10,
+              "fear": 5
+            }
+          },
+          "rightChoice": {
+            "text": "Scrape him off",
+            "effects": {
+              "horde": -5,
+              "fear": 10
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Dismantle it",
+        "effects": {
+          "horde": 10,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "We found a door with a **big skull** on it! Should we knock?",
+      "leftChoice": {
+        "text": "Break it down",
+        "effects": {
+          "might": -15,
+          "loot": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Leave it closed",
+        "effects": {
+          "fear": 10,
+          "horde": 5
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "Master! The rat-catchers formed a guild! They demand extra mold on their bread!",
+      "leftChoice": {
+        "text": "Crush the guild",
+        "effects": {
+          "fear": 20,
+          "horde": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Give them mold",
+        "effects": {
+          "loot": -15,
+          "horde": 15
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "We found a glowing orb. It keeps screaming prophecies about a \"Hero\" in green. Smash it?",
+      "leftChoice": {
+        "text": "Smash it",
+        "effects": {
+          "horde": -15,
+          "might": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Sell it",
+        "effects": {
+          "loot": 20,
+          "fear": -10
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "Master! I found a **Magic Window**! When I look in, another handsome goblin looks back!",
+      "dialogues": [
+        {
+          "btn": "Where did you get that?",
+          "text": "I pinched it from the shiny elf-man's bag!"
+        }
+      ],
+      "leftChoice": {
+        "text": "That is a mirror",
+        "effects": {
+          "fear": -10,
+          "horde": 5
+        }
+      },
+      "rightChoice": {
+        "text": "Smash it!",
+        "effects": {
+          "might": 5,
+          "loot": -5,
+          "fear": 10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_2",
+          "prompt": "7 Years Bad Luck",
+          "cardText": "Snivel smashed the mirror. A rogue shard of glass bounced up and severed the Chief Treasurer's ear.",
+          "leftChoice": {
+            "text": "Next",
+            "effects": {
+              "loot": -15,
+              "horde": -5
+            }
+          },
+          "rightChoice": {
+            "text": "Next",
+            "effects": {
+              "loot": -15,
+              "horde": -5
+            }
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "We found a pile of surface-dweller \"Health Insurance\" forms. Can we eat them?",
+      "leftChoice": {
+        "text": "Eat your fill",
+        "effects": {
+          "horde": 15,
+          "loot": -5
+        }
+      },
+      "rightChoice": {
+        "text": "Burn them",
+        "effects": {
+          "fear": 10,
+          "might": 5
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "Master, we built a monument to you out of mud and old bones! It smells awful!",
+      "leftChoice": {
+        "text": "I love it",
+        "effects": {
+          "fear": -15,
+          "horde": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Tear it down",
+        "effects": {
+          "fear": 15,
+          "horde": -15
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "Some of the boys started a union. They want \"Safety Railings\" over the lava pits.",
+      "leftChoice": {
+        "text": "Install railings",
+        "effects": {
+          "loot": -20,
+          "horde": 15
+        }
+      },
+      "rightChoice": {
+        "text": "Push them in",
+        "effects": {
+          "fear": 20,
+          "horde": -15
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "We found a shiny golden cup! We have been using it to scoop out the latrines.",
+      "leftChoice": {
+        "text": "Wash and sell it",
+        "effects": {
+          "loot": 25,
+          "fear": 5
+        }
+      },
+      "rightChoice": {
+        "text": "Keep scooping",
+        "effects": {
+          "horde": 10,
+          "loot": -15
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "prompt": "Master! A human adventurer dropped a \"Cookbook\". Now the cooks refuse to serve anything raw!",
+      "leftChoice": {
+        "text": "Let them cook",
+        "effects": {
+          "horde": 15,
+          "loot": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Burn the book",
+        "effects": {
+          "fear": 15,
+          "horde": -10
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "prompt": "The men of the West are marching on our upper gates.",
+      "leftChoice": {
+        "text": "Barricade",
+        "effects": {
+          "horde": 10,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Ambush them",
+        "effects": {
+          "might": 15,
+          "horde": -15,
+          "loot": 10
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "prompt": "My Uruks demand a larger share of the plunder to stay in line. Pay up.",
+      "leftChoice": {
+        "text": "Give them gold",
+        "effects": {
+          "loot": -20,
+          "might": 15
+        }
+      },
+      "rightChoice": {
+        "text": "I pay in blood",
+        "effects": {
+          "might": -20,
+          "fear": 10
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "prompt": "I want to challenge the **Greenfang Bruiser** to a duel for supremacy of the [[Vanguard]].",
+      "leftChoice": {
+        "text": "Let them fight",
+        "effects": {
+          "might": -15,
+          "horde": 15
+        }
+      },
+      "rightChoice": {
+        "text": "Forbid it",
+        "effects": {
+          "might": -10,
+          "loot": 5
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "prompt": "We captured a dwarven engineer. I want to torture him. The goblins want him to build traps.",
+      "leftChoice": {
+        "text": "Torture him",
+        "effects": {
+          "fear": 15,
+          "loot": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Make him work",
+        "effects": {
+          "loot": 20,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "prompt": "My troops complain the torture chambers lack \"ambiance\". I told them I'd impale them atmospherically. Approve?",
+      "leftChoice": {
+        "text": "Yes, do it",
+        "effects": {
+          "fear": 20,
+          "horde": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Buy some candles",
+        "effects": {
+          "fear": -15,
+          "loot": -10
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "prompt": "The dwarven king sent a formal scroll demanding we stop chanting at midnight. I intend to eat the messenger.",
+      "dialogues": [
+        {
+          "btn": "What did the scroll say?",
+          "text": "It was heavily perfumed and asked politely. Disgusting."
+        }
+      ],
+      "leftChoice": {
+        "text": "Eat him",
+        "effects": {
+          "might": 15,
+          "loot": -10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_3",
+          "prompt": "Indigestion",
+          "cardText": "The dwarven messenger was wearing concealed spiked armor. The Warlord is now in the infirmary with a perforated colon.",
+          "leftChoice": {
+            "text": "Pathetic",
+            "effects": {
+              "might": -15,
+              "fear": -10
+            }
+          },
+          "rightChoice": {
+            "text": "Send the dwarf bill",
+            "effects": {
+              "loot": -10,
+              "fear": -5
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Ignore it",
+        "effects": {
+          "fear": -10,
+          "horde": 10
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "prompt": "The [[Vanguard]] is complaining about \"Work-Life Balance\". They want Tuesdays off to pillage for *fun*.",
+      "leftChoice": {
+        "text": "Approve leave",
+        "effects": {
+          "horde": 15,
+          "might": -15,
+          "loot": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Pillaging IS work",
+        "effects": {
+          "might": 15,
+          "horde": -15,
+          "fear": 10
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "prompt": "Our scouts captured an elven bard. He won't stop playing the lute. It is demoralizing the troops.",
+      "leftChoice": {
+        "text": "Execute him loudly",
+        "effects": {
+          "fear": 15,
+          "might": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Sell him to the pits",
+        "effects": {
+          "loot": 15,
+          "fear": -10
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "prompt": "I demand better siege engines. We cannot conquer the surface with sharpened logs.",
+      "leftChoice": {
+        "text": "Fund the engineers",
+        "effects": {
+          "loot": -25,
+          "might": 25
+        }
+      },
+      "rightChoice": {
+        "text": "Logs are fine",
+        "effects": {
+          "might": -15,
+          "loot": 10
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "prompt": "My lieutenant challenged me for command. I can crush him, but he is a skilled fighter.",
+      "leftChoice": {
+        "text": "Kill him",
+        "effects": {
+          "fear": 15,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Exile him",
+        "effects": {
+          "might": -15,
+          "fear": -10
+        }
+      }
+    },
+    {
+      "charId": "char_4",
+      "prompt": "Da boyz want better meat. *Rat meat ain't cuttin' it no more.*",
+      "leftChoice": {
+        "text": "Tough luck",
+        "effects": {
+          "horde": -20,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Raid a village",
+        "effects": {
+          "horde": 20,
+          "might": 10,
+          "fear": -15
+        }
+      }
+    },
+    {
+      "charId": "char_4",
+      "prompt": "Puny humans built a wooden fort near our cave. ==Let me smash it!== ",
+      "leftChoice": {
+        "text": "Smash it!",
+        "effects": {
+          "might": 15,
+          "loot": 10,
+          "horde": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Wait them out",
+        "effects": {
+          "horde": 10,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_4",
+      "prompt": "Dis armor is too tight. I want new plates made of **pure gold!**",
+      "leftChoice": {
+        "text": "Forge it",
+        "effects": {
+          "loot": -25,
+          "might": 15
+        }
+      },
+      "rightChoice": {
+        "text": "Wear iron, fool",
+        "effects": {
+          "might": -15,
+          "loot": 5
+        }
+      }
+    },
+    {
+      "charId": "char_4",
+      "prompt": "Da boyz are bored. Can we have a *fight pit*? Winner gets extra grog!",
+      "leftChoice": {
+        "text": "Start the pit",
+        "effects": {
+          "horde": 15,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "No fighting",
+        "effects": {
+          "horde": -15,
+          "might": 5
+        }
+      }
+    },
+    {
+      "charId": "char_4",
+      "prompt": "Da boyz wanna start a 'Choir'. It's just two hours of us screaming at a rock.",
+      "leftChoice": {
+        "text": "Fund it",
+        "effects": {
+          "loot": -15,
+          "horde": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Smash the rock",
+        "effects": {
+          "might": 15,
+          "horde": -15
+        }
+      }
+    },
+    {
+      "charId": "char_4",
+      "prompt": "I punched a wall and found a hidden room full of cursed dwarven ledgers. Should we burn 'em?",
+      "leftChoice": {
+        "text": "Burn them",
+        "effects": {
+          "horde": 15,
+          "loot": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Read them",
+        "effects": {
+          "fear": 15,
+          "loot": 15
+        }
+      }
+    },
+    {
+      "charId": "char_4",
+      "prompt": "Da boyz caught a troll. It says it wants to be an accountant. Should we smash it?",
+      "dialogues": [
+        {
+          "btn": "Can it count?",
+          "text": "It counted to three before biting off its own finger."
+        }
+      ],
+      "leftChoice": {
+        "text": "Smash it",
+        "effects": {
+          "might": 10,
+          "fear": 5
+        }
+      },
+      "rightChoice": {
+        "text": "Let it count",
+        "effects": {
+          "loot": 15,
+          "might": -10,
+          "horde": -5
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_4",
+          "prompt": "Troll Taxes",
+          "cardText": "The troll ate the financial ledger and then declared bankruptcy. At least his size intimidated the surface tax collectors.",
+          "leftChoice": {
+            "text": "Good enough",
+            "effects": {
+              "fear": 15,
+              "loot": 5
+            }
+          },
+          "rightChoice": {
+            "text": "Execute the CPA",
+            "effects": {
+              "fear": 10,
+              "horde": -5
+            }
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_4",
+      "prompt": "I challenged a stalagmite to a headbutting contest. I lost. Da boyz are laughing at me.",
+      "leftChoice": {
+        "text": "Execute the laughers",
+        "effects": {
+          "fear": 20,
+          "horde": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Join the laughing",
+        "effects": {
+          "fear": -15,
+          "horde": 15
+        }
+      }
+    },
+    {
+      "charId": "char_4",
+      "prompt": "We looted a carriage full of fancy silk hats. Can we wear them into battle?",
+      "leftChoice": {
+        "text": "Look dapper",
+        "effects": {
+          "fear": -20,
+          "might": 5,
+          "horde": 15
+        }
+      },
+      "rightChoice": {
+        "text": "Burn the hats",
+        "effects": {
+          "fear": 10,
+          "horde": -10
+        }
+      }
+    },
+    {
+      "charId": "char_4",
+      "prompt": "I want to grease the entrance ramp. Any hero running in will slide right into a wall.",
+      "leftChoice": {
+        "text": "Grease it",
+        "effects": {
+          "might": 15,
+          "loot": -5
+        }
+      },
+      "rightChoice": {
+        "text": "Too messy",
+        "effects": {
+          "fear": -5,
+          "might": -5
+        }
+      }
+    },
+    {
+      "charId": "char_5",
+      "prompt": "I caught a surface thief sneaking into the lower vaults. Flay him?",
+      "leftChoice": {
+        "text": "Ransom him",
+        "effects": {
+          "loot": 20,
+          "horde": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Flay him",
+        "effects": {
+          "horde": 15,
+          "fear": 10
+        }
+      }
+    },
+    {
+      "charId": "char_5",
+      "prompt": "I remember the layout of the [[Sun-King]]'s armory. Give me 100 men and I'll bring back **steel**.",
+      "dialogues": [
+        {
+          "btn": "Are the guards tough?",
+          "text": "Soft as butter. But they have shiny spears."
+        }
+      ],
+      "leftChoice": {
+        "text": "Go, shed blood",
+        "effects": {
+          "might": -20,
+          "loot": 30
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_5",
+          "prompt": "A Costly Raid",
+          "cardText": "The raid was successful, but the Sun-King's guards fought fiercely. The veteran returns with carts of steel, missing half his jaw.",
+          "leftChoice": {
+            "text": "Praise him",
+            "effects": {
+              "fear": 10,
+              "might": 10
+            }
+          },
+          "rightChoice": {
+            "text": "Take the loot",
+            "effects": {
+              "loot": 10,
+              "fear": -5
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Too risky",
+        "effects": {
+          "loot": -10,
+          "might": 5
+        }
+      }
+    },
+    {
+      "charId": "char_5",
+      "prompt": "My old wounds ache. The winter is cold. I need the ***Shadow Priest***'s dark magic to fight.",
+      "leftChoice": {
+        "text": "Heal him",
+        "effects": {
+          "fear": -15,
+          "might": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Suffer through it",
+        "effects": {
+          "might": -15,
+          "fear": 5
+        }
+      }
+    },
+    {
+      "charId": "char_5",
+      "prompt": "Found some surface *grog*. It makes the boyz fight harder... and die faster.",
+      "leftChoice": {
+        "text": "Drink up!",
+        "effects": {
+          "might": 25,
+          "horde": -20
+        }
+      },
+      "rightChoice": {
+        "text": "Pour it out",
+        "effects": {
+          "might": -10,
+          "horde": 10
+        }
+      }
+    },
+    {
+      "charId": "char_5",
+      "prompt": "I've survived eighty raids, but the new recruits keep polishing their armor instead of sharpening their axes. Can I flay them?",
+      "leftChoice": {
+        "text": "Yes, brutally",
+        "effects": {
+          "horde": -20,
+          "fear": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Let them shine",
+        "effects": {
+          "loot": 20,
+          "might": -15
+        }
+      }
+    },
+    {
+      "charId": "char_5",
+      "prompt": "An elf shot me in the kidney with a glowing arrow. I kept it as a torch. Can I have a sick day?",
+      "leftChoice": {
+        "text": "Walk it off",
+        "effects": {
+          "might": 15,
+          "fear": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Take a nap",
+        "effects": {
+          "horde": 15,
+          "loot": -10
+        }
+      }
+    },
+    {
+      "charId": "char_5",
+      "prompt": "The new recruits don't even know how to properly sever a limb! They need live practice.",
+      "leftChoice": {
+        "text": "Give them prisoners",
+        "effects": {
+          "might": 20,
+          "fear": 15,
+          "loot": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Use training dummies",
+        "effects": {
+          "might": -10,
+          "loot": -5
+        }
+      }
+    },
+    {
+      "charId": "char_5",
+      "prompt": "Back in my day, we didn't have \"healing potions.\" We rubbed dirt in our wounds! Ban the potions.",
+      "leftChoice": {
+        "text": "Ban potions",
+        "effects": {
+          "fear": 15,
+          "might": -15,
+          "loot": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Keep the potions",
+        "effects": {
+          "might": 15,
+          "horde": 10,
+          "fear": -10
+        }
+      }
+    },
+    {
+      "charId": "char_5",
+      "prompt": "I found an orphaned human baby during the raid. It looked at me... and didn't cry.",
+      "leftChoice": {
+        "text": "Raise it as an Orc",
+        "effects": {
+          "might": 10,
+          "fear": -15,
+          "horde": 5
+        }
+      },
+      "rightChoice": {
+        "text": "Leave it",
+        "effects": {
+          "fear": 10,
+          "horde": -5
+        }
+      }
+    },
+    {
+      "charId": "char_5",
+      "prompt": "My axe is rusted dull, but it holds the blood of a hundred kings. The smith wants to melt it.",
+      "leftChoice": {
+        "text": "Melt it down",
+        "effects": {
+          "might": 15,
+          "fear": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Keep the relic",
+        "effects": {
+          "fear": 15,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "The dark altar requires a sacrifice of **royal blood** to awaken the old ones.",
+      "leftChoice": {
+        "text": "Too risky",
+        "effects": {
+          "fear": -20,
+          "horde": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Kidnap a prince",
+        "effects": {
+          "fear": 30,
+          "might": -20,
+          "loot": -10
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "The stars align in a bloody crescent. We must sacrifice the *plumpest goblins* ==tonight==. ",
+      "leftChoice": {
+        "text": "Take them",
+        "effects": {
+          "fear": 20,
+          "horde": -25
+        }
+      },
+      "rightChoice": {
+        "text": "Spare the horde",
+        "effects": {
+          "fear": -20,
+          "horde": 15
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "I can bind the screaming souls of fallen heroes to our [[Vanguard]]'s armor. It requires a tithe of **gold**.",
+      "leftChoice": {
+        "text": "Bind them",
+        "effects": {
+          "might": 20,
+          "loot": -20
+        }
+      },
+      "rightChoice": {
+        "text": "Forbidden magic",
+        "effects": {
+          "fear": -10,
+          "loot": 10
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "The whispers from the deep abyss are getting louder. *Should I answer them?*",
+      "leftChoice": {
+        "text": "Listen closely",
+        "effects": {
+          "fear": 25,
+          "horde": -15,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Block them out",
+        "effects": {
+          "fear": -20,
+          "horde": 10
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "The Abyss demands a virgin sacrifice, but there's a blizzard outside. Can we just use a particularly pure goblin?",
+      "leftChoice": {
+        "text": "Lie to the Gods",
+        "effects": {
+          "fear": -15,
+          "loot": 15
+        }
+      },
+      "rightChoice": {
+        "text": "Find a human",
+        "effects": {
+          "fear": 15,
+          "horde": -10
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "I accidentally summoned a lesser demon of misplaced items. Now all the armory keys are missing.",
+      "dialogues": [
+        {
+          "btn": "Can you banish it?",
+          "text": "I lost the banishing scroll."
+        }
+      ],
+      "leftChoice": {
+        "text": "Break the doors",
+        "effects": {
+          "loot": -10,
+          "horde": 10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_6",
+          "prompt": "Unleashed Magic",
+          "cardText": "Smashing the doors triggered the arcane wards. The armory is open, but half the Vanguard is permanently singed and terrified.",
+          "leftChoice": {
+            "text": "Oops",
+            "effects": {
+              "might": -20,
+              "fear": 15
+            }
+          },
+          "rightChoice": {
+            "text": "Punish the priest",
+            "effects": {
+              "fear": 20,
+              "might": -10
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Suffer the demon",
+        "effects": {
+          "fear": 15,
+          "horde": -15
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "The [[The Deep Flame]] is hungry, but the sacrificial pits are closed for a **Mandatory Safety Inspection**.",
+      "leftChoice": {
+        "text": "Sacrifice the Inspector",
+        "effects": {
+          "fear": 20,
+          "might": 10,
+          "horde": -5
+        }
+      },
+      "rightChoice": {
+        "text": "Wait for the permit",
+        "effects": {
+          "fear": -20,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "I have started a \"Book Club\" reading the Necronomicon. The goblins are taking it surprisingly well.",
+      "leftChoice": {
+        "text": "Encourage literacy",
+        "effects": {
+          "fear": 15,
+          "horde": -15,
+          "might": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Ban the book",
+        "effects": {
+          "fear": -10,
+          "horde": 10
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "Tentacles are coming out of the plumbing again. The plumbers require hazard pay.",
+      "leftChoice": {
+        "text": "Pay them",
+        "effects": {
+          "loot": -15,
+          "horde": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Let them be eaten",
+        "effects": {
+          "fear": 20,
+          "horde": -20,
+          "loot": 5
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "The dark gods demand a \"Void Tax.\" 20% of all shiny rocks must be thrown into the abyss.",
+      "leftChoice": {
+        "text": "Pay the gods",
+        "effects": {
+          "loot": -20,
+          "fear": 15
+        }
+      },
+      "rightChoice": {
+        "text": "Defy them",
+        "effects": {
+          "fear": -25,
+          "loot": 15
+        }
+      }
+    },
+    {
+      "charId": "char_6",
+      "prompt": "My chanting is causing the stalactites to fall and crush the workers. Should I hum instead?",
+      "leftChoice": {
+        "text": "Keep chanting",
+        "effects": {
+          "fear": 15,
+          "horde": -20
+        }
+      },
+      "rightChoice": {
+        "text": "Hum quietly",
+        "effects": {
+          "fear": -10,
+          "horde": 10
+        }
+      }
+    },
+    {
+      "charId": "char_7",
+      "prompt": "My former brothers-in-arms seek to redeem me. Let me crush them to prove my loyalty.",
+      "leftChoice": {
+        "text": "Stay your hand",
+        "effects": {
+          "might": -10,
+          "fear": -10
+        }
+      },
+      "rightChoice": {
+        "text": "No mercy",
+        "effects": {
+          "might": 15,
+          "fear": 15,
+          "horde": -5
+        }
+      }
+    },
+    {
+      "charId": "char_7",
+      "prompt": "A ***paladin*** of the [[Order of the Light]] approaches the dungeon alone. I request the honor of a duel.",
+      "leftChoice": {
+        "text": "Face him alone",
+        "effects": {
+          "might": 10,
+          "fear": 15,
+          "horde": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Swarm him",
+        "effects": {
+          "horde": 15,
+          "might": -5,
+          "fear": -15
+        }
+      }
+    },
+    {
+      "charId": "char_7",
+      "prompt": "My rusted armor reminds me of my failure to the light. Forge me a new suit of **dark steel**.",
+      "leftChoice": {
+        "text": "Forge it",
+        "effects": {
+          "loot": -20,
+          "might": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Wear your shame",
+        "effects": {
+          "might": -15,
+          "loot": 5
+        }
+      }
+    },
+    {
+      "charId": "char_7",
+      "prompt": "The goblins lack discipline. They are pathetic. Let me train them... *brutally*.",
+      "leftChoice": {
+        "text": "Whip them into shape",
+        "effects": {
+          "might": 20,
+          "horde": -25
+        }
+      },
+      "rightChoice": {
+        "text": "Leave them be",
+        "effects": {
+          "horde": 10,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_7",
+      "prompt": "My spiked armor of eternal suffering is chafing terribly. May I line it with velvet?",
+      "leftChoice": {
+        "text": "Yes, be comfortable",
+        "effects": {
+          "horde": 15,
+          "fear": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Suffer for darkness",
+        "effects": {
+          "fear": 15,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_7",
+      "prompt": "The Paladins sent me a bouquet of holy warding-garlic to \"cure\" me. It smells... delicious. What do I do?",
+      "leftChoice": {
+        "text": "Eat it",
+        "effects": {
+          "might": 15,
+          "fear": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Poison it and return",
+        "effects": {
+          "fear": 15,
+          "loot": -10
+        }
+      }
+    },
+    {
+      "charId": "char_7",
+      "prompt": "A squire from the [[Order of the Light]] is weeping in the dungeons. He looks like my son... let him go?",
+      "dialogues": [
+        {
+          "btn": "Can he be turned?",
+          "text": "His resolve is weak, but his heart is still stubbornly pure."
+        }
+      ],
+      "leftChoice": {
+        "text": "Release him",
+        "effects": {
+          "might": -20,
+          "fear": -15,
+          "horde": 10
+        }
+      },
+      "rightChoice": {
+        "text": "No witnesses",
+        "effects": {
+          "fear": 15,
+          "might": 10,
+          "loot": 5
+        }
+      }
+    },
+    {
+      "charId": "char_7",
+      "prompt": "The Goblins mock my vows of dark chivalry. They do not understand the etiquette of a proper duel.",
+      "leftChoice": {
+        "text": "Execute the mockers",
+        "effects": {
+          "fear": 20,
+          "horde": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Ignore the rabble",
+        "effects": {
+          "fear": -15,
+          "horde": 10
+        }
+      }
+    },
+    {
+      "charId": "char_7",
+      "prompt": "I wish to mount an expedition to retrieve my old horse's skeleton and reanimate it as my steed.",
+      "leftChoice": {
+        "text": "Fund the necromancy",
+        "effects": {
+          "loot": -20,
+          "might": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Walk, death knight",
+        "effects": {
+          "fear": -10,
+          "might": -5
+        }
+      }
+    },
+    {
+      "charId": "char_7",
+      "prompt": "My old holy sword burns my hand, but it is a mastercrafted weapon. Melt it into spikes?",
+      "leftChoice": {
+        "text": "Melt the holy steel",
+        "effects": {
+          "might": 15,
+          "fear": 10,
+          "loot": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Sell it to merchants",
+        "effects": {
+          "loot": 25,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "I have a rare, **cursed artifact** from the surface. Yours for a bag of gold.",
+      "leftChoice": {
+        "text": "Not interested",
+        "effects": {
+          "loot": 5
+        }
+      },
+      "rightChoice": {
+        "text": "I'll take it",
+        "effects": {
+          "loot": -20,
+          "fear": 15,
+          "might": 10
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "Got a fresh shipment of healing potions. They are slightly expired, *but cheap!*",
+      "leftChoice": {
+        "text": "Buy the lot",
+        "effects": {
+          "loot": -15,
+          "horde": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Throw them out",
+        "effects": {
+          "horde": -15,
+          "loot": 5
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "I found a map to a hidden vein of **dark iron**. I need funding to start the mining operation.",
+      "leftChoice": {
+        "text": "Fund the mine",
+        "effects": {
+          "loot": -25,
+          "might": 20,
+          "horde": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Too expensive",
+        "effects": {
+          "loot": 10,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "The **Shadow Priest** owes me coin for incense. Collect it for me, and I'll cut you in.",
+      "leftChoice": {
+        "text": "Shake down the priest",
+        "effects": {
+          "loot": 20,
+          "fear": -25
+        }
+      },
+      "rightChoice": {
+        "text": "Settle it yourselves",
+        "effects": {
+          "fear": 10,
+          "loot": -10
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "I am selling naming rights to the new slime pits. Interested in the \"Overlord's Vats of Agony\" package?",
+      "leftChoice": {
+        "text": "Pay him",
+        "effects": {
+          "loot": -15,
+          "fear": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Throw him in",
+        "effects": {
+          "loot": 20,
+          "fear": 15
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "I've devised a multi-tiered scheme involving cursed wishing coins. Want in on the ground floor?",
+      "leftChoice": {
+        "text": "Invest heavily",
+        "effects": {
+          "loot": -20,
+          "fear": 15
+        }
+      },
+      "rightChoice": {
+        "text": "Arrest him",
+        "effects": {
+          "loot": 20,
+          "horde": -10
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "Business is slow. Let's install a **Gift Shop** at the end of the Hall of Screams. Tourists love keychains.",
+      "leftChoice": {
+        "text": "Capitalism!",
+        "effects": {
+          "loot": 30,
+          "fear": -20,
+          "might": -5
+        }
+      },
+      "rightChoice": {
+        "text": "Stay scary",
+        "effects": {
+          "fear": 15,
+          "loot": -10
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "I'm introducing \"Non-Fungible Trinkets.\" It's just regular rocks, but I tell the Uruks they are rare.",
+      "dialogues": [
+        {
+          "btn": "Will they buy it?",
+          "text": "Uruks aren't known for their financial literacy. Yes."
+        }
+      ],
+      "leftChoice": {
+        "text": "Run the scam",
+        "effects": {
+          "loot": 25,
+          "might": -15,
+          "fear": -5
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_8",
+          "prompt": "Market Crash",
+          "cardText": "The Uruks quickly realized the rocks are everywhere. They are now throwing the \"currency\" at the Merchant's head.",
+          "leftChoice": {
+            "text": "Bail him out",
+            "effects": {
+              "loot": -20,
+              "fear": 5
+            }
+          },
+          "rightChoice": {
+            "text": "Let him suffer",
+            "effects": {
+              "fear": 15,
+              "might": 10
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Ban the rocks",
+        "effects": {
+          "fear": 10,
+          "loot": -10
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "Inflation has hit the dungeon. A single rat skewer now costs 40 gold pieces. Do we fix prices?",
+      "leftChoice": {
+        "text": "Fix the prices",
+        "effects": {
+          "horde": 15,
+          "loot": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Let the market decide",
+        "effects": {
+          "loot": 20,
+          "horde": -20
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "I want to sell \"Mystery Loot Boxes\" to the Vanguard. It's mostly just rusty spoons.",
+      "leftChoice": {
+        "text": "Approve",
+        "effects": {
+          "loot": 20,
+          "might": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Deny",
+        "effects": {
+          "might": 10,
+          "loot": -10
+        }
+      }
+    },
+    {
+      "charId": "char_8",
+      "prompt": "A noble from the surface wants to buy a timeshare in our torture chambers for his \"vacations.\"",
+      "leftChoice": {
+        "text": "Sign the contract",
+        "effects": {
+          "loot": 30,
+          "fear": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Torture the noble",
+        "effects": {
+          "fear": 20,
+          "loot": 10,
+          "might": 5
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "The seals holding back the arcane horrors are weakening, **Overlord**.",
+      "leftChoice": {
+        "text": "Reinforce them",
+        "effects": {
+          "loot": -20,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Let them break",
+        "effects": {
+          "fear": 25,
+          "horde": -30,
+          "might": 20
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "THE DEEP WATER... IT HUNGERS FOR THE **SHINY METAL**. ==FEED IT.==",
+      "leftChoice": {
+        "text": "Throw gold in the lake",
+        "effects": {
+          "loot": -30,
+          "fear": 25
+        }
+      },
+      "rightChoice": {
+        "text": "Keep our gold",
+        "effects": {
+          "fear": -20,
+          "loot": 10
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "THE LITTLE GREEN ONES MULTIPLY TOO FAST. THEY MAKE GOOD KINDLING FOR [[The Deep Flame]].",
+      "leftChoice": {
+        "text": "Burn the goblins",
+        "effects": {
+          "horde": -35,
+          "fear": 30
+        }
+      },
+      "rightChoice": {
+        "text": "Protect the horde",
+        "effects": {
+          "horde": 20,
+          "fear": -20
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "A RIFT IN REALITY OPENS IN THE CATACOMBS. *PEER INSIDE?*",
+      "dialogues": [
+        {
+          "btn": "What do you see?",
+          "text": "I SEE A DIMENSION OF INFINITE SPREADSHEETS AND CUBICLES. TRULY TERRIFYING."
+        }
+      ],
+      "leftChoice": {
+        "text": "Look into the void",
+        "effects": {
+          "fear": 30,
+          "loot": -15,
+          "horde": -15
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_9",
+          "prompt": "Corporate Assimilation",
+          "cardText": "Three goblins looked into the rift and instantly formed an HR department. Bureaucracy is spreading and morale has plummeted.",
+          "leftChoice": {
+            "text": "Fire them",
+            "effects": {
+              "horde": -15,
+              "fear": 20
+            }
+          },
+          "rightChoice": {
+            "text": "Accept synergy",
+            "effects": {
+              "loot": 15,
+              "might": -20
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Seal the rift",
+        "effects": {
+          "might": -20,
+          "fear": -10,
+          "horde": 10
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "THE MORTALS HAVE INVENTED \"PAPER MONEY\". IT LACKS THE TASTE OF SOULS. SHALL WE BURN THEIR BANKS?",
+      "leftChoice": {
+        "text": "Burn them",
+        "effects": {
+          "loot": -20,
+          "fear": 15
+        }
+      },
+      "rightChoice": {
+        "text": "Steal the paper",
+        "effects": {
+          "might": 15,
+          "loot": 10
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "MY TENTACLES ARE TANGLED IN THE LEY-LINES. THE WARLOCKS ARE RIOTING OVER THE MAGICAL INTERFERENCE.",
+      "leftChoice": {
+        "text": "Untangle them",
+        "effects": {
+          "loot": -15,
+          "horde": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Cut the lines",
+        "effects": {
+          "fear": 20,
+          "horde": -20
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "==THE VOICES== TELL ME YOU ARE JUST A REFLECTION IN A CRYSTAL SLAB HELD BY A GIANT. BREAK THE SLAB?",
+      "leftChoice": {
+        "text": "I am real!",
+        "effects": {
+          "fear": -15,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Break the 4th wall",
+        "effects": {
+          "fear": 30,
+          "loot": -20,
+          "horde": -20
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "REALITY IS THINNING IN THE LOWER DEPTHS. GEOMETRY NO LONGER MAKES SENSE. CHARGE ADMISSION?",
+      "leftChoice": {
+        "text": "Capitalize on madness",
+        "effects": {
+          "loot": 25,
+          "fear": 10,
+          "horde": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Seal the sector",
+        "effects": {
+          "might": 15,
+          "loot": -10
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "I HAVE ADOPTED A MORTAL KITTEN. IF ANYONE HARMS IT, I WILL UNMAKE THE CONCEPT OF TIME.",
+      "leftChoice": {
+        "text": "Assign 100 guards",
+        "effects": {
+          "might": -20,
+          "fear": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Pet the kitten",
+        "effects": {
+          "fear": -20,
+          "horde": 15
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "THE STARS ARE WRONG TODAY. I WISH TO SLEEP FOR A THOUSAND YEARS. DO NOT WAKE ME.",
+      "leftChoice": {
+        "text": "Let it slumber",
+        "effects": {
+          "fear": -25,
+          "might": -20,
+          "horde": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Force it awake",
+        "effects": {
+          "fear": 25,
+          "might": 20,
+          "horde": -15
+        }
+      }
+    },
+    {
+      "charId": "char_9",
+      "prompt": "AN EXISTENTIAL DREAD HAS GRIPPED THE HORDE. THEY REALIZE THEIR LIVES ARE JUST NUMBERS ON A BAR.",
+      "leftChoice": {
+        "text": "Distract with shiny rocks",
+        "effects": {
+          "loot": -20,
+          "horde": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Embrace the void",
+        "effects": {
+          "fear": 30,
+          "horde": -30
+        }
+      }
+    }
+  ]
+}
