@@ -2174,6 +2174,578 @@
           "horde": -30
         }
       }
+    },
+    
+  {
+    "charId": "char_3",
+    "prompt": "The Bruisers say the Goblins' constant screeching is giving them migraines. They want to 'repurpose' the goblin warrens as quiet zones.",
+    "leftChoice": {
+      "text": "Evict the Swarm",
+      "effects": {
+        "might": 15,
+        "horde": -25,
+        "fear": 5
+      }
+    },
+    "rightChoice": {
+      "text": "Buy earplugs",
+      "effects": {
+        "loot": -15,
+        "might": -10,
+        "horde": 10
+      }
     }
+  },
+  {
+    "charId": "char_2",
+    "prompt": "Master! We found a 'Bar of Soap' in a Paladin's kit. The boys want to know if it's an edible holy relic.",
+    "leftChoice": {
+      "text": "Eat it for science",
+      "effects": {
+        "horde": -10,
+        "fear": 15
+      }
+    },
+    "rightChoice": {
+      "text": "Make them wash",
+      "effects": {
+        "fear": -20,
+        "horde": 15,
+        "loot": -5
+      }
+    }
+  },
+  {
+    "charId": "char_8",
+    "prompt": "I'm offering 'Disruption Insurance.' If a Hero clears a floor, I pay you out. Premium is just a few chests of gold.",
+    "leftChoice": {
+      "text": "Sign me up",
+      "effects": {
+        "loot": -25,
+        "fear": 10
+      }
+    },
+    "rightChoice": {
+      "text": "I'll take the risk",
+      "effects": {
+        "loot": 5,
+        "might": -10
+      }
+    }
+  },
+  {
+    "charId": "char_5",
+    "prompt": "The Bruisers are getting soft. They want 'Participation Trophies' for every village they burn. Should I flay the sentiment out of them?",
+    "leftChoice": {
+      "text": "Flay away",
+      "effects": {
+        "might": -15,
+        "fear": 20
+      }
+    },
+    "rightChoice": {
+      "text": "Give them trophies",
+      "effects": {
+        "loot": -15,
+        "might": 15,
+        "fear": -10
+      }
+    }
+  },
+  {
+    "charId": "char_6",
+    "prompt": "The Deep Flame is flickering. I suggest we toss in the 'Employee of the Month' to brighten the mood.",
+    "dialogues": [
+      {
+        "btn": "Who won it?",
+        "text": "A particularly enthusiastic goblin named 'Lunch.'"
+      }
+    ],
+    "leftChoice": {
+      "text": "Sacrifice Lunch",
+      "effects": {
+        "fear": 20,
+        "horde": -10,
+        "might": 10
+      }
+    },
+    "rightChoice": {
+      "text": "Burn coal instead",
+      "effects": {
+        "loot": -15,
+        "fear": -10
+      }
+    }
+  },
+  {
+    "charId": "char_7",
+    "prompt": "I attempted to teach the Swarm the 'Shield Wall' formation. They used the shields as sleds to race down the lava chutes.",
+    "leftChoice": {
+      "text": "Ban sledding",
+      "effects": {
+        "horde": -15,
+        "might": 10
+      }
+    },
+    "rightChoice": {
+      "text": "Bet on the winner",
+      "effects": {
+        "loot": 15,
+        "horde": -20,
+        "fear": -10
+      }
+    }
+  },
+  {
+    "charId": "char_3",
+    "prompt": "The Bruisers have unionized. They're demanding 'Hazard Pay' for fighting Wizards. Something about being turned into sheep being 'unprofessional.'",
+    "leftChoice": {
+      "text": "Pay the premiums",
+      "effects": {
+        "loot": -25,
+        "might": 20
+      }
+    },
+    "rightChoice": {
+      "text": "Hire more sheep",
+      "effects": {
+        "might": -30,
+        "horde": 15,
+        "fear": 10
+      }
+    }
+  },
+  {
+    "charId": "char_2",
+    "prompt": "Master! The rat-stew has started talking back to the cooks! It's demanding a seat on the High Council!",
+    "leftChoice": {
+      "text": "Eat the witness",
+      "effects": {
+        "horde": 10,
+        "fear": 10
+      }
+    },
+    "rightChoice": {
+      "text": "Promote the stew",
+      "effects": {
+        "fear": -20,
+        "horde": 10,
+        "might": -15
+      }
+    }
+  },
+  {
+    "charId": "char_8",
+    "prompt": "I have a crate of 'Tactical Glitter.' Throw it at a Hero to reveal their invisible armor... or just make them fabulous.",
+    "leftChoice": {
+      "text": "Buy the glitter",
+      "effects": {
+        "loot": -10,
+        "might": 15,
+        "fear": -5
+      }
+    },
+    "rightChoice": {
+      "text": "Keep your trash",
+      "effects": {
+        "loot": 5,
+        "might": -5
+      }
+    }
+  },
+  {
+    "charId": "char_9",
+    "prompt": "I HAVE FOUND THE END OF THE SCRIPT. BEYOND THIS CARD LIES ONLY THE BLANK WHITE VOID OF AN UNPAID DEVELOPER'S AMBITION.",
+    "leftChoice": {
+      "text": "I am the Creator!",
+      "effects": {
+        "fear": 25,
+        "might": -20
+      }
+    },
+    "rightChoice": {
+      "text": "Don't look at me",
+      "effects": {
+        "fear": -25,
+        "horde": -20
+      }
+    }
+  },
+  {
+    "charId": "char_6",
+    "prompt": "The Shadow Priest suggests we replace the torches with 'Grave-Wax Candles.' They smell of ancient rot and provide a most becoming gloom.",
+    "leftChoice": {
+      "text": "How atmospheric",
+      "effects": {
+        "loot": -10,
+        "fear": 15
+      }
+    },
+    "rightChoice": {
+      "text": "Too expensive",
+      "effects": {
+        "fear": -10,
+        "horde": 5
+      }
+    }
+  },
+  {
+    "charId": "char_2",
+    "prompt": "Master! We found a **wildflower** growing in the sludge. Its colors are... *revoltingly* bright. Shall we burn the contamination?",
+    "leftChoice": {
+      "text": "Incinerate it",
+      "effects": {
+        "horde": 15,
+        "fear": -5
+      }
+    },
+    "rightChoice": {
+      "text": "Keep it as a torture",
+      "effects": {
+        "fear": 20,
+        "horde": -15
+      }
+    }
+  },
+  {
+    "charId": "char_3",
+    "prompt": "The Warlord wants to host a 'Family Reunion' for his clan. It involves three days of mandatory screaming and traditional poison-tasting.",
+    "leftChoice": {
+      "text": "A lovely tradition",
+      "effects": {
+        "might": 20,
+        "horde": -25,
+        "loot": -10
+      }
+    },
+    "rightChoice": {
+      "text": "Forbid the fun",
+      "effects": {
+        "might": -15,
+        "fear": -10
+      }
+    }
+  },
+  {
+    "charId": "char_7",
+    "prompt": "The Fallen Knight is weeping. He says the spikes on the 'Iron Maiden' are too blunt to provide a truly *soulful* experience.",
+    "leftChoice": {
+      "text": "Sharpen them",
+      "effects": {
+        "loot": -15,
+        "fear": 15,
+        "might": 5
+      }
+    },
+    "rightChoice": {
+      "text": "He’s being dramatic",
+      "effects": {
+        "fear": -10,
+        "might": -10
+      }
+    }
+  },
+  {
+    "charId": "char_8",
+    "prompt": "I’ve imported some 'Premium Cimmerian Fog.' It’s thick enough to choke a dragon and hides the unsightly lack of cobwebs in the hallway.",
+    "leftChoice": {
+      "text": "Invest in gloom",
+      "effects": {
+        "loot": -20,
+        "fear": 15,
+        "might": 10
+      }
+    },
+    "rightChoice": {
+      "text": "I like the drafts",
+      "effects": {
+        "might": -5,
+        "loot": 10
+      }
+    }
+  },
+  {
+    "charId": "char_5",
+    "prompt": "The Veteran Orc is nostalgic. He wants to recreate his first raid by setting fire to the Swarm's (Goblins) favorite fungus farm.",
+    "leftChoice": {
+      "text": "For the memories",
+      "effects": {
+        "might": 15,
+        "horde": -25,
+        "fear": 10
+      }
+    },
+    "rightChoice": {
+      "text": "Let them eat",
+      "effects": {
+        "horde": 15,
+        "might": -15
+      }
+    }
+  },
+  {
+    "charId": "char_1",
+    "prompt": "Kargoth found a 'Baby's First Rattle' in a caravan. He is using it to rhythmically beat a goblin scout. It's quite musical.",
+    "leftChoice": {
+      "text": "Encourage the arts",
+      "effects": {
+        "might": 10,
+        "horde": -10,
+        "fear": 15
+      }
+    },
+    "rightChoice": {
+      "text": "Confiscate the toy",
+      "effects": {
+        "might": -10,
+        "fear": -15
+      }
+    }
+  },
+  {
+    "charId": "char_9",
+    "prompt": "A GUST OF BITTER, FRIGID AIR HAS SWEPT THE CATACOMBS. IT FEELS LIKE THE COLD EMBRACE OF A FORGOTTEN ANCESTOR. DELIGHTFUL, ISN'T IT?",
+    "leftChoice": {
+      "text": "Truly charming",
+      "effects": {
+        "fear": 15,
+        "might": -10
+      }
+    },
+    "rightChoice": {
+      "text": "Light a fire",
+      "effects": {
+        "loot": -10,
+        "fear": -15
+      }
+    }
+  },
+  {
+    "charId": "char_4",
+    "prompt": "The Bruisers (Orcs) are demanding 'Formal Battle Shroud.' They refuse to pillage unless they look appropriately cadaverous.",
+    "leftChoice": {
+      "text": "Buy the silk",
+      "effects": {
+        "loot": -20,
+        "might": 20,
+        "fear": -5
+      }
+    },
+    "rightChoice": {
+      "text": "Fight naked",
+      "effects": {
+        "fear": 25,
+        "might": -15,
+        "horde": -5
+      }
+    }
+  },
+  {
+    "charId": "char_6",
+    "prompt": "I’ve curated a 'Gallery of Agony' in the north wing. It's just Goblins trying to do basic math. The Shadow Priest calls it his masterpiece.",
+    "leftChoice": {
+      "text": "Simply exquisite",
+      "effects": {
+        "fear": 20,
+        "horde": -15
+      }
+    },
+    "rightChoice": {
+      "text": "Let them rest",
+      "effects": {
+        "horde": 15,
+        "fear": -20
+      }
+    }
+  },
+  {
+    "charId": "char_5",
+    "prompt": "The Veteran Orc sighs. 'I've seen three Dark Lords fall. They all started with golden statues and ended as charcoal. Maybe we just... buy better boots instead?'",
+    "leftChoice": {
+      "text": "Practicality wins",
+      "effects": {
+        "loot": -15,
+        "might": 20,
+        "fear": -10
+      }
+    },
+    "rightChoice": {
+      "text": "I want my statue",
+      "effects": {
+        "loot": -25,
+        "fear": 20,
+        "might": -5
+      }
+    }
+  },
+  {
+    "charId": "char_2",
+    "prompt": "Master! A 'Hero' is at the gate. He says he's here for a 'Prophecy,' but he looks like he'd sell his mother for a warm pint. Should we hire him as a scout?",
+    "leftChoice": {
+      "text": "Give him a cloak",
+      "effects": {
+        "might": 10,
+        "horde": 10,
+        "fear": -15
+      }
+    },
+    "rightChoice": {
+      "text": "Feed him to the pit",
+      "effects": {
+        "fear": 15,
+        "horde": -10
+      }
+    }
+  },
+  {
+    "charId": "char_6",
+    "prompt": "The Shadow Priest is bored. 'The Abyss demands a sacrifice, or a very long, very dry lecture on the philosophy of nothingness.' The Goblins are already weeping.",
+    "leftChoice": {
+      "text": "Start the lecture",
+      "effects": {
+        "fear": 25,
+        "horde": -20
+      }
+    },
+    "rightChoice": {
+      "text": "Just kill someone",
+      "effects": {
+        "horde": -10,
+        "fear": 10
+      }
+    }
+  },
+  {
+    "charId": "char_8",
+    "prompt": "A shipment of 'Anti-Paladin Repellent' arrived. It’s mostly just garlic and very offensive jokes about the Sun-King. Does the Overlord want the 'Premium' batch?",
+    "leftChoice": {
+      "text": "Buy the spite",
+      "effects": {
+        "loot": -20,
+        "might": 15
+      }
+    },
+    "rightChoice": {
+      "text": "Unnecessary",
+      "effects": {
+        "might": -10,
+        "loot": 10
+      }
+    }
+  },
+  {
+    "charId": "char_3",
+    "prompt": "The Warlord found a Knight who claims he's 'neutral.' He wants a permit to hunt the slime in the basement for 'research.'",
+    "leftChoice": {
+      "text": "Sign the permit",
+      "effects": {
+        "loot": 20,
+        "might": -10,
+        "fear": -10
+      }
+    },
+    "rightChoice": {
+      "text": "No visitors",
+      "effects": {
+        "fear": 10,
+        "might": 5
+      }
+    }
+  },
+  {
+    "charId": "char_7",
+    "prompt": "The Fallen Knight remembers his old vows. 'Honor is a fine thing, but it doesn't stop an Orc from gutting you while you're bowing.' He wants to teach the Swarm (Goblins) to fight 'dirty.'",
+    "leftChoice": {
+      "text": "End the chivalry",
+      "effects": {
+        "might": 20,
+        "fear": 10,
+        "horde": -15
+      }
+    },
+    "rightChoice": {
+      "text": "Keep them 'pure'",
+      "effects": {
+        "might": -15,
+        "fear": -10
+      }
+    }
+  },
+  {
+    "charId": "char_4",
+    "prompt": "Da boyz caught a Bard. He offered to write a ballad about your 'magnificent cruelty' if we don't eat his legs. Is it art, or is it lunch?",
+    "leftChoice": {
+      "text": "I love a ballad",
+      "effects": {
+        "fear": -20,
+        "horde": 15
+      }
+    },
+    "rightChoice": {
+      "text": "Legs it is",
+      "effects": {
+        "horde": 10,
+        "fear": 15
+      }
+    }
+  },
+  {
+    "charId": "char_1",
+    "prompt": "Kargoth is having an existential crisis. 'If I bash a skull in a forest and no one hears it, did I really bash it?' He’s stopped working to think.",
+    "leftChoice": {
+      "text": "Philosophy is soft",
+      "effects": {
+        "fear": 15,
+        "might": -10
+      }
+    },
+    "rightChoice": {
+      "text": "Give him a hug",
+      "effects": {
+        "fear": -25,
+        "might": -15,
+        "horde": 15
+      }
+    }
+  },
+  {
+    "charId": "char_9",
+    "prompt": "THE VOICES IN THE WALLS COMPLAIN THAT THE DUNGEON IS BECOMING 'QUITE GENTRIFIED.' THEY PREFERRED IT WHEN THE FLOOR WAS MOSTLY BLOOD AND FILTH.",
+    "leftChoice": {
+      "text": "Make it filthier",
+      "effects": {
+        "fear": 20,
+        "horde": -10,
+        "loot": -10
+      }
+    },
+    "rightChoice": {
+      "text": "I like the tiles",
+      "effects": {
+        "fear": -15,
+        "loot": -5
+      }
+    }
+  },
+  {
+    "charId": "char_2",
+    "prompt": "Master! The Swarm (Goblins) wants a 'Union Rep.' They say being 'Disposable' should at least come with a dental plan.",
+    "leftChoice": {
+      "text": "Grant the plan",
+      "effects": {
+        "loot": -25,
+        "horde": 20,
+        "might": -5
+      }
+    },
+    "rightChoice": {
+      "text": "Dispose of the Rep",
+      "effects": {
+        "fear": 20,
+        "horde": -20
+      }
+    }
+  }
+
   ]
 }
