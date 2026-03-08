@@ -1,1 +1,308 @@
 
+[
+  {
+    "charId": "char_1",
+    "prompt": "Boss. Found a tiny wood box. Make plink-plink noises when I spin the handle. Make it stop, or I eat it.",
+    "dialogues": [
+      {
+        "btn": "What song is it playing?",
+        "text": "Sound like a sad elf. Very annoying."
+      },
+      {
+        "btn": "Does it have magic?",
+        "text": "It make Gribble cry. So yes, evil magic."
+      }
+    ],
+    "leftChoice": {
+      "text": "Keep spinning it",
+      "effects": {
+        "fear": 15,
+        "horde": -10
+      }
+    },
+    "rightChoice": {
+      "text": "Eat the box",
+      "effects": {
+        "might": 10,
+        "loot": -15
+      }
+    }
+  },
+  {
+    "charId": "char_2",
+    "prompt": "Master! The stars say today is a bad day for the Swarm! We must hide under the floorboards until tomorrow!",
+    "dialogues": [
+      {
+        "btn": "Who taught you to read stars?",
+        "text": "We ate a wizard's eyeball! Now we knows things!"
+      },
+      {
+        "btn": "What exactly did the stars say?",
+        "text": "The big shiny dot winked! It means certain doom!"
+      }
+    ],
+    "leftChoice": {
+      "text": "Hide in the dirt",
+      "effects": {
+        "might": -20,
+        "horde": 15
+      }
+    },
+    "rightChoice": {
+      "text": "Get back to work",
+      "effects": {
+        "might": 15,
+        "horde": -15
+      }
+    }
+  },
+  {
+    "charId": "char_3",
+    "prompt": "Overlord. I propose we send 'formal declarations of war' to the human villages before we burn them. The terror of anticipation is exquisite.",
+    "dialogues": [
+      {
+        "btn": "Won't that give them time to prepare?",
+        "text": "Yes. It makes the slaughter slightly less boring."
+      },
+      {
+        "btn": "What does the letter say?",
+        "text": "'You are cordially invited to your own disembowelment.' I used a very nice wax seal."
+      }
+    ],
+    "leftChoice": {
+      "text": "Send the letters",
+      "effects": {
+        "fear": 20,
+        "might": -15
+      }
+    },
+    "rightChoice": {
+      "text": "Surprise them",
+      "effects": {
+        "loot": 20,
+        "fear": -10
+      }
+    }
+  },
+  {
+    "charId": "char_4",
+    "prompt": "Caught a humie [[Painted Demon]]. He honked at me with demonic nose! Chop da skull-crushing shoes?!",
+    "dialogues": [
+      {
+        "btn": "Is he a great warrior?",
+        "text": "Yes! He wears paints of a demon leer! And massive shoes for crushing skulls!"
+      },
+      {
+        "btn": "Is his honk a war cry?",
+        "text": "It freeze Kargoth in his tracks! Very strong magic honk!"
+      }
+    ],
+    "leftChoice": {
+      "text": "Smash his nose",
+      "effects": {
+        "might": 15,
+        "fear": 10
+      }
+    },
+    "rightChoice": {
+      "text": "Make him perform",
+      "effects": {
+        "horde": 15,
+        "fear": -15
+      }
+    }
+  },
+  {
+    "charId": "char_5",
+    "prompt": "Boss... the lower levels are flooding with blood. Again. Do we drain it, or just buy taller boots? I am tired of draining it.",
+    "dialogues": [
+      {
+        "btn": "Whose blood is it?",
+        "text": "I stopped keeping track three centuries ago, Boss."
+      },
+      {
+        "btn": "Won't the goblins drown?",
+        "text": "They float. Mostly."
+      }
+    ],
+    "leftChoice": {
+      "text": "Buy taller boots",
+      "effects": {
+        "loot": -20,
+        "fear": 15
+      }
+    },
+    "rightChoice": {
+      "text": "Drain the levels",
+      "effects": {
+        "horde": -15,
+        "might": 10
+      }
+    }
+  },
+  {
+    "charId": "char_6",
+    "prompt": "Overlord. The Deep Flame demands a theatrical tragedy. Shall we force the goblins to act out 'Hamlet', or just set them on fire?",
+    "dialogues": [
+      {
+        "btn": "Do the goblins know Hamlet?",
+        "text": "They believe it is a play about a small, delicious pig. It is a disaster."
+      },
+      {
+        "btn": "Will fire appease the Flame?",
+        "text": "Fire always appeases the Flame, Overlord. It is wonderfully predictable."
+      }
+    ],
+    "leftChoice": {
+      "text": "Put on the play",
+      "effects": {
+        "fear": -15,
+        "horde": 10,
+        "loot": -5
+      }
+    },
+    "rightChoice": {
+      "text": "Set them on fire",
+      "effects": {
+        "fear": 20,
+        "horde": -25
+      }
+    }
+  },
+  {
+    "charId": "char_7",
+    "prompt": "My Lord. I have decided to take a goblin squire. His name is 'Mud'. I shall teach him the heavy, depressing burden of chivalry.",
+    "dialogues": [
+      {
+        "btn": "Why Mud?",
+        "text": "He looked at a puddle with the same profound despair I feel looking at the stars."
+      },
+      {
+        "btn": "Will he survive the training?",
+        "text": "His bones are brittle, but his spirit is appropriately shattered."
+      }
+    ],
+    "leftChoice": {
+      "text": "Knight him",
+      "effects": {
+        "fear": 15,
+        "might": -15
+      }
+    },
+    "rightChoice": {
+      "text": "Forbid it",
+      "effects": {
+        "might": 10,
+        "fear": -10
+      }
+    }
+  },
+  {
+    "charId": "char_8",
+    "prompt": "Overlord! I've started selling 'I Survived [[The Iron Pits]]' shrouds to fleeing heroes! The profit margins are incredible!",
+    "dialogues": [
+      {
+        "btn": "You are arming our enemies?",
+        "text": "No, no! It's very cheap cotton. It offers negative armor class!"
+      },
+      {
+        "btn": "Does the Vanguard know?",
+        "text": "They get a 5% royalty on every hero they deliberately let escape."
+      }
+    ],
+    "leftChoice": {
+      "text": "Expand the clothing line",
+      "effects": {
+        "loot": 30,
+        "might": -20
+      },
+      "nextCard": {
+        "type": "text",
+        "charId": "char_8",
+        "prompt": "Capitalism!",
+        "cardText": "Overlord! The surface-dwellers are treating our death-traps like an amusement park! They are lining up outside for the 'Lava Flume Ride'!",
+        "leftChoice": {
+          "text": "Charge admission",
+          "effects": {
+            "loot": 30,
+            "fear": -25,
+            "might": -10
+          }
+        },
+        "rightChoice": {
+          "text": "Slaughter the tourists",
+          "effects": {
+            "fear": 30,
+            "loot": -15,
+            "horde": 10
+          }
+        }
+      }
+    },
+    "rightChoice": {
+      "text": "Shut it down",
+      "effects": {
+        "might": 15,
+        "loot": -15
+      }
+    }
+  },
+  {
+    "charId": "char_9",
+    "prompt": "OVERLORD. GRAVITY IS BECOMING TEDIOUS. MAY I INVERT IT IN THE EAST WING FOR MY AMUSEMENT?",
+    "dialogues": [
+      {
+        "btn": "What happens to the Orcs there?",
+        "text": "THEY WILL LEARN TO WALK ON THE CEILING. OR THEY WILL FALL UPWARDS FOREVER."
+      },
+      {
+        "btn": "Will it affect the treasury?",
+        "text": "GOLD IS HEAVY. IT WILL MAKE A DELIGHTFUL, LETHAL RAIN."
+      }
+    ],
+    "leftChoice": {
+      "text": "Invert gravity",
+      "effects": {
+        "fear": 25,
+        "might": -20,
+        "loot": -10
+      }
+    },
+    "rightChoice": {
+      "text": "Keep gravity normal",
+      "effects": {
+        // "suggestion 3": The 'Phantom Dot'. Player sees the dots, but no actual stat changes.
+      }
+    }
+  },
+  {
+    "charId": "char_9",
+    "prompt": "OVERLORD. THESE INTERMINABLE SWIPES DEMAND A FINAL CHOICE. ==THE UNPAID DEVELOPER== APPEARS! ACCEPTS HIS OFFER?",
+    "dialogues": [
+      {
+        "btn": "Developer? Architectural God?",
+        "text": "A DIVINE ENTITY THAT DEMANDS TITHES OF 'COFFEE' TO DESIGN THIS VERY REALITY."
+      },
+      {
+        "btn": "What is his offer?",
+        "text": "A CONCEPT CALLED 'PAID LEAVE'. WHERE HE STOPS WATCHING YOUR STRUGGLES."
+      }
+    ],
+    "leftChoice": {
+      "text": "Accept synergy",
+      "effects": {
+        "might": -15,
+        "horde": 15,
+        "loot": 5
+      }
+    },
+    "rightChoice": {
+      "text": "Banish him",
+      "effects": {
+        "fear": 20,
+        "horde": -15,
+        "might": 10
+      }
+    }
+  }
+]
