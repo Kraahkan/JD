@@ -1,1 +1,1402 @@
-  
+{
+  "packId": "content_pack_2",
+  "packName": "The Dark Below \u2014 New Blood",
+  "version": "1.0",
+  "totalCards": 37,
+  "CHARACTERS": {
+    "char_10": {
+      "name": "Skarrix",
+      "tags": [
+        "reptilian",
+        "spymaster"
+      ],
+      "flavor": "Cold, precise. Speaks like every word costs something.",
+      "image": "https://jdlindsay.com/IMG_2314.png"
+    },
+    "char_11": {
+      "name": "Valdrath",
+      "tags": [
+        "kobold",
+        "fighter"
+      ],
+      "flavor": "Enormous chip on his shoulder. Furious at being underestimated. Usually right.",
+      "image": "https://jdlindsay.com/IMG_2315.png"
+    },
+    "char_12": {
+      "name": "Vex",
+      "tags": [
+        "kobold",
+        "tactician"
+      ],
+      "flavor": "Where Valdrath is all rage, she is all patience. Speaks rarely and only to devastate.",
+      "image": "https://jdlindsay.com/IMG_2316.png"
+    },
+    "char_13": {
+      "name": "The Branded",
+      "tags": [
+        "ancient",
+        "ritual"
+      ],
+      "flavor": "The runes predate the dungeon. When he speaks it is a statement, never a question.",
+      "image": "https://jdlindsay.com/IMG_2317.png"
+    },
+    "char_14": {
+      "name": "Morra",
+      "tags": [
+        "tiefling",
+        "commander"
+      ],
+      "flavor": "The only one here doing her job correctly. Perpetually furious about it.",
+      "image": "https://jdlindsay.com/IMG_2318.png"
+    }
+  },
+  "DECK_JSON": [
+    {
+      "charId": "char_10",
+      "prompt": "One of your inner circle is selling information to the surface. I know which one. The price is your silence on an unrelated matter.",
+      "dialogues": [
+        {
+          "btn": "Which one?",
+          "text": "The price first."
+        },
+        {
+          "btn": "What unrelated matter?",
+          "text": "A shipment I lost. The contents are not your concern. The silence is."
+        }
+      ],
+      "leftChoice": {
+        "text": "Pay his price",
+        "effects": {
+          "fear": 15,
+          "loot": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Refuse him",
+        "effects": {
+          "fear": -15,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_10",
+      "prompt": "I have placed an informant in the Order of the Light. He is very good. He is also very expensive.",
+      "dialogues": [
+        {
+          "btn": "How expensive?",
+          "text": "Less than a war. More than you'd like."
+        },
+        {
+          "btn": "Is he reliable?",
+          "text": "He has survived four years. That is its own answer."
+        }
+      ],
+      "leftChoice": {
+        "text": "Pay for the spy",
+        "effects": {
+          "loot": -20,
+          "fear": 20
+        }
+      },
+      "rightChoice": {
+        "text": "Pull him out",
+        "effects": {
+          "fear": -15,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_10",
+      "prompt": "The Sun-King knows our eastern tunnel exists. He does not yet know where it leads. We have perhaps a week.",
+      "dialogues": [
+        {
+          "btn": "How did he find out?",
+          "text": "Someone talked. I am handling it."
+        },
+        {
+          "btn": "Can we collapse it?",
+          "text": "We can. We lose three months of supply access. Your call."
+        }
+      ],
+      "leftChoice": {
+        "text": "Collapse the tunnel",
+        "effects": {
+          "might": -10,
+          "loot": -15,
+          "fear": 15
+        }
+      },
+      "rightChoice": {
+        "text": "Set a trap in it",
+        "effects": {
+          "might": 20,
+          "loot": -10
+        }
+      }
+    },
+    {
+      "charId": "char_10",
+      "prompt": "A surface assassin entered the dungeon last night. She is still here. I am watching her. Should I let her run?",
+      "dialogues": [
+        {
+          "btn": "Who sent her?",
+          "text": "Unknown. The interesting part is who she hasn't moved against yet."
+        }
+      ],
+      "leftChoice": {
+        "text": "Let her run",
+        "effects": {
+          "fear": 10,
+          "might": -10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_10",
+          "prompt": "She tried to kill the Shadow Priest. She failed. She is now in a cell. She won't say who sent her but she keeps looking toward the merchant's corridor.",
+          "leftChoice": {
+            "text": "Interrogate her",
+            "effects": {
+              "fear": 10,
+              "loot": 0
+            }
+          },
+          "rightChoice": {
+            "text": "Release her with a message",
+            "effects": {
+              "fear": 15,
+              "loot": -5
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Take her now",
+        "effects": {
+          "fear": 20,
+          "might": -5
+        }
+      }
+    },
+    {
+      "charId": "char_10",
+      "prompt": "I require three days away from the dungeon. Do not ask where. I will return with something useful.",
+      "dialogues": [
+        {
+          "btn": "Can I ask what?",
+          "text": "You can ask."
+        }
+      ],
+      "leftChoice": {
+        "text": "Let him go",
+        "effects": {
+          "fear": -10,
+          "loot": 15
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_10",
+          "prompt": "He returned on the third day. He left a locked chest outside your door and said nothing. The chest hums faintly.",
+          "leftChoice": {
+            "text": "Open it",
+            "effects": {
+              "loot": 15,
+              "fear": -5
+            }
+          },
+          "rightChoice": {
+            "text": "Leave it locked",
+            "effects": {
+              "fear": 10,
+              "loot": 0
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Deny the leave",
+        "effects": {
+          "fear": -15,
+          "might": -5
+        }
+      }
+    },
+    {
+      "charId": "char_11",
+      "prompt": "I want to lead the next raid. Not assist. Lead. I am twice the fighter of anyone you'd send and we both know it.",
+      "dialogues": [
+        {
+          "btn": "Are you ready for it?",
+          "text": "I've been ready since before you gave me this rank. Sir."
+        },
+        {
+          "btn": "The Uruks won't follow a kobold.",
+          "text": "The Uruks will follow whoever breaks the most heads. Watch me."
+        }
+      ],
+      "leftChoice": {
+        "text": "Give him the raid",
+        "effects": {
+          "might": 20,
+          "horde": -10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_11",
+          "prompt": "He came back with three crates of surface steel and a split lip. The Uruks carried him on their shoulders. He looked furious about it.",
+          "leftChoice": {
+            "text": "Let them celebrate",
+            "effects": {
+              "might": 10,
+              "horde": 5
+            }
+          },
+          "rightChoice": {
+            "text": "Back to work",
+            "effects": {
+              "fear": 10,
+              "might": 5
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Not yet",
+        "effects": {
+          "might": -10,
+          "fear": -10
+        }
+      }
+    },
+    {
+      "charId": "char_11",
+      "prompt": "The big ones get the good armor. I get the scraps. Fix it or I fix it myself.",
+      "dialogues": [
+        {
+          "btn": "What does he want?",
+          "text": "Fitted plate. Not Orc-sized. Mine. Custom. I have measurements."
+        },
+        {
+          "btn": "What does fixing it himself mean?",
+          "text": "I take it off whoever I beat in the pit. Starting tonight."
+        }
+      ],
+      "leftChoice": {
+        "text": "Commission his armor",
+        "effects": {
+          "loot": -15,
+          "might": 15
+        }
+      },
+      "rightChoice": {
+        "text": "Earn it in the pit",
+        "effects": {
+          "might": 10,
+          "horde": -10
+        }
+      }
+    },
+    {
+      "charId": "char_11",
+      "prompt": "An Uruk called me rat-kin in front of the Vanguard. I already broke his jaw. Is that going to be a problem?",
+      "dialogues": [
+        {
+          "btn": "How bad is the jaw?",
+          "text": "Both sides. He'll eat soup for a month. He'll think twice for longer."
+        }
+      ],
+      "leftChoice": {
+        "text": "Good. Leave it.",
+        "effects": {
+          "fear": 15,
+          "might": 5
+        }
+      },
+      "rightChoice": {
+        "text": "Discipline him",
+        "effects": {
+          "might": -15,
+          "fear": -10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_11",
+          "prompt": "He took the discipline without a word. The Vanguard watched. Three Uruks have since called him sir. Unprompted.",
+          "leftChoice": {
+            "text": "Noted",
+            "effects": {
+              "might": 10,
+              "fear": 0
+            }
+          },
+          "rightChoice": {
+            "text": "Promote him",
+            "effects": {
+              "might": 15,
+              "horde": -5
+            }
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_11",
+      "prompt": "I can get us through the mountain pass the surface army is using. I've scouted it three times. Alone. At night.",
+      "dialogues": [
+        {
+          "btn": "How did you get out?",
+          "text": "Small. Quiet. Fast. Advantages nobody credits me with."
+        },
+        {
+          "btn": "Is it dangerous?",
+          "text": "For them, yes."
+        }
+      ],
+      "leftChoice": {
+        "text": "Send him through",
+        "effects": {
+          "might": 20,
+          "loot": 15
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_11",
+          "prompt": "He came back with a map of the supply route, three surface patrol schedules, and a black eye he refuses to explain.",
+          "leftChoice": {
+            "text": "Ask about the eye",
+            "effects": {
+              "fear": 0,
+              "loot": 10
+            }
+          },
+          "rightChoice": {
+            "text": "Don't ask",
+            "effects": {
+              "loot": 15,
+              "might": 5
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Too risky",
+        "effects": {
+          "might": -10,
+          "loot": -5
+        }
+      }
+    },
+    {
+      "charId": "char_11",
+      "prompt": "They wrote songs about the Orc raids. Nobody writes songs about what I do. I want a bard. A good one.",
+      "dialogues": [
+        {
+          "btn": "What would the song be about?",
+          "text": "Everything they missed. Which is most of it."
+        },
+        {
+          "btn": "We have a bard in the cells.",
+          "text": "I know. I've already given him the outline. He needs funding."
+        }
+      ],
+      "leftChoice": {
+        "text": "Fund the ballad",
+        "effects": {
+          "loot": -10,
+          "fear": 15
+        }
+      },
+      "rightChoice": {
+        "text": "No bards",
+        "effects": {
+          "fear": -10,
+          "might": -5
+        }
+      }
+    },
+    {
+      "charId": "char_12",
+      "prompt": "The Orcs are loud. The goblins are endless. I have been thinking. Give me one floor and I will show you what discipline looks like.",
+      "dialogues": [
+        {
+          "btn": "What would change?",
+          "text": "Everything. Quietly."
+        },
+        {
+          "btn": "Why one floor?",
+          "text": "To start."
+        }
+      ],
+      "leftChoice": {
+        "text": "Give her the floor",
+        "effects": {
+          "fear": 20,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Stay in your lane",
+        "effects": {
+          "fear": -15,
+          "might": 5
+        }
+      }
+    },
+    {
+      "charId": "char_12",
+      "prompt": "The merchant has been skimming the vault tributes. I have the ledger. What you do with it is your business.",
+      "dialogues": [
+        {
+          "btn": "How long has this been happening?",
+          "text": "Long enough that he thinks you haven't noticed. Which tells me something about you."
+        }
+      ],
+      "leftChoice": {
+        "text": "Use it against him",
+        "effects": {
+          "loot": 20,
+          "fear": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Burn the ledger",
+        "effects": {
+          "loot": -15,
+          "fear": -10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_12",
+          "prompt": "She watched you burn it without expression. Later that day the merchant's prices dropped significantly. She did not mention it.",
+          "leftChoice": {
+            "text": "Say nothing",
+            "effects": {
+              "fear": 10,
+              "loot": 5
+            }
+          },
+          "rightChoice": {
+            "text": "Ask her what she did",
+            "effects": {
+              "fear": 15,
+              "loot": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_12",
+      "prompt": "I don't need more troops. I need better ones. Let me cut the Vanguard by half and triple their training.",
+      "dialogues": [
+        {
+          "btn": "Which half stays?",
+          "text": "The half that survives the selection."
+        },
+        {
+          "btn": "How long does training take?",
+          "text": "As long as it takes. Rushing it is how you get the current Vanguard."
+        }
+      ],
+      "leftChoice": {
+        "text": "Do it",
+        "effects": {
+          "might": 20,
+          "horde": -20
+        }
+      },
+      "rightChoice": {
+        "text": "Keep the numbers",
+        "effects": {
+          "horde": 10,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_12",
+      "prompt": "Something in the lower depths has been watching the eastern patrols. Not attacking. Watching. I want to go down alone.",
+      "dialogues": [
+        {
+          "btn": "Is it dangerous?",
+          "text": "Probably. That's why I'm going alone."
+        },
+        {
+          "btn": "What do you think it is?",
+          "text": "Something that's deciding."
+        }
+      ],
+      "leftChoice": {
+        "text": "Let her go",
+        "effects": {
+          "fear": 15,
+          "might": 10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_12",
+          "prompt": "She returned after two days. She said one thing: it has been there longer than the dungeon. It is not hostile. It is waiting. She will not say what for.",
+          "leftChoice": {
+            "text": "Post guards down there",
+            "effects": {
+              "fear": 10,
+              "might": -5
+            }
+          },
+          "rightChoice": {
+            "text": "Leave it alone",
+            "effects": {
+              "fear": 15,
+              "loot": 0
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Send backup",
+        "effects": {
+          "might": -10,
+          "fear": -10
+        }
+      }
+    },
+    {
+      "charId": "char_12",
+      "prompt": "Valdrath and I disagree on the eastern patrol routes. He is wrong. I would like this settled before someone dies proving it.",
+      "dialogues": [
+        {
+          "btn": "Who's more likely to be right?",
+          "text": "Me. But his way is faster, which is why it's wrong."
+        },
+        {
+          "btn": "What does Valdrath say?",
+          "text": "That I overthink. He is not entirely incorrect."
+        }
+      ],
+      "leftChoice": {
+        "text": "Side with Vex",
+        "effects": {
+          "might": 10,
+          "fear": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Side with Valdrath",
+        "effects": {
+          "might": 15,
+          "horde": -10
+        }
+      }
+    },
+    {
+      "charId": "char_13",
+      "prompt": "The runes on the lower walls are not decorative. Someone has been feeding them. Stop them or do not. But know what you are allowing.",
+      "dialogues": [
+        {
+          "btn": "Who is feeding them?",
+          "text": "Something that was here before the dungeon."
+        },
+        {
+          "btn": "What do the runes do?",
+          "text": "They remember."
+        }
+      ],
+      "leftChoice": {
+        "text": "Investigate",
+        "effects": {
+          "fear": 20,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Leave them",
+        "effects": {
+          "fear": -15,
+          "loot": 10
+        }
+      }
+    },
+    {
+      "charId": "char_13",
+      "prompt": "I will fight the surface champion. Alone. This is not a request.",
+      "dialogues": [
+        {
+          "btn": "Can you beat him?",
+          "text": "I have beaten things older than his bloodline."
+        }
+      ],
+      "leftChoice": {
+        "text": "Let him fight",
+        "effects": {
+          "fear": 20,
+          "might": 15
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_13",
+          "prompt": "He returned before midday. No wounds. He left the champion's gauntlet outside your door and said nothing.",
+          "leftChoice": {
+            "text": "Ask what happened",
+            "effects": {
+              "fear": 10,
+              "might": 0
+            }
+          },
+          "rightChoice": {
+            "text": "Don't ask",
+            "effects": {
+              "fear": 15,
+              "might": 5
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Send the Vanguard instead",
+        "effects": {
+          "might": -15,
+          "fear": -15
+        }
+      }
+    },
+    {
+      "charId": "char_13",
+      "prompt": "The young ones mock the old ways. They do not know what the old ways cost. I would like to show them.",
+      "dialogues": [
+        {
+          "btn": "Show them how?",
+          "text": "The same way I was shown. They will not mock afterward."
+        },
+        {
+          "btn": "Will they survive it?",
+          "text": "The ones worth keeping will."
+        }
+      ],
+      "leftChoice": {
+        "text": "Let him teach",
+        "effects": {
+          "might": 15,
+          "horde": -15
+        }
+      },
+      "rightChoice": {
+        "text": "Too brutal",
+        "effects": {
+          "might": -10,
+          "fear": -5
+        }
+      }
+    },
+    {
+      "charId": "char_13",
+      "prompt": "The brands are fading. The ritual requires blood. Mine is no longer enough. I need volunteers.",
+      "dialogues": [
+        {
+          "btn": "What happens if they fade?",
+          "text": "The things they hold back stop being held back."
+        },
+        {
+          "btn": "Will the volunteers survive?",
+          "text": "Most of them."
+        }
+      ],
+      "leftChoice": {
+        "text": "Send him goblins",
+        "effects": {
+          "fear": 20,
+          "horde": -20
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_13",
+          "prompt": "The ritual is done. The brands hold. Fourteen goblins went in. Eleven came out. The three who didn't are part of the walls now. Literally.",
+          "leftChoice": {
+            "text": "Acceptable",
+            "effects": {
+              "fear": 15,
+              "horde": -5
+            }
+          },
+          "rightChoice": {
+            "text": "What do you mean literally",
+            "effects": {
+              "fear": 20,
+              "horde": 0
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Find another way",
+        "effects": {
+          "fear": -20,
+          "might": -15
+        }
+      }
+    },
+    {
+      "charId": "char_13",
+      "prompt": "I am leaving for three days. Do not send anyone after me. Do not ask where I am going.",
+      "dialogues": [
+        {
+          "btn": "Will you come back?",
+          "text": "I always come back."
+        },
+        {
+          "btn": "Should we be worried?",
+          "text": "You should always be worried. That is unrelated to this."
+        }
+      ],
+      "leftChoice": {
+        "text": "Let him go",
+        "effects": {
+          "fear": 10,
+          "might": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Send someone after him",
+        "effects": {
+          "fear": -20,
+          "might": -15
+        }
+      }
+    },
+    {
+      "charId": "char_14",
+      "prompt": "The east barricade has been unmanned for six days. I have been covering it myself. I would like this acknowledged.",
+      "dialogues": [
+        {
+          "btn": "Why hasn't anyone reported it?",
+          "text": "Because I fixed it before it became a crisis. That is apparently invisible."
+        },
+        {
+          "btn": "Who was supposed to man it?",
+          "text": "Three separate units. All with excellent excuses."
+        }
+      ],
+      "leftChoice": {
+        "text": "Acknowledge her",
+        "effects": {
+          "fear": 15,
+          "horde": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Just assign someone",
+        "effects": {
+          "fear": -15,
+          "might": -5
+        }
+      }
+    },
+    {
+      "charId": "char_14",
+      "prompt": "The Vanguard filed a formal complaint about my drills. In writing. On parchment. I need a moment.",
+      "dialogues": [
+        {
+          "btn": "What did the complaint say?",
+          "text": "That I am relentless, joyless, and make them run laps at midnight. All correct."
+        },
+        {
+          "btn": "Are the drills too hard?",
+          "text": "The drills are exactly hard enough. The Vanguard is too soft."
+        }
+      ],
+      "leftChoice": {
+        "text": "Back her drills",
+        "effects": {
+          "might": 15,
+          "horde": -15
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_14",
+          "prompt": "Three weeks later the Vanguard ran a night drill unprompted. No order given. Morra was watching from the upper walkway. She said nothing. Her expression was unreadable.",
+          "leftChoice": {
+            "text": "Something is working",
+            "effects": {
+              "might": 15,
+              "horde": 0
+            }
+          },
+          "rightChoice": {
+            "text": "Ask her what she thinks",
+            "effects": {
+              "might": 10,
+              "fear": 5
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Ease up a little",
+        "effects": {
+          "horde": 10,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_14",
+      "prompt": "A hero cleared the third floor. My third floor. The traps I designed, the patrols I set, the protocols I wrote. I want an explanation.",
+      "dialogues": [
+        {
+          "btn": "How did he get through?",
+          "text": "Someone propped open the eastern gate. With a bucket. A bucket, Overlord."
+        },
+        {
+          "btn": "Was anyone hurt?",
+          "text": "Two goblins and my professional pride. The goblins will recover."
+        }
+      ],
+      "leftChoice": {
+        "text": "Find who left the bucket",
+        "effects": {
+          "fear": 15,
+          "might": 10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_14",
+          "prompt": "It was Kargoth. He needed to carry something large through the gate. He didn't see the problem. Morra is very still right now.",
+          "leftChoice": {
+            "text": "Let her handle it",
+            "effects": {
+              "fear": 15,
+              "might": -5
+            }
+          },
+          "rightChoice": {
+            "text": "Step between them",
+            "effects": {
+              "might": 5,
+              "fear": -5
+            }
+          }
+        }
+      },
+      "rightChoice": {
+        "text": "Rebuild the floor",
+        "effects": {
+          "loot": -20,
+          "might": 10
+        }
+      }
+    },
+    {
+      "charId": "char_14",
+      "prompt": "I have not slept in four days. The dungeon is running perfectly. I need one hour and I need you to not break anything.",
+      "dialogues": [
+        {
+          "btn": "What could go wrong in an hour?",
+          "text": "Last time I took an hour, Greenfang tried to reroute the lava."
+        },
+        {
+          "btn": "When did you last sleep?",
+          "text": "Properly? I genuinely cannot remember."
+        }
+      ],
+      "leftChoice": {
+        "text": "Take the hour",
+        "effects": {
+          "might": 10,
+          "horde": 10
+        }
+      },
+      "rightChoice": {
+        "text": "We need you now",
+        "effects": {
+          "might": 15,
+          "fear": -10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_14",
+          "prompt": "She worked another six hours without complaint. Then she sat down in the war room and didn't move for a full day. Nobody dared wake her.",
+          "leftChoice": {
+            "text": "Let her sleep",
+            "effects": {
+              "might": -5,
+              "horde": 10
+            }
+          },
+          "rightChoice": {
+            "text": "Leave a note",
+            "effects": {
+              "fear": 0,
+              "might": 5
+            }
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_14",
+      "prompt": "The Shadow Priest requisitioned my supply stores for a ritual. Without asking. I want his tongue or an apology. Either is fine.",
+      "dialogues": [
+        {
+          "btn": "What did he take?",
+          "text": "Three crates of iron filings, a month of rations, and my best rope. For a ritual. My rope."
+        },
+        {
+          "btn": "Did it work at least?",
+          "text": "He says yes. The rope is gone regardless."
+        }
+      ],
+      "leftChoice": {
+        "text": "Make him apologise",
+        "effects": {
+          "fear": -15,
+          "might": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Replenish her stores",
+        "effects": {
+          "loot": -15,
+          "horde": 15
+        }
+      }
+    },
+    {
+      "charId": "char_10",
+      "prompt": "The spy I turned inside the Order has sent a final message. He has been discovered. He is asking for extraction. If I pull him out, three years of intelligence access dies with him. If I leave him, he dies.",
+      "dialogues": [
+        {
+          "btn": "Can we reach him in time?",
+          "text": "Possibly. The window is narrow and the risk is considerable."
+        },
+        {
+          "btn": "What did he give us?",
+          "text": "Enough to know when they were coming. Twice. He saved more lives than he knew."
+        }
+      ],
+      "leftChoice": {
+        "text": "Extract him",
+        "effects": {
+          "fear": -10,
+          "loot": -15,
+          "might": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Leave him",
+        "effects": {
+          "fear": 15,
+          "loot": 10,
+          "might": -5
+        }
+      }
+    },
+    {
+      "charId": "char_10",
+      "prompt": "I have identified the traitor. It is someone you trust. The evidence is conclusive. They do not yet know I know. How you proceed will tell me more about you than anything else has.",
+      "dialogues": [
+        {
+          "btn": "Who is it?",
+          "text": "That depends on what you intend to do with the answer."
+        }
+      ],
+      "leftChoice": {
+        "text": "Confront them privately",
+        "effects": {
+          "fear": -10,
+          "might": 10,
+          "loot": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Make an example publicly",
+        "effects": {
+          "fear": 20,
+          "might": -10,
+          "horde": -10
+        }
+      }
+    },
+    {
+      "charId": "char_11",
+      "prompt": "The village we raided last season \u2014 I went back alone. The survivors rebuilt. There are children there now who weren't there before. My orders stand. I am telling you this not to ask permission. I am telling you because you should know what the orders mean.",
+      "dialogues": [
+        {
+          "btn": "Why are you telling me this?",
+          "text": "Because someone should have to know. Might as well be you."
+        }
+      ],
+      "leftChoice": {
+        "text": "The orders stand",
+        "effects": {
+          "fear": 15,
+          "might": 10,
+          "horde": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Find another target",
+        "effects": {
+          "fear": -15,
+          "loot": -10,
+          "might": -5
+        }
+      }
+    },
+    {
+      "charId": "char_11",
+      "prompt": "I can end the war with the eastern clans in a single meeting. No blood. I know their chief. We grew up in the same warren before everything. They will listen to me. This is the only time I will offer this.",
+      "dialogues": [
+        {
+          "btn": "Can they be trusted?",
+          "text": "More than most things down here. Less than I'd like."
+        },
+        {
+          "btn": "What do they want?",
+          "text": "To stop. Same as me, most days."
+        }
+      ],
+      "leftChoice": {
+        "text": "Let him negotiate",
+        "effects": {
+          "fear": -15,
+          "horde": 20,
+          "loot": 10
+        }
+      },
+      "rightChoice": {
+        "text": "We finish the war",
+        "effects": {
+          "might": 15,
+          "fear": 10,
+          "horde": -15
+        }
+      }
+    },
+    {
+      "charId": "char_12",
+      "prompt": "The floor I command has had zero casualties, zero breaches. Intruders who enter turn back voluntarily. No blood, no bodies. The other commanders say it means the floor isn't being tested. I think it means something saw it and decided against.",
+      "dialogues": [
+        {
+          "btn": "Is that a good sign?",
+          "text": "It means something out there is making informed decisions. Whether that is good depends entirely on what it decides next."
+        }
+      ],
+      "leftChoice": {
+        "text": "Trust her read",
+        "effects": {
+          "fear": 15,
+          "might": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Send a probe force",
+        "effects": {
+          "might": -10,
+          "fear": -10,
+          "horde": -10
+        }
+      }
+    },
+    {
+      "charId": "char_12",
+      "prompt": "One of my soldiers has been feeding accurate patrol routes to someone on the surface. The routes were never written down. The only way they could know them is if they were on the patrols. I have narrowed it to four people. I cannot narrow further without tipping my hand.",
+      "dialogues": [
+        {
+          "btn": "Can you watch them?",
+          "text": "I have been. Whoever it is, they are very good. Almost as good as me. I find this personally offensive."
+        }
+      ],
+      "leftChoice": {
+        "text": "Change all routes immediately",
+        "effects": {
+          "might": 10,
+          "fear": -10,
+          "horde": -5
+        }
+      },
+      "rightChoice": {
+        "text": "Feed them false routes",
+        "effects": {
+          "fear": 15,
+          "might": 5
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_12",
+          "prompt": "The surface force walked into the false position. We were waiting. One of my four suspects did not look surprised when the trap closed. Vex is certain now. She is waiting for your word.",
+          "leftChoice": {
+            "text": "Take them quietly",
+            "effects": {
+              "fear": 10,
+              "might": 10
+            }
+          },
+          "rightChoice": {
+            "text": "Let Vex handle it",
+            "effects": {
+              "fear": 20,
+              "might": 5,
+              "horde": -5
+            }
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_13",
+      "prompt": "Three soldiers who touched my arm during the last engagement have begun showing marks. Faint. They do not hurt. The soldiers do not know what they mean. I do. They are not in danger yet. What they are bound to now is the question.",
+      "dialogues": [
+        {
+          "btn": "What are they bound to?",
+          "text": "Whatever I am bound to. Which is a great deal, and none of it optional."
+        },
+        {
+          "btn": "Can it be reversed?",
+          "text": "Everything can be reversed. The cost is the question."
+        }
+      ],
+      "leftChoice": {
+        "text": "Tell them the truth",
+        "effects": {
+          "fear": 15,
+          "might": -10,
+          "horde": -5
+        }
+      },
+      "rightChoice": {
+        "text": "Say nothing, watch them",
+        "effects": {
+          "fear": 10,
+          "might": 5
+        }
+      }
+    },
+    {
+      "charId": "char_13",
+      "prompt": "The thing in the lower depths that Vex observed \u2014 I have seen it before. Long before this dungeon. Long before this age. It is not waiting. It is counting. I did not tell her this when she asked. I am telling you now because the count is almost finished.",
+      "dialogues": [
+        {
+          "btn": "What is it counting?",
+          "text": "I have never been able to determine that. I have spent a very long time trying."
+        },
+        {
+          "btn": "How long has it been counting?",
+          "text": "Since before the concept of counting existed. It invented the practice."
+        }
+      ],
+      "leftChoice": {
+        "text": "Seal the lower depths",
+        "effects": {
+          "loot": -20,
+          "fear": 15,
+          "might": -10
+        }
+      },
+      "rightChoice": {
+        "text": "Let it finish",
+        "effects": {
+          "fear": 20,
+          "horde": -10
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_13",
+          "prompt": "The count finished at dawn. Nothing happened. The Branded sat in silence for a full hour. Then he said: it was satisfied. He will not elaborate. He seems, for the first time, relieved.",
+          "leftChoice": {
+            "text": "Ask what it counted",
+            "effects": {
+              "fear": 10,
+              "loot": 0
+            }
+          },
+          "rightChoice": {
+            "text": "Leave it alone",
+            "effects": {
+              "fear": 5,
+              "might": 10
+            }
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_13",
+      "prompt": "I can end what lives in the deep permanently. The ritual requires destroying something irreplaceable. Not gold. Not soldiers. Something you have only one of and cannot name until the moment it is gone. I have done this before. I am telling you the cost honestly because the last person who paid it did not know what they were agreeing to.",
+      "dialogues": [
+        {
+          "btn": "What did the last person lose?",
+          "text": "They never told me. They couldn't, after. They just looked different."
+        }
+      ],
+      "leftChoice": {
+        "text": "Perform the ritual",
+        "effects": {
+          "fear": 25,
+          "horde": 15,
+          "loot": -25
+        }
+      },
+      "rightChoice": {
+        "text": "Not yet",
+        "effects": {
+          "fear": -10,
+          "might": -10
+        }
+      }
+    },
+    {
+      "charId": "char_14",
+      "prompt": "My protocols were followed precisely during the third floor breach. Every gate closed on schedule. Every patrol ran the correct route. A hero still got through. Either my system has a flaw I cannot find, or someone who knows the system intimately used it against us. Both possibilities keep me awake.",
+      "dialogues": [
+        {
+          "btn": "Which do you think it is?",
+          "text": "I think it is the second. I am hoping it is the first."
+        }
+      ],
+      "leftChoice": {
+        "text": "Audit the system",
+        "effects": {
+          "loot": -10,
+          "might": 10,
+          "fear": -5
+        }
+      },
+      "rightChoice": {
+        "text": "Audit the people",
+        "effects": {
+          "fear": 15,
+          "might": 5,
+          "horde": -10
+        }
+      }
+    },
+    {
+      "charId": "char_14",
+      "prompt": "I have a soldier who is the best fighter in my unit by a considerable margin. She is also the reason three others have requested transfers. I have read both sides. Neither is wrong. I cannot keep everyone and I cannot afford to lose either.",
+      "dialogues": [
+        {
+          "btn": "What does she say?",
+          "text": "That the others are soft. She is correct. That is not the whole of the problem."
+        },
+        {
+          "btn": "What do the others say?",
+          "text": "That she makes the dungeon feel less survivable even when standing still. Also correct."
+        }
+      ],
+      "leftChoice": {
+        "text": "Keep the fighter, let the others go",
+        "effects": {
+          "might": 15,
+          "horde": -15,
+          "fear": 5
+        }
+      },
+      "rightChoice": {
+        "text": "Reassign her elsewhere",
+        "effects": {
+          "might": -10,
+          "horde": 10,
+          "fear": -5
+        }
+      }
+    },
+    {
+      "charId": "char_14",
+      "prompt": "A surface deserter came to our gates asking for asylum. He has genuine intelligence on the Sun-King's next campaign. He also has a family on the surface who do not know where he is. Taking him protects us. Keeping him condemns them when the Sun-King looks for him.",
+      "dialogues": [
+        {
+          "btn": "Is the intelligence reliable?",
+          "text": "Everything I can verify checks out. The rest I cannot verify yet."
+        },
+        {
+          "btn": "What does he want?",
+          "text": "Safety. That's all. He said it very quietly."
+        }
+      ],
+      "leftChoice": {
+        "text": "Grant asylum",
+        "effects": {
+          "fear": -10,
+          "loot": 15,
+          "might": 10
+        }
+      },
+      "rightChoice": {
+        "text": "Turn him away",
+        "effects": {
+          "fear": 10,
+          "might": -5
+        },
+        "nextCard": {
+          "type": "text",
+          "charId": "char_14",
+          "prompt": "He was taken by the Sun-King's men three days later on the road. The intelligence he carried died with him. Morra filed no report on this. She simply adjusted the eastern watch rotation and said nothing.",
+          "leftChoice": {
+            "text": "Note it in the record",
+            "effects": {
+              "fear": -5,
+              "loot": -10
+            }
+          },
+          "rightChoice": {
+            "text": "Say nothing",
+            "effects": {
+              "fear": 5,
+              "might": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "LORE_DICTIONARY": {
+    "The Shadow Network": {
+      "title": "The Shadow Network",
+      "loreInfo": "Skarrix's web of informants, cutpurses, and compromised nobles stretching from the dungeon to the surface courts. Nobody knows its full extent. Including Skarrix, who lost the ledger sometime during the third siege and has been improvising since."
+    },
+    "The Infiltrated Order": {
+      "title": "The Infiltrated Order",
+      "loreInfo": "A splinter cell of the Order of the Light whose upper ranks have been quietly replaced by Skarrix's agents over four years. They still send holy pamphlets to the dungeon. Skarrix files them under 'operational humor.'"
+    },
+    "The Branded Marks": {
+      "title": "The Branded Marks",
+      "loreInfo": "Ritual sigils carved into The Branded's flesh over centuries of service to something older than language. Each mark holds a different thing at bay. He has never written down what any of them mean. He considers this responsible contingency planning."
+    },
+    "The Old Compact": {
+      "title": "The Old Compact",
+      "loreInfo": "An agreement struck before the dungeon existed, between The Branded and entities whose names have since been removed from every text that mentioned them. The terms are unknown. The Branded honors it regardless. He finds questions about it tedious."
+    },
+    "The Lower Watching": {
+      "title": "The Lower Watching",
+      "loreInfo": "Whatever dwells beneath the eastern patrol routes has been there longer than the dungeon's foundations. It has never attacked. It has never communicated. It simply observes. Vex went down alone to look at it. She came back two days later and said it was waiting. Nobody asked what for. This was considered wise."
+    },
+    "The Thornpass": {
+      "title": "The Thornpass",
+      "loreInfo": "A narrow mountain pass used by the surface army for supply caravans, named for the thornbriar that grows along its walls. Valdrath has scouted it three times at night without being detected. He finds this less impressive than everyone else does, since he considers not being detected the bare minimum standard for competence."
+    },
+    "The Kobold Question": {
+      "title": "The Kobold Question",
+      "loreInfo": "An ongoing philosophical debate in dungeon culture about whether kobolds count as 'real' dungeon inhabitants or merely 'very aggressive furniture.' Valdrath is aware of this debate. He has opinions. They are expressed primarily through jaw-breaking."
+    },
+    "Vex's Floor": {
+      "title": "Vex's Floor",
+      "loreInfo": "The single floor Vex was given command of is the quietest in the dungeon. Nothing has breached it. No patrol has failed. The goblins stationed there stand straight, speak in measured tones, and refuse to discuss what the first week of training was like. They seem fine. Probably fine."
+    },
+    "The Champion's Gauntlet": {
+      "title": "The Champion's Gauntlet",
+      "loreInfo": "Left outside the Overlord's door by The Branded after his solo engagement with the surface champion. The gauntlet is undamaged. The champion is not available for comment."
+    },
+    "Morra's Protocols": {
+      "title": "Morra's Protocols",
+      "loreInfo": "A seventeen-volume operational manual covering dungeon defense, patrol scheduling, trap maintenance, and the correct way to hold a torch so you don't trip over your own feet in the dark. Volume nine is dedicated entirely to gates and why they must remain closed. It was written after the bucket incident. It is very thorough."
+    },
+    "The Bucket Incident": {
+      "title": "The Bucket Incident",
+      "loreInfo": "Classified. Morra has requested this entry remain blank. The entry is blank. The fact that the entry exists is itself considered a violation of operational security and she has filed a formal complaint about it with the Complaints Committee, who have not yet read it because they are afraid of her."
+    },
+    "The Deep Cartography": {
+      "title": "The Deep Cartography",
+      "loreInfo": "Vex's ongoing project to map the lower depths below the dungeon's known foundations. Current status: seventeen floors charted, four floors that 'resist notation,' and one floor that appeared on the map before she visited it. She has not visited it yet. She is thinking about it."
+    }
+  }
+}
