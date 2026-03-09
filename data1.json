@@ -1,9 +1,206 @@
-  {
+{
   "packId": "content_pack_1",
   "packName": "The Dark Below \u2014 Playtest Pack",
   "version": "1.0",
   "totalCards": 170,
-  "deck": [
+  "LORE_DICTIONARY": {
+    "Vanguard": {
+      "title": "The Vanguard",
+      "loreInfo": "The elite frontline shock troops of the dungeon, clad in thick, rusted iron."
+    },
+    "Sun-King": {
+      "title": "The Sun-King",
+      "loreInfo": "The tyrannical ruler of the surface realm. His light burns the eyes of the deep dwellers."
+    },
+    "The Deep Flame": {
+      "title": "The Deep Flame",
+      "loreInfo": "A primordial, sentient entity of fire that slumbers at the planet's core."
+    },
+    "Order of the Light": {
+      "title": "Order of the Light",
+      "loreInfo": "Fanatical surface zealots sworn to eradicate all dungeon ecology."
+    },
+    "The Warrens": {
+      "title": "The Warrens",
+      "loreInfo": "The damp, overcrowded maze where the Swarm sleeps. Smells like wet dog and tactical genius. Mostly wet dog."
+    },
+    "Black Iron": {
+      "title": "Black Iron",
+      "loreInfo": "Heavy, jagged metal mined from the depths. It is the only thing the Bruisers respect, mostly because it is hard to chew."
+    },
+    "Fungus Farms": {
+      "title": "The Fungus Farms",
+      "loreInfo": "The dungeon's primary food source. Varieties include 'Lung-Cough Blue' and 'Death-Cap Delight.' High in fiber, higher in lethality."
+    },
+    "The Great Ceiling": {
+      "title": "The Great Ceiling",
+      "loreInfo": "What the deep-dwellers call the Surface. A terrifying place where the roof is blue and the 'Sun' never stops screaming light."
+    },
+    "Grave-Wax": {
+      "title": "Grave-Wax",
+      "loreInfo": "Harvested from the remains of failed heroes. It provides a steady, flickering light and a scent that reminds everyone of their own mortality."
+    },
+    "The Lesser Evil": {
+      "title": "The Lesser Evil",
+      "loreInfo": "A goblin philosophical concept used to decide which of two brothers to eat during a famine. It is the cornerstone of dungeon law."
+    },
+    "Cimmerian Fog": {
+      "title": "Cimmerian Fog",
+      "loreInfo": "A thick, supernatural vapor used to hide the fact that the Swarm hasn't cleaned the hallways in three centuries."
+    },
+    "The Iron Pit": {
+      "title": "The Iron Pit",
+      "loreInfo": "The training ground for the Bruisers. A place of grunts, sweat, and the occasional accidental decapitation. High morale, low life expectancy."
+    },
+    "Rat-Stew": {
+      "title": "Rat-Stew",
+      "loreInfo": "A culinary staple. If the tail is still twitching, it's considered 'al dente.' If it talks back, it's considered a council member."
+    },
+    "Soul-Taxes": {
+      "title": "Soul-Taxes",
+      "loreInfo": "A mandatory tithe to the Deep Flame. Goblins often try to pay in 'good intentions.' They are usually incinerated for the attempt."
+    }
+  },
+  "STAT_TOOLTIP_CONTENT": {
+    "fear": {
+      "title": "Dread",
+      "text": "The terrifying presence you project. Too low, mutiny. Too high, paralysis."
+    },
+    "horde": {
+      "title": "The Swarm",
+      "text": "The endless tide of lowly goblins. Keep them fed and breeding."
+    },
+    "might": {
+      "title": "The Bruisers",
+      "text": "Your heavy hitters\u2014Uruks, trolls, and beasts. Keep them bashing."
+    },
+    "loot": {
+      "title": "The Stash",
+      "text": "Shiny rocks, stolen armor, and moldy cheese. Keep it hoarded."
+    }
+  },
+  "DEATH_EVENTS": {
+    "fear_low": {
+      "title": "The Laughing Stock",
+      "description": "The ranks no longer fear your shadow. They've turned your throne into a communal latrine and are currently using your crown to play 'toss the turnip.' You have been evicted."
+    },
+    "fear_high": {
+      "title": "The Silent Tomb",
+      "description": "Your reign of terror was too successful. The goblins are so paralyzed by fear they've stopped eating, breathing, and moving. You rule a dungeon of petrified statues."
+    },
+    "horde_low": {
+      "title": "The Lonely Overlord",
+      "description": "The last goblin has packed his bindle and left. The dungeon is empty, the torches have flickered out, and you're left arguing with the echoes."
+    },
+    "horde_high": {
+      "title": "The Green Tide Rises",
+      "description": "Overpopulation has reached critical mass. The goblins have eaten the supplies, then the furniture, then... well, you always were the 'Big Meat.'"
+    },
+    "might_low": {
+      "title": "Paper Walls",
+      "description": "A single surface-dweller toddler wandered in and accidentally tripped over your entire defense line. The Vanguard has dissolved into tears. You surrender to a five-year-old."
+    },
+    "might_high": {
+      "title": "Military Coup",
+      "description": "The Vanguard realized that if they can kill a Dragon, they can certainly kill a Boss who spends all day sitting on a throne. You are violently retired."
+    },
+    "loot_low": {
+      "title": "Complete Bankruptcy",
+      "description": "You tried to pay the Uruks in 'exposure' and 'good vibes.' They preferred to pay themselves with your internal organs."
+    },
+    "loot_high": {
+      "title": "The Wyrm's Visit",
+      "description": "Your hoard grew so bright it acted as a beacon for an Ancient Red Wyrm. It didn't even fight you; it just sat on the dungeon until everything flatlined."
+    }
+  },
+  "CHARACTERS": {
+    "char_1": {
+      "name": "Kargoth the Ironclad",
+      "tags": [
+        "orc",
+        "brute"
+      ],
+      "flavor": "A towering wall of muscle and rust. He speaks in grunts and violence.",
+      "image": "https://i.imgur.com/5Y5AbxJ.png"
+    },
+    "char_2": {
+      "name": "Snivel the Goblin",
+      "tags": [
+        "goblin"
+      ],
+      "flavor": "A wretched creature from the deep warrens.",
+      "image": "https://i.imgur.com/CUqLppA.png"
+    },
+    "char_3": {
+      "name": "Uruk Warlord",
+      "tags": [
+        "orc",
+        "uruk"
+      ],
+      "flavor": "A hulking brute demanding tribute or blood.",
+      "image": "https://i.imgur.com/9vi5M3R.png"
+    },
+    "char_4": {
+      "name": "Greenfang Bruiser",
+      "tags": [
+        "orc"
+      ],
+      "flavor": "Commander of the green tide. Thinks with his fists.",
+      "image": "https://i.imgur.com/TH3mHnP.png"
+    },
+    "char_5": {
+      "name": "Blood Scarred Orc",
+      "tags": [
+        "orc",
+        "veteran"
+      ],
+      "flavor": "A hardened veteran of a hundred surface raids.",
+      "image": "https://i.imgur.com/4H8qi9y.png"
+    },
+    "char_6": {
+      "name": "The Shadow Priest",
+      "tags": [
+        "human",
+        "cultist"
+      ],
+      "flavor": "Chanter of the dark litanies and keeper of secrets.",
+      "image": "https://i.imgur.com/9mqz8zo.png"
+    },
+    "char_7": {
+      "name": "Fallen Knight",
+      "tags": [
+        "human",
+        "undead"
+      ],
+      "flavor": "An oathbreaker who found a new master in the dark.",
+      "image": "https://i.imgur.com/9AxeNPL.png"
+    },
+    "char_8": {
+      "name": "Dungeon Merchant",
+      "tags": [
+        "human",
+        "merchant"
+      ],
+      "flavor": "A greedy peddler of cursed surface goods.",
+      "image": "https://i.imgur.com/tDKtx5p.png"
+    },
+    "char_9": {
+      "name": "The Abyssal Warden",
+      "tags": [
+        "eldritch",
+        "boss"
+      ],
+      "flavor": "An ancient evil stirred from its long slumber.",
+      "image": "https://i.imgur.com/boFuT53.png",
+      "imageFx": {
+        "boxShadow": "inset 0 0 100px rgba(180,0,0,0.6)",
+        "background": "rgba(80,0,0,0.3)",
+        "mixBlendMode": "overlay",
+        "shineColor": "rgba(255, 50, 50, 0.4)"
+      }
+    }
+  },
+  "DECK_JSON": [
     {
       "charId": "char_1",
       "prompt": "Found rusted stab-sticks under the old latrine. Give to the boyz, or melt for shiny?",
