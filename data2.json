@@ -53,7 +53,7 @@
   "DECK_JSON": [
     {
       "charId": "char_10",
-      "prompt": "One of your inner circle is selling information to the surface. I know which one. The price is your silence on an unrelated matter.",
+      "prompt": "Someone in your inner circle is selling information. I know who. My price is your silence on one matter.",
       "dialogues": [
         {
           "btn": "Which one?",
@@ -154,7 +154,7 @@
         "nextCard": {
           "type": "text",
           "charId": "char_10",
-          "prompt": "She tried to kill the Shadow Priest. She failed. She is now in a cell. She won't say who sent her but she keeps looking toward the merchant's corridor.",
+          "prompt": "She went for the Shadow Priest. Failed. She's in a cell, keeps staring toward the merchant's corridor.",
           "leftChoice": {
             "text": "Interrogate her",
             "effects": {
@@ -224,7 +224,7 @@
     },
     {
       "charId": "char_11",
-      "prompt": "I want to lead the next raid. Not assist. Lead. I am twice the fighter of anyone you'd send and we both know it.",
+      "prompt": "I want to lead the next raid. Not assist. Lead. I'm twice the fighter of anyone you'd send.",
       "dialogues": [
         {
           "btn": "Are you ready for it?",
@@ -244,7 +244,7 @@
         "nextCard": {
           "type": "text",
           "charId": "char_11",
-          "prompt": "He came back with three crates of surface steel and a split lip. The Uruks carried him on their shoulders. He looked furious about it.",
+          "prompt": "Came back with surface steel and a split lip. The Uruks carried him on their shoulders. He looked furious.",
           "leftChoice": {
             "text": "Let them celebrate",
             "effects": {
@@ -417,7 +417,7 @@
     },
     {
       "charId": "char_12",
-      "prompt": "The Orcs are loud. The goblins are endless. I have been thinking. Give me one floor and I will show you what discipline looks like.",
+      "prompt": "The Orcs are loud. The goblins are endless. Give me one floor. I'll show you what discipline looks like.",
       "dialogues": [
         {
           "btn": "What would change?",
@@ -536,7 +536,7 @@
         "nextCard": {
           "type": "text",
           "charId": "char_12",
-          "prompt": "She returned after two days. She said one thing: it has been there longer than the dungeon. It is not hostile. It is waiting. She will not say what for.",
+          "prompt": "Back after two days. One sentence: it's been there longer than the dungeon. It's not hostile. It's waiting.",
           "leftChoice": {
             "text": "Post guards down there",
             "effects": {
@@ -591,7 +591,7 @@
     },
     {
       "charId": "char_13",
-      "prompt": "The runes on the lower walls are not decorative. Someone has been feeding them. Stop them or do not. But know what you are allowing.",
+      "prompt": "The lower wall runes aren't decorative. Something has been feeding them. Stop it or don't. But know what you allow.",
       "dialogues": [
         {
           "btn": "Who is feeding them?",
@@ -710,7 +710,7 @@
         "nextCard": {
           "type": "text",
           "charId": "char_13",
-          "prompt": "The ritual is done. The brands hold. Fourteen goblins went in. Eleven came out. The three who didn't are part of the walls now. Literally.",
+          "prompt": "Brands hold. Fourteen went in. Eleven came out. The three who didn't are part of the walls now. Literally.",
           "leftChoice": {
             "text": "Acceptable",
             "effects": {
@@ -813,7 +813,7 @@
         "nextCard": {
           "type": "text",
           "charId": "char_14",
-          "prompt": "Three weeks later the Vanguard ran a night drill unprompted. No order given. Morra was watching from the upper walkway. She said nothing. Her expression was unreadable.",
+          "prompt": "Three weeks later the Vanguard ran a drill unprompted. Morra watched from the walkway. Said nothing.",
           "leftChoice": {
             "text": "Something is working",
             "effects": {
@@ -840,7 +840,7 @@
     },
     {
       "charId": "char_14",
-      "prompt": "A hero cleared the third floor. My third floor. The traps I designed, the patrols I set, the protocols I wrote. I want an explanation.",
+      "prompt": "A hero cleared my floor. My traps. My patrols. My protocols. I want an explanation.",
       "dialogues": [
         {
           "btn": "How did he get through?",
@@ -860,7 +860,7 @@
         "nextCard": {
           "type": "text",
           "charId": "char_14",
-          "prompt": "It was Kargoth. He needed to carry something large through the gate. He didn't see the problem. Morra is very still right now.",
+          "prompt": "It was Kargoth. He needed the gate open. Didn't see the problem. Morra is very still right now.",
           "leftChoice": {
             "text": "Let her handle it",
             "effects": {
@@ -887,7 +887,7 @@
     },
     {
       "charId": "char_14",
-      "prompt": "I have not slept in four days. The dungeon is running perfectly. I need one hour and I need you to not break anything.",
+      "prompt": "Four days without sleep. The dungeon runs perfectly. I need one hour. Don't break anything.",
       "dialogues": [
         {
           "btn": "What could go wrong in an hour?",
@@ -914,7 +914,7 @@
         "nextCard": {
           "type": "text",
           "charId": "char_14",
-          "prompt": "She worked another six hours without complaint. Then she sat down in the war room and didn't move for a full day. Nobody dared wake her.",
+          "prompt": "Six more hours, no complaint. Then she sat down in the war room and didn't move for a day.",
           "leftChoice": {
             "text": "Let her sleep",
             "effects": {
@@ -962,15 +962,15 @@
     },
     {
       "charId": "char_10",
-      "prompt": "The spy I turned inside the Order has sent a final message. He has been discovered. He is asking for extraction. If I pull him out, three years of intelligence access dies with him. If I leave him, he dies.",
+      "prompt": "My spy inside the Order is blown. He's asking for extraction. Pull him out and we lose three years of access.",
       "dialogues": [
         {
           "btn": "Can we reach him in time?",
-          "text": "Possibly. The window is narrow and the risk is considerable."
+          "text": "The window is narrow. Risk is considerable."
         },
         {
           "btn": "What did he give us?",
-          "text": "Enough to know when they were coming. Twice. He saved more lives than he knew."
+          "text": "Enough to know when they were coming. Twice."
         }
       ],
       "leftChoice": {
@@ -992,11 +992,11 @@
     },
     {
       "charId": "char_10",
-      "prompt": "I have identified the traitor. It is someone you trust. The evidence is conclusive. They do not yet know I know. How you proceed will tell me more about you than anything else has.",
+      "prompt": "I know who the traitor is. Someone you trust. They don't know I know yet.",
       "dialogues": [
         {
           "btn": "Who is it?",
-          "text": "That depends on what you intend to do with the answer."
+          "text": "Depends what you plan to do with the answer."
         }
       ],
       "leftChoice": {
@@ -1018,11 +1018,11 @@
     },
     {
       "charId": "char_11",
-      "prompt": "The village we raided last season \u2014 I went back alone. The survivors rebuilt. There are children there now who weren't there before. My orders stand. I am telling you this not to ask permission. I am telling you because you should know what the orders mean.",
+      "prompt": "I went back to the village. They rebuilt. There are children now. My orders stand. You should know what that means.",
       "dialogues": [
         {
           "btn": "Why are you telling me this?",
-          "text": "Because someone should have to know. Might as well be you."
+          "text": "Someone should have to know. Might as well be you."
         }
       ],
       "leftChoice": {
@@ -1044,11 +1044,11 @@
     },
     {
       "charId": "char_11",
-      "prompt": "I can end the war with the eastern clans in a single meeting. No blood. I know their chief. We grew up in the same warren before everything. They will listen to me. This is the only time I will offer this.",
+      "prompt": "I can end the eastern clan war. One meeting, no blood. I know their chief. This offer won't come again.",
       "dialogues": [
         {
           "btn": "Can they be trusted?",
-          "text": "More than most things down here. Less than I'd like."
+          "text": "More than most things here. Less than I'd like."
         },
         {
           "btn": "What do they want?",
@@ -1074,11 +1074,11 @@
     },
     {
       "charId": "char_12",
-      "prompt": "The floor I command has had zero casualties, zero breaches. Intruders who enter turn back voluntarily. No blood, no bodies. The other commanders say it means the floor isn't being tested. I think it means something saw it and decided against.",
+      "prompt": "Zero casualties. Zero breaches. Intruders turn back on their own. Something saw this floor and decided against.",
       "dialogues": [
         {
           "btn": "Is that a good sign?",
-          "text": "It means something out there is making informed decisions. Whether that is good depends entirely on what it decides next."
+          "text": "Something is making informed decisions. Whether that's good depends what it decides next."
         }
       ],
       "leftChoice": {
@@ -1099,11 +1099,11 @@
     },
     {
       "charId": "char_12",
-      "prompt": "One of my soldiers has been feeding accurate patrol routes to someone on the surface. The routes were never written down. The only way they could know them is if they were on the patrols. I have narrowed it to four people. I cannot narrow further without tipping my hand.",
+      "prompt": "Someone on my patrols is leaking routes. Never written down. Narrowed to four. Can't go further without tipping my hand.",
       "dialogues": [
         {
           "btn": "Can you watch them?",
-          "text": "I have been. Whoever it is, they are very good. Almost as good as me. I find this personally offensive."
+          "text": "Whoever it is, they're very good. Almost as good as me. I find that personally offensive."
         }
       ],
       "leftChoice": {
@@ -1123,7 +1123,7 @@
         "nextCard": {
           "type": "text",
           "charId": "char_12",
-          "prompt": "The surface force walked into the false position. We were waiting. One of my four suspects did not look surprised when the trap closed. Vex is certain now. She is waiting for your word.",
+          "prompt": "Trap closed. One suspect didn't look surprised. Vex is certain. She's waiting for your word.",
           "leftChoice": {
             "text": "Take them quietly",
             "effects": {
@@ -1144,11 +1144,11 @@
     },
     {
       "charId": "char_13",
-      "prompt": "Three soldiers who touched my arm during the last engagement have begun showing marks. Faint. They do not hurt. The soldiers do not know what they mean. I do. They are not in danger yet. What they are bound to now is the question.",
+      "prompt": "Three soldiers who touched me have faint marks now. They don't know what they mean. I do.",
       "dialogues": [
         {
           "btn": "What are they bound to?",
-          "text": "Whatever I am bound to. Which is a great deal, and none of it optional."
+          "text": "Whatever I'm bound to. Which is a great deal, none of it optional."
         },
         {
           "btn": "Can it be reversed?",
@@ -1173,15 +1173,15 @@
     },
     {
       "charId": "char_13",
-      "prompt": "The thing in the lower depths that Vex observed \u2014 I have seen it before. Long before this dungeon. Long before this age. It is not waiting. It is counting. I did not tell her this when she asked. I am telling you now because the count is almost finished.",
+      "prompt": "The thing Vex watched \u2014 I've seen it before. It's not waiting. It's counting. The count is almost done.",
       "dialogues": [
         {
           "btn": "What is it counting?",
-          "text": "I have never been able to determine that. I have spent a very long time trying."
+          "text": "I've spent a very long time trying to determine that."
         },
         {
           "btn": "How long has it been counting?",
-          "text": "Since before the concept of counting existed. It invented the practice."
+          "text": "Since before counting existed. It invented the practice."
         }
       ],
       "leftChoice": {
@@ -1201,7 +1201,7 @@
         "nextCard": {
           "type": "text",
           "charId": "char_13",
-          "prompt": "The count finished at dawn. Nothing happened. The Branded sat in silence for a full hour. Then he said: it was satisfied. He will not elaborate. He seems, for the first time, relieved.",
+          "prompt": "The count finished. Nothing happened. The Branded said: it was satisfied. For the first time, he looked relieved.",
           "leftChoice": {
             "text": "Ask what it counted",
             "effects": {
@@ -1221,11 +1221,11 @@
     },
     {
       "charId": "char_13",
-      "prompt": "I can end what lives in the deep permanently. The ritual requires destroying something irreplaceable. Not gold. Not soldiers. Something you have only one of and cannot name until the moment it is gone. I have done this before. I am telling you the cost honestly because the last person who paid it did not know what they were agreeing to.",
+      "prompt": "I can end what lives in the deep. The cost is something irreplaceable. Not gold. Something you can't name until it's gone.",
       "dialogues": [
         {
           "btn": "What did the last person lose?",
-          "text": "They never told me. They couldn't, after. They just looked different."
+          "text": "They couldn't say after. They just looked different."
         }
       ],
       "leftChoice": {
@@ -1246,11 +1246,11 @@
     },
     {
       "charId": "char_14",
-      "prompt": "My protocols were followed precisely during the third floor breach. Every gate closed on schedule. Every patrol ran the correct route. A hero still got through. Either my system has a flaw I cannot find, or someone who knows the system intimately used it against us. Both possibilities keep me awake.",
+      "prompt": "My protocols ran perfectly. Hero still got through. Either there's a flaw I can't find, or someone used the system against us.",
       "dialogues": [
         {
           "btn": "Which do you think it is?",
-          "text": "I think it is the second. I am hoping it is the first."
+          "text": "I think it's the second. I'm hoping it's the first."
         }
       ],
       "leftChoice": {
@@ -1272,15 +1272,15 @@
     },
     {
       "charId": "char_14",
-      "prompt": "I have a soldier who is the best fighter in my unit by a considerable margin. She is also the reason three others have requested transfers. I have read both sides. Neither is wrong. I cannot keep everyone and I cannot afford to lose either.",
+      "prompt": "Best fighter in my unit by a wide margin. Also why three others want transfers. Both sides are right.",
       "dialogues": [
         {
           "btn": "What does she say?",
-          "text": "That the others are soft. She is correct. That is not the whole of the problem."
+          "text": "She's correct. That's not the whole problem."
         },
         {
           "btn": "What do the others say?",
-          "text": "That she makes the dungeon feel less survivable even when standing still. Also correct."
+          "text": "That she makes the dungeon feel less survivable just standing still. Also correct."
         }
       ],
       "leftChoice": {
@@ -1302,15 +1302,15 @@
     },
     {
       "charId": "char_14",
-      "prompt": "A surface deserter came to our gates asking for asylum. He has genuine intelligence on the Sun-King's next campaign. He also has a family on the surface who do not know where he is. Taking him protects us. Keeping him condemns them when the Sun-King looks for him.",
+      "prompt": "Surface deserter at the gates. Real intelligence on the Sun-King. Family on the surface who don't know he's gone.",
       "dialogues": [
         {
           "btn": "Is the intelligence reliable?",
-          "text": "Everything I can verify checks out. The rest I cannot verify yet."
+          "text": "Everything I can verify checks out."
         },
         {
           "btn": "What does he want?",
-          "text": "Safety. That's all. He said it very quietly."
+          "text": "Safety. He said it very quietly."
         }
       ],
       "leftChoice": {
@@ -1330,7 +1330,7 @@
         "nextCard": {
           "type": "text",
           "charId": "char_14",
-          "prompt": "He was taken by the Sun-King's men three days later on the road. The intelligence he carried died with him. Morra filed no report on this. She simply adjusted the eastern watch rotation and said nothing.",
+          "prompt": "Taken three days later. Intelligence died with him. Morra filed no report. Adjusted the watch. Said nothing.",
           "leftChoice": {
             "text": "Note it in the record",
             "effects": {
