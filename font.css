@@ -1,0 +1,37 @@
+/* ==========================================================================
+   DELVE Typography & Text Effects
+   Host at: https://jdlindsay.com/font.css
+   ========================================================================== */
+
+.font-fantasy { 
+  font-family: 'EB Garamond', serif; 
+  user-select: none; 
+  -webkit-user-select: none; 
+  letter-spacing: 0.01em; 
+}
+
+.font-cinzel { 
+  font-family: 'Cinzel', serif; 
+  letter-spacing: 0.05em; 
+}
+
+.text-glow { 
+  text-shadow: 0 0 6px rgba(232, 228, 217, 0.4); 
+}
+
+.text-glow-important { 
+  text-shadow: 0 0 6px rgba(179, 151, 98, 0.5); 
+}
+
+@keyframes violentlyShake { 
+  0%, 100% { transform: translate(0, 0) rotate(0deg); } 
+  20% { transform: translate(-2px, 1px) rotate(-1deg); } 
+  40% { transform: translate(2px, -1px) rotate(1deg); } 
+  60% { transform: translate(-1px, 2px) rotate(0deg); } 
+  80% { transform: translate(1px, -2px) rotate(-1deg); } 
+}
+
+.shake-text { 
+  animation: violentlyShake 0.3s infinite; 
+}
+
