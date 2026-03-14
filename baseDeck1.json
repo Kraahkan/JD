@@ -818,16 +818,10 @@
       }
     },
     {
-      "_comment_bridge_card": "--- THE BRIDGE CARD ---",
+      "_comment_bridge_card": "--- THE BRIDGE CARD (DEBUG MODE) ---",
       "charId": "char_3",
       "id": "bridge_to_deck2",
-      "weight": 100,
-      
-      "_comment_requirements": "This card won't appear in the draw pile until you hit Day 20 AND have at least 40 Might.",
-      "requirements": {
-        "minRound": 20,
-        "minMight": 40
-      },
+      "weight": 5000,
       
       "prompt": "The <dungeon/stronghold> is stable, but the lower depths are <calling/whispering>. Expand?",
       
