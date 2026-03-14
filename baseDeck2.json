@@ -1,1 +1,1058 @@
-{"packId":"base_deck_2","DECK_JSON":[{"charId":"char_1","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Did he survive?","text":"He make a very good black rock now."}],"rightChoice":{"effects":{"horde":-20,"might":10},"text":"Let it slide"},"prompt":"Goblin talk too much. I throw him in <fire/magma>. You mad?","leftChoice":{"effects":{"might":-15,"fear":15},"text":"Lash him"}},{"charId":"char_1","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Are they really aerodynamic?","text":"The pointy ears make them spin! Very <fast/quick>!"}],"rightChoice":{"effects":{"horde":10,"fear":-15},"text":"Deny him"},"prompt":"Pointy-ear prisoners fly real good. Let Kargoth throw them at humies.","leftChoice":{"effects":{"might":20,"horde":-10},"text":"Arm them"}},{"charId":"char_1","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Are you dangerous?","text":"My feet melting the rocks, Boss."}],"rightChoice":{"effects":{"horde":10,"loot":-10},"text":"Pump stomach"},"prompt":"Drank the blue fire water. Kargoth glowing now. I want hug a wizard.","leftChoice":{"effects":{"might":15,"fear":15},"text":"Let him","nextCard":{"charId":"char_1","cardText":"Kargoth squeeze the fire-humie. Big boom! Fire-humie gone. Sorry I break the wall.","prompt":"","type":"text","leftChoice":{"effects":{"might":-10,"fear":10},"text":"Worth it"},"rightChoice":{"effects":{"horde":-10,"loot":-15},"text":"Rebuild it"}}}},{"charId":"char_1","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Is it house trained?","text":"It only eat things that bleed. So, no."}],"rightChoice":{"effects":{"might":-10,"loot":10,"fear":10},"text":"Kill and eat"},"prompt":"Found furry monster. It eat three goblins already. Kargoth keep it.","leftChoice":{"effects":{"might":15,"horde":-15},"text":"Good for morale","nextCard":{"charId":"char_1","cardText":"Furry monster break chain. Eat the armor-maker. Monster gone now. We need new armor-maker.","prompt":"","type":"text","leftChoice":{"effects":{"might":-15,"horde":-10},"text":"Track it"},"rightChoice":{"effects":{"loot":-15,"fear":-5},"text":"Hire smith"}}}},{"charId":"char_1","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Does it actually make you faster?","text":"Kargoth science say yes."}],"rightChoice":{"effects":{"horde":-15,"might":5,"fear":15},"text":"Use blood"},"prompt":"Red make me go fasta. Buy red paint, or I smash goblins for red juice.","leftChoice":{"effects":{"might":10,"loot":-15},"text":"Buy paint"}},{"charId":"char_1","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"What is the ‘Downward Dog’?","text":"It is when I break humie spine over my knee."}],"rightChoice":{"effects":{"might":-5,"fear":10},"text":"Ban it"},"prompt":"Kargoth invent ‘Orc Yoga’. Make bones crack loud. Tell all boyz they gotta do it.","leftChoice":{"effects":{"might":10,"horde":-5,"fear":-15},"text":"Mandatory"}},{"charId":"char_1","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"might":-10,"fear":-15},"text":"Confiscate toy"},"prompt":"Found a ‘Baby’s First Rattle’. I am using it to beat a goblin scout rhythmically. It’s quite musical.","leftChoice":{"effects":{"might":10,"horde":-10,"fear":15},"text":"Encourage arts"}},{"charId":"char_1","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"might":-15,"horde":15,"fear":-25},"text":"Give hug"},"prompt":"If I bash humie skull in forest and no one hears it… did I really bash it? My head hurts from thinking.","leftChoice":{"effects":{"might":-10,"fear":15},"text":"Philosophy soft"}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Who volunteered?","text":"Gribble said he wanted to see the big <fire/sun> in the sky!"}],"rightChoice":{"effects":{"horde":10,"might":-10},"text":"Dismantle it"},"prompt":"Look look! We builds a catapult! It flings the other goblins real high! Can we push the button?!","leftChoice":{"effects":{"might":15,"horde":-20},"text":"Fire away!","nextCard":{"charId":"char_2","cardText":"Gribble hit the ceiling, bounced off a stalactite, and landed in the gold vault! He crushed your favorite chest!","prompt":"","type":"text","leftChoice":{"effects":{"loot":-10,"fear":5},"text":"Clean it"},"rightChoice":{"effects":{"horde":-5,"fear":10},"text":"Scrape him off"}}}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"What exactly does it say?","text":"Something about a ‘Link to the Past.’ It makes our ears <itch/burn>!"}],"rightChoice":{"effects":{"loot":20,"fear":-10},"text":"Sell it"},"prompt":"We gets a glowing ball! It keeps yelling ‘bout a humie in green! Make it stop, yes? Smash it?!","leftChoice":{"effects":{"horde":-15,"might":20},"text":"Smash it"}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Where did you get that?","text":"I pinched it from the dead elf-man’s bag!"}],"rightChoice":{"effects":{"might":5,"loot":-5,"fear":10},"text":"Smash it!","nextCard":{"charId":"char_2","cardText":"I smashed the window. A sharp piece bounced up and cut off the big Orc’s ear! He is very mad!","prompt":"","type":"text","leftChoice":{"effects":{"horde":-5,"loot":-15},"text":"Run"},"rightChoice":{"effects":{"horde":-5,"loot":-15},"text":"Run"}}},"prompt":"Look! Snivel finds a Magic Window! A very handsome goblin looks right back at me!","leftChoice":{"effects":{"horde":5,"fear":-10},"text":"That is a mirror"}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Do they taste good?","text":"Very dry! But the ‘Co-Pay’ part has a nice crunch!"}],"rightChoice":{"effects":{"might":5,"fear":10},"text":"Burn them"},"prompt":"We finds lots of humie paper with big words! It says ‘Health Insurance’. Can the Swarm eats it for supper?","leftChoice":{"effects":{"horde":15,"loot":-5},"text":"Eat your fill"}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Is that supposed to be my nose?","text":"Yes! The femur bone really captures your majestic face!"}],"rightChoice":{"effects":{"horde":-15,"fear":15},"text":"Tear it down"},"prompt":"We builds a big statue of you! Made of mud and wet bones! It stinks so beautiful!","leftChoice":{"effects":{"horde":20,"fear":-15},"text":"I love it"}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Why do they want railings?","text":"Gribble fell in yesterday. He didn’t even leave a good splash."}],"rightChoice":{"effects":{"horde":-15,"fear":20},"text":"Push them in"},"prompt":"The boys makes a ‘union’. They cries for ‘Safety Rails’ so they don’t falls in the hot-hot magma!","leftChoice":{"effects":{"horde":15,"loot":-20},"text":"Install railings","nextCard":{"charId":"char_2","cardText":"The boys thought the railings was for swinging. Three dozen just swung right into the fire-juice.","prompt":"","type":"text","leftChoice":{"effects":{"horde":-15,"fear":5},"text":"Fools"},"rightChoice":{"effects":{"horde":-15,"fear":5},"text":"Fools"}}}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"horde":10,"might":-15,"fear":-20},"text":"Promote stew"},"prompt":"The [[Rat-Stew]] has started talking back to the cooks! It’s demanding a seat on the High Council!","leftChoice":{"effects":{"horde":10,"fear":10},"text":"Eat the witness"}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"horde":-15,"fear":20},"text":"Keep as torture"},"prompt":"Ew, ew! We finds a <wildflower/daisy> in the sludge! It’s too bright! It burns our eyeballs! Burn it?!","leftChoice":{"effects":{"horde":15,"fear":-5},"text":"Incinerate"}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"horde":-20,"fear":20},"text":"Dispose of Rep"},"prompt":"The Swarm wants a ‘Union Man’! They say if they dies, they wants their teeths to be shiny first!","leftChoice":{"effects":{"horde":20,"loot":-25,"might":-5},"text":"Grant plan"}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"horde":10,"loot":-10,"fear":15},"text":"Eat maiden"},"prompt":"A glowing surface-maiden wanders into the traps! She gives us ‘Blessing of Gold’ if we let her walk away!","leftChoice":{"effects":{"loot":30,"fear":-15},"text":"Take blessing","nextCard":{"charId":"char_4","cardText":"Dat ‘blessing’ was holy light! Vault is full of gold, but da front row of my Vanguard is permanently blind!","prompt":"","type":"text","leftChoice":{"effects":{"might":-25,"loot":10},"text":"Worth it"},"rightChoice":{"effects":{"might":-25,"fear":10},"text":"Curse her"}}}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"might":15,"loot":-15},"text":"Hire the stew"},"prompt":"The [[Rat-Stew]] militia is marching on your throne! It screams we must stop eating its ‘brothers’!","leftChoice":{"effects":{"horde":20,"fear":-15},"text":"Eat militia","nextCard":{"charId":"char_1","cardText":"Goblins ate the angry stew. Stew is now organizing a strike inside their stomachs. Goblins throwing up everywhere.","prompt":"","type":"text","leftChoice":{"effects":{"horde":-20,"might":-10},"text":"Ugh"},"rightChoice":{"effects":{"horde":-20,"might":-10},"text":"Ugh"}}}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"horde":-10,"loot":15},"text":"Put in vault"},"prompt":"We steals a magic word-book! The paper is so softs… can the boys use it for the latrines?","leftChoice":{"effects":{"horde":15,"fear":-10},"text":"Wipe away","nextCard":{"charId":"char_2","cardText":"The magic papers hated the poop-pits! Half the warrens just blowed up into purple fire!","prompt":"","type":"text","leftChoice":{"effects":{"horde":-30,"might":-10},"text":"Clean it"},"rightChoice":{"effects":{"horde":-30,"might":-10},"text":"Clean it"}}}},{"charId":"char_2","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"loot":5,"fear":-10},"text":"Leave it"},"prompt":"Ouch-water dripping from the roof! Tastes like spicy fire! Put it in the [[Rat-Stew]] for flavor?","leftChoice":{"effects":{"horde":-15,"might":20},"text":"Spice it up","nextCard":{"charId":"char_3","cardText":"The liquid was liquid rage! My Bruisers ate the stew and are in a frenzy, tearing the dungeon apart!","prompt":"","type":"text","leftChoice":{"effects":{"might":15,"loot":-20},"text":"Excellent"},"rightChoice":{"effects":{"might":15,"loot":-20},"text":"Excellent"}}}},{"charId":"char_3","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Define ‘atmospherically’.","text":"At a 45-degree angle, facing the scenic lava falls."}],"rightChoice":{"effects":{"loot":-10,"fear":-15},"text":"Buy candles"},"prompt":"My troops complain the torture chambers lack ‘ambiance’. Let me impale them atmospherically.","leftChoice":{"effects":{"horde":-15,"fear":20},"text":"Yes, do it"}},{"charId":"char_3","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Pillaging is fun?","text":"Only if you aren’t doing it for a strict quota."}],"rightChoice":{"effects":{"might":15,"horde":-15,"fear":10},"text":"Work is work"},"prompt":"My [[Vanguard]] complains of ‘Work-Life Balance’. They want Tuesdays off to pillage for fun.","leftChoice":{"effects":{"horde":15,"might":-15,"loot":10},"text":"Approve leave"}},{"charId":"char_3","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Are they that loud?","text":"They sing about fungus. Terribly."}],"rightChoice":{"effects":{"might":-10,"loot":-15,"horde":10},"text":"Buy earplugs"},"prompt":"The Swarm’s screeching gives my Bruisers migraines. Let me ‘repurpose’ [[The Warrens]] as a quiet zone.","leftChoice":{"effects":{"might":15,"horde":-25,"fear":5},"text":"Evict Swarm","nextCard":{"charId":"char_2","cardText":"The kicked-out goblins is sleeping in the treasury! We is eating the gold coins, thinking they is hard beetles!","prompt":"","type":"text","leftChoice":{"effects":{"horde":15,"loot":-20},"text":"Let them eat"},"rightChoice":{"effects":{"might":-15,"horde":10},"text":"Move them back"}}}},{"charId":"char_3","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Are there many sheep?","text":"Enough to start a wool export business."}],"rightChoice":{"effects":{"might":-30,"horde":15,"fear":10},"text":"Hire more sheep"},"prompt":"My Bruisers unionized. We demand ‘Hazard Pay’ for fighting Wizards. Being turned into sheep is unprofessional.","leftChoice":{"effects":{"might":20,"loot":-25},"text":"Pay premiums","nextCard":{"charId":"char_8","cardText":"The new ‘sheep’ recruits are terrible at fighting, but I have made a fortune selling their wool.","prompt":"","type":"text","leftChoice":{"effects":{"loot":25,"fear":10},"text":"Take a cut"},"rightChoice":{"effects":{"horde":10,"loot":5},"text":"Let him keep it"}}}},{"charId":"char_3","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"might":-15,"fear":-10},"text":"Forbid the fun"},"prompt":"I want to host a ‘Family Reunion’ for my clan. It involves three days of mandatory screaming and traditional poison-tasting.","leftChoice":{"effects":{"might":20,"horde":-25,"loot":-10},"text":"Lovely tradition"}},{"charId":"char_3","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"horde":-30,"loot":15},"text":"Bury in Goblins"},"prompt":"Dwarven sappers breached the lower armory. Strapped with explosives. If they blow, we lose the [[Black Iron]].","leftChoice":{"effects":{"might":-25,"loot":15},"text":"Send Vanguard","nextCard":{"charId":"char_3","cardText":"My Bruisers killed the dwarves, but the resulting explosion turned our best elites into a fine mist. The iron is safe, though.","prompt":"","type":"text","leftChoice":{"effects":{"might":-5,"fear":10},"text":"Wipe it off"},"rightChoice":{"effects":{"might":-5,"fear":10},"text":"Wipe it off"}}}},{"charId":"char_3","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"horde":-30,"might":15,"fear":10},"text":"Start the cull"},"prompt":"The Swarm’s breeding pits are overflowing into my training grounds. I am going to initiate a cull unless you build new warrens.","leftChoice":{"effects":{"horde":20,"loot":-25},"text":"Build warrens"}},{"charId":"char_4","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"What are you singing?","text":"‘Blood on the Rocks’ in G-flat. Very emotional."}],"rightChoice":{"effects":{"might":15,"horde":-15},"text":"Smash the rock"},"prompt":"Da boyz makes a ‘Choir’! We stands in a circle and screams at a big rock. Give us gold for our art!","leftChoice":{"effects":{"horde":20,"loot":-15},"text":"Fund it"}},{"charId":"char_4","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Are they cursed?","text":"Yeah, looking at the tax rates makes my eyes bleed."}],"rightChoice":{"effects":{"loot":15,"fear":15},"text":"Read them"},"prompt":"Greenfang punch a wall! Found secret room with humie number-books. Make my head hurt. We burn ‘em?","leftChoice":{"effects":{"horde":15,"loot":-10},"text":"Burn them"}},{"charId":"char_4","requirements":{"unlock_deck_2":true},"dialogues":[{"btn":"Can it count?","text":"It counted to three before biting off its own finger."}],"rightChoice":{"effects":{"might":-10,"loot":15,"horde":-5},"text":"Let it count","nextCard":{"charId":"char_4","cardText":"Da troll ate the paper books and yelled ‘BANKRUPT’! Humie tax men got scared and ran away!","prompt":"","type":"text","leftChoice":{"effects":{"loot":5,"fear":15},"text":"Good enough"},"rightChoice":{"effects":{"horde":-5,"fear":10},"text":"Execute the CPA"}}},"prompt":"Boyz caught a big troll! It say it wants to be an ‘accountant’. Dat sound like nerd talk. Smash?","leftChoice":{"effects":{"might":10,"fear":5},"text":"Smash it"}},{"charId":"char_4","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"might":-15,"horde":-5,"fear":25},"text":"Fight naked"},"prompt":"Da boyz want fancy ‘Battle Shrouds’! We ain’t choppin’ no one unless we look pretty and dead!","leftChoice":{"effects":{"might":20,"loot":-20,"fear":-5},"text":"Buy the silk"}},{"charId":"char_4","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"horde":10,"fear":15},"text":"Legs it is","nextCard":{"charId":"char_4","cardText":"Da music man’s legs was chewy, but his screaming sounded real nice during da feast!","prompt":"","type":"text","leftChoice":{"effects":{"horde":10,"fear":5},"text":"Delicious"},"rightChoice":{"effects":{"horde":5,"loot":-5},"text":"Needs salt"}}},"prompt":"Caught a music humie! Say he sing about you being super mean if we don’t eat his legs. We eat ‘em anyway?","leftChoice":{"effects":{"horde":15,"fear":-20},"text":"I love a ballad"}},{"charId":"char_4","requirements":{"unlock_deck_2":true},"rightChoice":{"effects":{"horde":20,"might":-15,"loot":-15},"text":"Let organize"},"prompt":"Goblins talking about a ‘Union’! Greenfang don’t know what dat is, but I wanna smash it!","leftChoice":{"effects":{"might":15,"horde":-25,"fear":15},"text":"Smash Union"}}]}
+{
+  "_comment_packId": "This deck will sit silently in the background until the unlockDeck command from base_deck_1 calls it into action.",
+  "packId": "base_deck_2",
+  "DECK_JSON": [
+    {
+      "charId": "char_1",
+      "dialogues": [
+        {
+          "btn": "Did he survive?",
+          "text": "He make a very good black rock now."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "horde": -20,
+          "might": 10
+        },
+        "text": "Let it slide"
+      },
+      "prompt": "Goblin talk too much. I throw him in <fire/magma>. You mad?",
+      "leftChoice": {
+        "effects": {
+          "might": -15,
+          "fear": 15
+        },
+        "text": "Lash him"
+      }
+    },
+    {
+      "charId": "char_1",
+      "dialogues": [
+        {
+          "btn": "Are they really aerodynamic?",
+          "text": "The pointy ears make them spin! Very <fast/quick>!"
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "horde": 10,
+          "fear": -15
+        },
+        "text": "Deny him"
+      },
+      "prompt": "Pointy-ear prisoners fly real good. Let Kargoth throw them at humies.",
+      "leftChoice": {
+        "effects": {
+          "might": 20,
+          "horde": -10
+        },
+        "text": "Arm them"
+      }
+    },
+    {
+      "charId": "char_1",
+      "dialogues": [
+        {
+          "btn": "Are you dangerous?",
+          "text": "My feet melting the rocks, Boss."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "horde": 10,
+          "loot": -10
+        },
+        "text": "Pump stomach"
+      },
+      "prompt": "Drank the blue fire water. Kargoth glowing now. I want hug a wizard.",
+      "leftChoice": {
+        "effects": {
+          "might": 15,
+          "fear": 15
+        },
+        "text": "Let him",
+        "nextCard": {
+          "charId": "char_1",
+          "cardText": "Kargoth squeeze the fire-humie. Big boom! Fire-humie gone. Sorry I break the wall.",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "might": -10,
+              "fear": 10
+            },
+            "text": "Worth it"
+          },
+          "rightChoice": {
+            "effects": {
+              "horde": -10,
+              "loot": -15
+            },
+            "text": "Rebuild it"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "dialogues": [
+        {
+          "btn": "Is it house trained?",
+          "text": "It only eat things that bleed. So, no."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "might": -10,
+          "loot": 10,
+          "fear": 10
+        },
+        "text": "Kill and eat"
+      },
+      "prompt": "Found furry monster. It eat three goblins already. Kargoth keep it.",
+      "leftChoice": {
+        "effects": {
+          "might": 15,
+          "horde": -15
+        },
+        "text": "Good for morale",
+        "nextCard": {
+          "charId": "char_1",
+          "cardText": "Furry monster break chain. Eat the armor-maker. Monster gone now. We need new armor-maker.",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "might": -15,
+              "horde": -10
+            },
+            "text": "Track it"
+          },
+          "rightChoice": {
+            "effects": {
+              "loot": -15,
+              "fear": -5
+            },
+            "text": "Hire smith"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_1",
+      "dialogues": [
+        {
+          "btn": "Does it actually make you faster?",
+          "text": "Kargoth science say yes."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "horde": -15,
+          "might": 5,
+          "fear": 15
+        },
+        "text": "Use blood"
+      },
+      "prompt": "Red make me go fasta. Buy red paint, or I smash goblins for red juice.",
+      "leftChoice": {
+        "effects": {
+          "might": 10,
+          "loot": -15
+        },
+        "text": "Buy paint"
+      }
+    },
+    {
+      "charId": "char_1",
+      "dialogues": [
+        {
+          "btn": "What is the ‘Downward Dog’?",
+          "text": "It is when I break humie spine over my knee."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "might": -5,
+          "fear": 10
+        },
+        "text": "Ban it"
+      },
+      "prompt": "Kargoth invent ‘Orc Yoga’. Make bones crack loud. Tell all boyz they gotta do it.",
+      "leftChoice": {
+        "effects": {
+          "might": 10,
+          "horde": -5,
+          "fear": -15
+        },
+        "text": "Mandatory"
+      }
+    },
+    {
+      "charId": "char_1",
+      "rightChoice": {
+        "effects": {
+          "might": -10,
+          "fear": -15
+        },
+        "text": "Confiscate toy"
+      },
+      "prompt": "Found a ‘Baby’s First Rattle’. I am using it to beat a goblin scout rhythmically. It’s quite musical.",
+      "leftChoice": {
+        "effects": {
+          "might": 10,
+          "horde": -10,
+          "fear": 15
+        },
+        "text": "Encourage arts"
+      }
+    },
+    {
+      "charId": "char_1",
+      "rightChoice": {
+        "effects": {
+          "might": -15,
+          "horde": 15,
+          "fear": -25
+        },
+        "text": "Give hug"
+      },
+      "prompt": "If I bash humie skull in forest and no one hears it… did I really bash it? My head hurts from thinking.",
+      "leftChoice": {
+        "effects": {
+          "might": -10,
+          "fear": 15
+        },
+        "text": "Philosophy soft"
+      }
+    },
+    {
+      "charId": "char_2",
+      "dialogues": [
+        {
+          "btn": "Who volunteered?",
+          "text": "Gribble said he wanted to see the big <fire/sun> in the sky!"
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "horde": 10,
+          "might": -10
+        },
+        "text": "Dismantle it"
+      },
+      "prompt": "Look look! We builds a catapult! It flings the other goblins real high! Can we push the button?!",
+      "leftChoice": {
+        "effects": {
+          "might": 15,
+          "horde": -20
+        },
+        "text": "Fire away!",
+        "nextCard": {
+          "charId": "char_2",
+          "cardText": "Gribble hit the ceiling, bounced off a stalactite, and landed in the gold vault! He crushed your favorite chest!",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "loot": -10,
+              "fear": 5
+            },
+            "text": "Clean it"
+          },
+          "rightChoice": {
+            "effects": {
+              "horde": -5,
+              "fear": 10
+            },
+            "text": "Scrape him off"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "dialogues": [
+        {
+          "btn": "What exactly does it say?",
+          "text": "Something about a ‘Link to the Past.’ It makes our ears <itch/burn>!"
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "loot": 20,
+          "fear": -10
+        },
+        "text": "Sell it"
+      },
+      "prompt": "We gets a glowing ball! It keeps yelling ‘bout a humie in green! Make it stop, yes? Smash it?!",
+      "leftChoice": {
+        "effects": {
+          "horde": -15,
+          "might": 20
+        },
+        "text": "Smash it"
+      }
+    },
+    {
+      "charId": "char_2",
+      "dialogues": [
+        {
+          "btn": "Where did you get that?",
+          "text": "I pinched it from the dead elf-man’s bag!"
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "might": 5,
+          "loot": -5,
+          "fear": 10
+        },
+        "text": "Smash it!",
+        "nextCard": {
+          "charId": "char_2",
+          "cardText": "I smashed the window. A sharp piece bounced up and cut off the big Orc’s ear! He is very mad!",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "horde": -5,
+              "loot": -15
+            },
+            "text": "Run"
+          },
+          "rightChoice": {
+            "effects": {
+              "horde": -5,
+              "loot": -15
+            },
+            "text": "Run"
+          }
+        }
+      },
+      "prompt": "Look! Snivel finds a Magic Window! A very handsome goblin looks right back at me!",
+      "leftChoice": {
+        "effects": {
+          "horde": 5,
+          "fear": -10
+        },
+        "text": "That is a mirror"
+      }
+    },
+    {
+      "charId": "char_2",
+      "dialogues": [
+        {
+          "btn": "Do they taste good?",
+          "text": "Very dry! But the ‘Co-Pay’ part has a nice crunch!"
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "might": 5,
+          "fear": 10
+        },
+        "text": "Burn them"
+      },
+      "prompt": "We finds lots of humie paper with big words! It says ‘Health Insurance’. Can the Swarm eats it for supper?",
+      "leftChoice": {
+        "effects": {
+          "horde": 15,
+          "loot": -5
+        },
+        "text": "Eat your fill"
+      }
+    },
+    {
+      "charId": "char_2",
+      "dialogues": [
+        {
+          "btn": "Is that supposed to be my nose?",
+          "text": "Yes! The femur bone really captures your majestic face!"
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "horde": -15,
+          "fear": 15
+        },
+        "text": "Tear it down"
+      },
+      "prompt": "We builds a big statue of you! Made of mud and wet bones! It stinks so beautiful!",
+      "leftChoice": {
+        "effects": {
+          "horde": 20,
+          "fear": -15
+        },
+        "text": "I love it"
+      }
+    },
+    {
+      "charId": "char_2",
+      "dialogues": [
+        {
+          "btn": "Why do they want railings?",
+          "text": "Gribble fell in yesterday. He didn’t even leave a good splash."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "horde": -15,
+          "fear": 20
+        },
+        "text": "Push them in"
+      },
+      "prompt": "The boys makes a ‘union’. They cries for ‘Safety Rails’ so they don’t falls in the hot-hot magma!",
+      "leftChoice": {
+        "effects": {
+          "horde": 15,
+          "loot": -20
+        },
+        "text": "Install railings",
+        "nextCard": {
+          "charId": "char_2",
+          "cardText": "The boys thought the railings was for swinging. Three dozen just swung right into the fire-juice.",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "horde": -15,
+              "fear": 5
+            },
+            "text": "Fools"
+          },
+          "rightChoice": {
+            "effects": {
+              "horde": -15,
+              "fear": 5
+            },
+            "text": "Fools"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "rightChoice": {
+        "effects": {
+          "horde": 10,
+          "might": -15,
+          "fear": -20
+        },
+        "text": "Promote stew"
+      },
+      "prompt": "The [[Rat-Stew]] has started talking back to the cooks! It’s demanding a seat on the High Council!",
+      "leftChoice": {
+        "effects": {
+          "horde": 10,
+          "fear": 10
+        },
+        "text": "Eat the witness"
+      }
+    },
+    {
+      "charId": "char_2",
+      "rightChoice": {
+        "effects": {
+          "horde": -15,
+          "fear": 20
+        },
+        "text": "Keep as torture"
+      },
+      "prompt": "Ew, ew! We finds a <wildflower/daisy> in the sludge! It’s too bright! It burns our eyeballs! Burn it?!",
+      "leftChoice": {
+        "effects": {
+          "horde": 15,
+          "fear": -5
+        },
+        "text": "Incinerate"
+      }
+    },
+    {
+      "charId": "char_2",
+      "rightChoice": {
+        "effects": {
+          "horde": -20,
+          "fear": 20
+        },
+        "text": "Dispose of Rep"
+      },
+      "prompt": "The Swarm wants a ‘Union Man’! They say if they dies, they wants their teeths to be shiny first!",
+      "leftChoice": {
+        "effects": {
+          "horde": 20,
+          "loot": -25,
+          "might": -5
+        },
+        "text": "Grant plan"
+      }
+    },
+    {
+      "charId": "char_2",
+      "rightChoice": {
+        "effects": {
+          "horde": 10,
+          "loot": -10,
+          "fear": 15
+        },
+        "text": "Eat maiden"
+      },
+      "prompt": "A glowing surface-maiden wanders into the traps! She gives us ‘Blessing of Gold’ if we let her walk away!",
+      "leftChoice": {
+        "effects": {
+          "loot": 30,
+          "fear": -15
+        },
+        "text": "Take blessing",
+        "nextCard": {
+          "charId": "char_4",
+          "cardText": "Dat ‘blessing’ was holy light! Vault is full of gold, but da front row of my Vanguard is permanently blind!",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "might": -25,
+              "loot": 10
+            },
+            "text": "Worth it"
+          },
+          "rightChoice": {
+            "effects": {
+              "might": -25,
+              "fear": 10
+            },
+            "text": "Curse her"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "rightChoice": {
+        "effects": {
+          "might": 15,
+          "loot": -15
+        },
+        "text": "Hire the stew"
+      },
+      "prompt": "The [[Rat-Stew]] militia is marching on your throne! It screams we must stop eating its ‘brothers’!",
+      "leftChoice": {
+        "effects": {
+          "horde": 20,
+          "fear": -15
+        },
+        "text": "Eat militia",
+        "nextCard": {
+          "charId": "char_1",
+          "cardText": "Goblins ate the angry stew. Stew is now organizing a strike inside their stomachs. Goblins throwing up everywhere.",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "horde": -20,
+              "might": -10
+            },
+            "text": "Ugh"
+          },
+          "rightChoice": {
+            "effects": {
+              "horde": -20,
+              "might": -10
+            },
+            "text": "Ugh"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "rightChoice": {
+        "effects": {
+          "horde": -10,
+          "loot": 15
+        },
+        "text": "Put in vault"
+      },
+      "prompt": "We steals a magic word-book! The paper is so softs… can the boys use it for the latrines?",
+      "leftChoice": {
+        "effects": {
+          "horde": 15,
+          "fear": -10
+        },
+        "text": "Wipe away",
+        "nextCard": {
+          "charId": "char_2",
+          "cardText": "The magic papers hated the poop-pits! Half the warrens just blowed up into purple fire!",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "horde": -30,
+              "might": -10
+            },
+            "text": "Clean it"
+          },
+          "rightChoice": {
+            "effects": {
+              "horde": -30,
+              "might": -10
+            },
+            "text": "Clean it"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_2",
+      "rightChoice": {
+        "effects": {
+          "loot": 5,
+          "fear": -10
+        },
+        "text": "Leave it"
+      },
+      "prompt": "Ouch-water dripping from the roof! Tastes like spicy fire! Put it in the [[Rat-Stew]] for flavor?",
+      "leftChoice": {
+        "effects": {
+          "horde": -15,
+          "might": 20
+        },
+        "text": "Spice it up",
+        "nextCard": {
+          "charId": "char_3",
+          "cardText": "The liquid was liquid rage! My Bruisers ate the stew and are in a frenzy, tearing the dungeon apart!",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "might": 15,
+              "loot": -20
+            },
+            "text": "Excellent"
+          },
+          "rightChoice": {
+            "effects": {
+              "might": 15,
+              "loot": -20
+            },
+            "text": "Excellent"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "dialogues": [
+        {
+          "btn": "Define ‘atmospherically’.",
+          "text": "At a 45-degree angle, facing the scenic lava falls."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "loot": -10,
+          "fear": -15
+        },
+        "text": "Buy candles"
+      },
+      "prompt": "My troops complain the torture chambers lack ‘ambiance’. Let me impale them atmospherically.",
+      "leftChoice": {
+        "effects": {
+          "horde": -15,
+          "fear": 20
+        },
+        "text": "Yes, do it"
+      }
+    },
+    {
+      "charId": "char_3",
+      "dialogues": [
+        {
+          "btn": "Pillaging is fun?",
+          "text": "Only if you aren’t doing it for a strict quota."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "might": 15,
+          "horde": -15,
+          "fear": 10
+        },
+        "text": "Work is work"
+      },
+      "prompt": "My [[Vanguard]] complains of ‘Work-Life Balance’. They want Tuesdays off to pillage for fun.",
+      "leftChoice": {
+        "effects": {
+          "horde": 15,
+          "might": -15,
+          "loot": 10
+        },
+        "text": "Approve leave"
+      }
+    },
+    {
+      "charId": "char_3",
+      "dialogues": [
+        {
+          "btn": "Are they that loud?",
+          "text": "They sing about fungus. Terribly."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "might": -10,
+          "loot": -15,
+          "horde": 10
+        },
+        "text": "Buy earplugs"
+      },
+      "prompt": "The Swarm’s screeching gives my Bruisers migraines. Let me ‘repurpose’ [[The Warrens]] as a quiet zone.",
+      "leftChoice": {
+        "effects": {
+          "might": 15,
+          "horde": -25,
+          "fear": 5
+        },
+        "text": "Evict Swarm",
+        "nextCard": {
+          "charId": "char_2",
+          "cardText": "The kicked-out goblins is sleeping in the treasury! We is eating the gold coins, thinking they is hard beetles!",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "horde": 15,
+              "loot": -20
+            },
+            "text": "Let them eat"
+          },
+          "rightChoice": {
+            "effects": {
+              "might": -15,
+              "horde": 10
+            },
+            "text": "Move them back"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "dialogues": [
+        {
+          "btn": "Are there many sheep?",
+          "text": "Enough to start a wool export business."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "might": -30,
+          "horde": 15,
+          "fear": 10
+        },
+        "text": "Hire more sheep"
+      },
+      "prompt": "My Bruisers unionized. We demand ‘Hazard Pay’ for fighting Wizards. Being turned into sheep is unprofessional.",
+      "leftChoice": {
+        "effects": {
+          "might": 20,
+          "loot": -25
+        },
+        "text": "Pay premiums",
+        "nextCard": {
+          "charId": "char_3",
+          "cardText": "The new ‘sheep’ recruits are terrible at fighting, but I have made a fortune selling their wool.",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "loot": 25,
+              "fear": 10
+            },
+            "text": "Take a cut"
+          },
+          "rightChoice": {
+            "effects": {
+              "horde": 10,
+              "loot": 5
+            },
+            "text": "Let him keep it"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "rightChoice": {
+        "effects": {
+          "might": -15,
+          "fear": -10
+        },
+        "text": "Forbid the fun"
+      },
+      "prompt": "I want to host a ‘Family Reunion’ for my clan. It involves three days of mandatory screaming and traditional poison-tasting.",
+      "leftChoice": {
+        "effects": {
+          "might": 20,
+          "horde": -25,
+          "loot": -10
+        },
+        "text": "Lovely tradition"
+      }
+    },
+    {
+      "charId": "char_3",
+      "rightChoice": {
+        "effects": {
+          "horde": -30,
+          "loot": 15
+        },
+        "text": "Bury in Goblins"
+      },
+      "prompt": "Dwarven sappers breached the lower armory. Strapped with explosives. If they blow, we lose the [[Black Iron]].",
+      "leftChoice": {
+        "effects": {
+          "might": -25,
+          "loot": 15
+        },
+        "text": "Send Vanguard",
+        "nextCard": {
+          "charId": "char_3",
+          "cardText": "My Bruisers killed the dwarves, but the resulting explosion turned our best elites into a fine mist. The iron is safe, though.",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "might": -5,
+              "fear": 10
+            },
+            "text": "Wipe it off"
+          },
+          "rightChoice": {
+            "effects": {
+              "might": -5,
+              "fear": 10
+            },
+            "text": "Wipe it off"
+          }
+        }
+      }
+    },
+    {
+      "charId": "char_3",
+      "rightChoice": {
+        "effects": {
+          "horde": -30,
+          "might": 15,
+          "fear": 10
+        },
+        "text": "Start the cull"
+      },
+      "prompt": "The Swarm’s breeding pits are overflowing into my training grounds. I am going to initiate a cull unless you build new warrens.",
+      "leftChoice": {
+        "effects": {
+          "horde": 20,
+          "loot": -25
+        },
+        "text": "Build warrens"
+      }
+    },
+    {
+      "charId": "char_4",
+      "dialogues": [
+        {
+          "btn": "What are you singing?",
+          "text": "‘Blood on the Rocks’ in G-flat. Very emotional."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "might": 15,
+          "horde": -15
+        },
+        "text": "Smash the rock"
+      },
+      "prompt": "Da boyz makes a ‘Choir’! We stands in a circle and screams at a big rock. Give us gold for our art!",
+      "leftChoice": {
+        "effects": {
+          "horde": 20,
+          "loot": -15
+        },
+        "text": "Fund it"
+      }
+    },
+    {
+      "charId": "char_4",
+      "dialogues": [
+        {
+          "btn": "Are they cursed?",
+          "text": "Yeah, looking at the tax rates makes my eyes bleed."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "loot": 15,
+          "fear": 15
+        },
+        "text": "Read them"
+      },
+      "prompt": "Greenfang punch a wall! Found secret room with humie number-books. Make my head hurt. We burn ‘em?",
+      "leftChoice": {
+        "effects": {
+          "horde": 15,
+          "loot": -10
+        },
+        "text": "Burn them"
+      }
+    },
+    {
+      "charId": "char_4",
+      "dialogues": [
+        {
+          "btn": "Can it count?",
+          "text": "It counted to three before biting off its own finger."
+        }
+      ],
+      "rightChoice": {
+        "effects": {
+          "might": -10,
+          "loot": 15,
+          "horde": -5
+        },
+        "text": "Let it count",
+        "nextCard": {
+          "charId": "char_4",
+          "cardText": "Da troll ate the paper books and yelled ‘BANKRUPT’! Humie tax men got scared and ran away!",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "loot": 5,
+              "fear": 15
+            },
+            "text": "Good enough"
+          },
+          "rightChoice": {
+            "effects": {
+              "horde": -5,
+              "fear": 10
+            },
+            "text": "Execute the CPA"
+          }
+        }
+      },
+      "prompt": "Boyz caught a big troll! It say it wants to be an ‘accountant’. Dat sound like nerd talk. Smash?",
+      "leftChoice": {
+        "effects": {
+          "might": 10,
+          "fear": 5
+        },
+        "text": "Smash it"
+      }
+    },
+    {
+      "charId": "char_4",
+      "rightChoice": {
+        "effects": {
+          "might": -15,
+          "horde": -5,
+          "fear": 25
+        },
+        "text": "Fight naked"
+      },
+      "prompt": "Da boyz want fancy ‘Battle Shrouds’! We ain’t choppin’ no one unless we look pretty and dead!",
+      "leftChoice": {
+        "effects": {
+          "might": 20,
+          "loot": -20,
+          "fear": -5
+        },
+        "text": "Buy the silk"
+      }
+    },
+    {
+      "charId": "char_4",
+      "rightChoice": {
+        "effects": {
+          "horde": 10,
+          "fear": 15
+        },
+        "text": "Legs it is",
+        "nextCard": {
+          "charId": "char_4",
+          "cardText": "Da music man’s legs was chewy, but his screaming sounded real nice during da feast!",
+          "prompt": "",
+          "type": "text",
+          "leftChoice": {
+            "effects": {
+              "horde": 10,
+              "fear": 5
+            },
+            "text": "Delicious"
+          },
+          "rightChoice": {
+            "effects": {
+              "horde": 5,
+              "loot": -5
+            },
+            "text": "Needs salt"
+          }
+        }
+      },
+      "prompt": "Caught a music humie! Say he sing about you being super mean if we don’t eat his legs. We eat ‘em anyway?",
+      "leftChoice": {
+        "effects": {
+          "horde": 15,
+          "fear": -20
+        },
+        "text": "I love a ballad"
+      }
+    },
+    {
+      "charId": "char_4",
+      "rightChoice": {
+        "effects": {
+          "horde": 20,
+          "might": -15,
+          "loot": -15
+        },
+        "text": "Let organize"
+      },
+      "prompt": "Goblins talking about a ‘Union’! Greenfang don’t know what dat is, but I wanna smash it!",
+      "leftChoice": {
+        "effects": {
+          "might": 15,
+          "horde": -25,
+          "fear": 15
+        },
+        "text": "Smash Union"
+      }
+    },
+    {
+      "_comment_bridge_card": "--- NEW BRIDGE CARD TO EXTRA DECK 1 ---",
+      "charId": "char_3",
+      "id": "bridge_to_extra_1",
+      "weight": 100,
+      "_comment_requirements": "We only need minRound here. Since base_deck_2 must be unlocked for this card to even be drawn, it already implicitly requires the player to have expanded!",
+      "requirements": {
+        "minRound": 40
+      },
+      "prompt": "The depths are secured, but we found a rusted gateway leading further down into the abyss. Do we breach it?",
+      "leftChoice": {
+        "effects": {
+          "fear": -5
+        },
+        "text": "Hold position"
+      },
+      "rightChoice": {
+        "effects": {
+          "loot": -40,
+          "fear": 15,
+          "unlockDeck": "extra_deck_1"
+        },
+        "text": "Breach it"
+      }
+    }
+  ]
+}
